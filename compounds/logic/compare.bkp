@@ -1,0 +1,3530 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "VHH::Core::Logic::compare",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "test"
+                                                },
+                                                {
+                                                    "metaName": "input1"
+                                                },
+                                                {
+                                                    "metaName": "input2"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-522 -23"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "81 -71"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "bool"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,compound"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Mesh,compute_mesh_surface_area"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,VHH::Core::Math,set_range"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-514 -366 1029 733"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-466.102 -358.242"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"test\"\n            },\n            {\n                \"group\": \"Inputs\",\n                \"items\": [\n                    {\n                        \"port\": \"input1\"\n                    },\n                    {\n                        \"port\": \"input2\"\n                    }\n                ]\n            },\n            {\n                \"port\": \"if_true\"\n            },\n            {\n                \"port\": \"if_false\"\n            },\n            {\n                \"group\": \"Results\"\n            }\n        ]\n    }\n}\n"
+                }
+            ],
+            "isDefaultOverload": "true",
+            "ports": [
+                {
+                    "portName": "test",
+                    "portDirection": "input",
+                    "portType": "VHH::comparisons",
+                    "portDefault": "equal [==]"
+                },
+                {
+                    "portName": "input1",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0f"
+                },
+                {
+                    "portName": "input2",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0f"
+                },
+                {
+                    "portName": "bool",
+                    "portDirection": "output",
+                    "portType": "bool"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "comparisons",
+                    "uriImported": "stream:/bifrostGraphShape1",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-909 -71"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "value"
+                                                        },
+                                                        {
+                                                            "metaName": "first"
+                                                        },
+                                                        {
+                                                            "metaName": "second"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "2031 -401"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "bool"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,if"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,not_equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,greater_or_equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,less_or_equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,greater"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "129.081 -938.158 2615.34 1863.02"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "value",
+                            "portDirection": "input",
+                            "portType": "VHH::comparisons"
+                        },
+                        {
+                            "portName": "first",
+                            "portDirection": "input",
+                            "portType": "float"
+                        },
+                        {
+                            "portName": "second",
+                            "portDirection": "input",
+                            "portType": "float"
+                        },
+                        {
+                            "portName": "bool",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "value",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-549 -401"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 -191"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value1",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-549 -221"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal1",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 -401"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if1",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1401 -401"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value2",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 49"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal2",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 49"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value3",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 229"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if2",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1131 19"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "less",
+                            "nodeType": "Core::Logic::less",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 259"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value4",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 499"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value5",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 679"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal3",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 499"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if3",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "861 469"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "greater",
+                            "nodeType": "Core::Logic::greater",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 709"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value6",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1129"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "3"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value7",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 949"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal4",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 949"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "less_or_equal",
+                            "nodeType": "Core::Logic::less_or_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 1159"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if4",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "591 949"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value8",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1549"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value9",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1369"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal5",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 1369"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "greater_or_equal",
+                            "nodeType": "Core::Logic::greater_or_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 1579"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if5",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "321 1369"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value10",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1999"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "5"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value11",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1819"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal6",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 1819"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "not_equal",
+                            "nodeType": "Core::Logic::not_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 1999"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if6",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "51 1819"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": ".value",
+                            "target": "value.value"
+                        },
+                        {
+                            "source": "value.output",
+                            "target": "equal1.first"
+                        },
+                        {
+                            "source": "value1.output",
+                            "target": "equal1.second"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "equal.first"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "equal.second"
+                        },
+                        {
+                            "source": "equal1.output",
+                            "target": "if1.condition"
+                        },
+                        {
+                            "source": "equal.output",
+                            "target": "if1.true_case"
+                        },
+                        {
+                            "source": "if1.output",
+                            "target": ".bool"
+                        },
+                        {
+                            "source": "value2.output",
+                            "target": "equal2.first"
+                        },
+                        {
+                            "source": "value3.output",
+                            "target": "equal2.second"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value2.value"
+                        },
+                        {
+                            "source": "equal2.output",
+                            "target": "if2.condition"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "less.first"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "less.second"
+                        },
+                        {
+                            "source": "less.output",
+                            "target": "if2.true_case"
+                        },
+                        {
+                            "source": "if2.output",
+                            "target": "if1.false_case"
+                        },
+                        {
+                            "source": "value4.output",
+                            "target": "equal3.first"
+                        },
+                        {
+                            "source": "value5.output",
+                            "target": "equal3.second"
+                        },
+                        {
+                            "source": "equal3.output",
+                            "target": "if3.condition"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value4.value"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "greater.first"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "greater.second"
+                        },
+                        {
+                            "source": "greater.output",
+                            "target": "if3.true_case"
+                        },
+                        {
+                            "source": "if3.output",
+                            "target": "if2.false_case"
+                        },
+                        {
+                            "source": "value6.output",
+                            "target": "equal4.second"
+                        },
+                        {
+                            "source": "value7.output",
+                            "target": "equal4.first"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value7.value"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "less_or_equal.first"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "less_or_equal.second"
+                        },
+                        {
+                            "source": "equal4.output",
+                            "target": "if4.condition"
+                        },
+                        {
+                            "source": "less_or_equal.output",
+                            "target": "if4.true_case"
+                        },
+                        {
+                            "source": "if4.output",
+                            "target": "if3.false_case"
+                        },
+                        {
+                            "source": "value8.output",
+                            "target": "equal5.second"
+                        },
+                        {
+                            "source": "value9.output",
+                            "target": "equal5.first"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value9.value"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "greater_or_equal.first"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "greater_or_equal.second"
+                        },
+                        {
+                            "source": "equal5.output",
+                            "target": "if5.condition"
+                        },
+                        {
+                            "source": "greater_or_equal.output",
+                            "target": "if5.true_case"
+                        },
+                        {
+                            "source": "if5.output",
+                            "target": "if4.false_case"
+                        },
+                        {
+                            "source": "value10.output",
+                            "target": "equal6.second"
+                        },
+                        {
+                            "source": "value11.output",
+                            "target": "equal6.first"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value11.value"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "not_equal.first"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "not_equal.second"
+                        },
+                        {
+                            "source": "equal6.output",
+                            "target": "if6.condition"
+                        },
+                        {
+                            "source": "not_equal.output",
+                            "target": "if6.true_case"
+                        },
+                        {
+                            "source": "if6.output",
+                            "target": "if5.false_case"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "value.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value1.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value2.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value3.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "less [<]"
+                        },
+                        {
+                            "valueName": "value4.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value5.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "greater [>]"
+                        },
+                        {
+                            "valueName": "value6.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "less or equal [<=]"
+                        },
+                        {
+                            "valueName": "value7.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value8.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value9.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value10.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "not equal [!=}"
+                        },
+                        {
+                            "valueName": "value11.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "comparisons",
+                    "nodeType": "comparisons",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-249 -71"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".test",
+                    "target": "comparisons.value"
+                },
+                {
+                    "source": ".input1",
+                    "target": "comparisons.first"
+                },
+                {
+                    "source": ".input2",
+                    "target": "comparisons.second"
+                },
+                {
+                    "source": "comparisons.bool",
+                    "target": ".bool"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "comparisons.value",
+                    "valueType": "VHH::comparisons",
+                    "value": "equal [==]"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        },
+        {
+            "name": "VHH::Core::Logic::compare",
+            "metadata": [
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,compound"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Mesh,compute_mesh_surface_area"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,VHH::Core::Math,set_range"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-519 -11"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "test"
+                                                },
+                                                {
+                                                    "metaName": "input1"
+                                                },
+                                                {
+                                                    "metaName": "input2"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "81 -71"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "bool"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-514 -366 1029 733"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"test\"\n            },\n            {\n                \"group\": \"Inputs\",\n                \"items\": [\n                    {\n                        \"port\": \"input1\"\n                    },\n                    {\n                        \"port\": \"input2\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"Results\",\n                \"items\": [\n                    {\n                        \"port\": \"if_true\"\n                    },\n                    {\n                        \"port\": \"if_false\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-164.578 -358.36"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "test",
+                    "portDirection": "input",
+                    "portType": "VHH::comparisons",
+                    "portDefault": "equal [==]"
+                },
+                {
+                    "portName": "input1",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "0"
+                },
+                {
+                    "portName": "input2",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "0"
+                },
+                {
+                    "portName": "bool",
+                    "portDirection": "output",
+                    "portType": "bool"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "comparisons",
+                    "metadata": [
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,if"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,not_equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,greater_or_equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,less_or_equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,greater"
+                        },
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-909 -71"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "value"
+                                                        },
+                                                        {
+                                                            "metaName": "first"
+                                                        },
+                                                        {
+                                                            "metaName": "second"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "2031 -401"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "bool"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "476.365 -982.985 2821.44 2009.83"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "value",
+                            "portDirection": "input",
+                            "portType": "VHH::comparisons"
+                        },
+                        {
+                            "portName": "first",
+                            "portDirection": "input",
+                            "portType": "long"
+                        },
+                        {
+                            "portName": "second",
+                            "portDirection": "input",
+                            "portType": "long"
+                        },
+                        {
+                            "portName": "bool",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "value",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-549 -401"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 -191"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value1",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-549 -221"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal1",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 -401"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if1",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1401 -401"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value2",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 49"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal2",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 49"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value3",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 229"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if2",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1131 19"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "less",
+                            "nodeType": "Core::Logic::less",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 259"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value4",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 499"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value5",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 679"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal3",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 499"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if3",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "861 469"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "greater",
+                            "nodeType": "Core::Logic::greater",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 709"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value6",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1129"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "3"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value7",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 949"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal4",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 949"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "less_or_equal",
+                            "nodeType": "Core::Logic::less_or_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 1159"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if4",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "591 949"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value8",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1549"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value9",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1369"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal5",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 1369"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "greater_or_equal",
+                            "nodeType": "Core::Logic::greater_or_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 1579"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if5",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "321 1369"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value10",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1999"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "5"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value11",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1819"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal6",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 1819"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "not_equal",
+                            "nodeType": "Core::Logic::not_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 1999"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if6",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "51 1819"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "value.output",
+                            "target": "equal1.first"
+                        },
+                        {
+                            "source": "equal.output",
+                            "target": "if1.true_case"
+                        },
+                        {
+                            "source": "value1.output",
+                            "target": "equal1.second"
+                        },
+                        {
+                            "source": "equal1.output",
+                            "target": "if1.condition"
+                        },
+                        {
+                            "source": "if1.output",
+                            "target": ".bool"
+                        },
+                        {
+                            "source": "value2.output",
+                            "target": "equal2.first"
+                        },
+                        {
+                            "source": "equal2.output",
+                            "target": "if2.condition"
+                        },
+                        {
+                            "source": "value3.output",
+                            "target": "equal2.second"
+                        },
+                        {
+                            "source": "if2.output",
+                            "target": "if1.false_case"
+                        },
+                        {
+                            "source": "less.output",
+                            "target": "if2.true_case"
+                        },
+                        {
+                            "source": "value4.output",
+                            "target": "equal3.first"
+                        },
+                        {
+                            "source": "value5.output",
+                            "target": "equal3.second"
+                        },
+                        {
+                            "source": "equal3.output",
+                            "target": "if3.condition"
+                        },
+                        {
+                            "source": "if3.output",
+                            "target": "if2.false_case"
+                        },
+                        {
+                            "source": "greater.output",
+                            "target": "if3.true_case"
+                        },
+                        {
+                            "source": "value6.output",
+                            "target": "equal4.second"
+                        },
+                        {
+                            "source": "value7.output",
+                            "target": "equal4.first"
+                        },
+                        {
+                            "source": "equal4.output",
+                            "target": "if4.condition"
+                        },
+                        {
+                            "source": "less_or_equal.output",
+                            "target": "if4.true_case"
+                        },
+                        {
+                            "source": "if4.output",
+                            "target": "if3.false_case"
+                        },
+                        {
+                            "source": "value8.output",
+                            "target": "equal5.second"
+                        },
+                        {
+                            "source": "value9.output",
+                            "target": "equal5.first"
+                        },
+                        {
+                            "source": "equal5.output",
+                            "target": "if5.condition"
+                        },
+                        {
+                            "source": "greater_or_equal.output",
+                            "target": "if5.true_case"
+                        },
+                        {
+                            "source": "if5.output",
+                            "target": "if4.false_case"
+                        },
+                        {
+                            "source": "value10.output",
+                            "target": "equal6.second"
+                        },
+                        {
+                            "source": "value11.output",
+                            "target": "equal6.first"
+                        },
+                        {
+                            "source": "equal6.output",
+                            "target": "if6.condition"
+                        },
+                        {
+                            "source": "not_equal.output",
+                            "target": "if6.true_case"
+                        },
+                        {
+                            "source": "if6.output",
+                            "target": "if5.false_case"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value.value"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value2.value"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value4.value"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value7.value"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value9.value"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value11.value"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "equal.first"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "less.first"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "greater.first"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "less_or_equal.first"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "greater_or_equal.first"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "not_equal.first"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "equal.second"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "less.second"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "greater.second"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "less_or_equal.second"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "greater_or_equal.second"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "not_equal.second"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "value.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value1.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value2.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value3.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "less [<]"
+                        },
+                        {
+                            "valueName": "value4.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value5.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "greater [>]"
+                        },
+                        {
+                            "valueName": "value6.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "less or equal [<=]"
+                        },
+                        {
+                            "valueName": "value7.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value8.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value9.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value10.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "not equal [!=}"
+                        },
+                        {
+                            "valueName": "value11.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "comparisons",
+                    "nodeType": "comparisons",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-249 -71"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".test",
+                    "target": "comparisons.value"
+                },
+                {
+                    "source": ".input1",
+                    "target": "comparisons.first"
+                },
+                {
+                    "source": ".input2",
+                    "target": "comparisons.second"
+                },
+                {
+                    "source": "comparisons.bool",
+                    "target": ".bool"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "comparisons.value",
+                    "valueType": "VHH::comparisons",
+                    "value": "equal [==]"
+                },
+                {
+                    "valueName": "comparisons.first",
+                    "valueType": "long",
+                    "value": "0"
+                },
+                {
+                    "valueName": "comparisons.second",
+                    "valueType": "long",
+                    "value": "0"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        },
+        {
+            "name": "VHH::Core::Logic::compare",
+            "metadata": [
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,compound"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Mesh,compute_mesh_surface_area"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,VHH::Core::Math,set_range"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-519 -11"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "test"
+                                                },
+                                                {
+                                                    "metaName": "input1"
+                                                },
+                                                {
+                                                    "metaName": "input2"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "76.4859 -82.2852"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "bool"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-593.427 -385.792 1161.25 827.207"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"test\"\n            },\n            {\n                \"group\": \"Inputs\",\n                \"items\": [\n                    {\n                        \"port\": \"input1\"\n                    },\n                    {\n                        \"port\": \"input2\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"Results\",\n                \"items\": [\n                    {\n                        \"port\": \"if_true\"\n                    },\n                    {\n                        \"port\": \"if_false\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "111.505 -358.361"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "test",
+                    "portDirection": "input",
+                    "portType": "VHH::comparisons",
+                    "portDefault": "equal [==]"
+                },
+                {
+                    "portName": "input1",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "input2",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "bool",
+                    "portDirection": "output",
+                    "portType": "bool"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "comparisons",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-909 -71"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "value"
+                                                        },
+                                                        {
+                                                            "metaName": "first"
+                                                        },
+                                                        {
+                                                            "metaName": "second"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "2236.16 -395.301"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "bool"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,members_not_equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,members_greater_or_equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,all_members_true"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,members_greater"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,members_less_or_equal"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "814.415 -665.223 2078.7 1480.75"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "value",
+                            "portDirection": "input",
+                            "portType": "VHH::comparisons"
+                        },
+                        {
+                            "portName": "first",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "second",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "bool",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "value",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-549 -401"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value1",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-549 -221"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal1",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 -401"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if1",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1606.16 -395.301"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value2",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 49"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal2",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 49"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value3",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 229"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if2",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1336.16 24.6989"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value4",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 499"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value5",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 679"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal3",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 499"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if3",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1066.16 474.699"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value6",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1129"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "3"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value7",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 949"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal4",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 949"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if4",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "796.16 954.699"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value8",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1549"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value9",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1369"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal5",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 1369"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if5",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "526.16 1374.7"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value10",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1999"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "5"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value11",
+                            "valueType": "VHH::comparisons",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-579 1819"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal6",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309 1819"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if6",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "256.16 1824.7"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "members_equal",
+                            "nodeType": "Core::Logic::members_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-311.144 -192.354"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "all_members_true",
+                            "nodeType": "Core::Logic::all_members_true",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-44.8995 -215.257"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "members_less",
+                            "nodeType": "Core::Logic::members_less",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-305.418 252.819"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "all_members_true1",
+                            "nodeType": "Core::Logic::all_members_true",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-42.0363 229.915"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "members_greater",
+                            "nodeType": "Core::Logic::members_greater",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-302.556 699.423"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "all_members_true2",
+                            "nodeType": "Core::Logic::all_members_true",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-42.0363 675.088"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "members_less_or_equal",
+                            "nodeType": "Core::Logic::members_less_or_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-309.713 1148.88"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "all_members_true3",
+                            "nodeType": "Core::Logic::all_members_true",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-64.9384 1125.98"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "all_members_true4",
+                            "nodeType": "Core::Logic::all_members_true",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-56.3103 1569.73"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "members_greater_or_equal",
+                            "nodeType": "Core::Logic::members_greater_or_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-312.117 1593.51"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "members_not_equal",
+                            "nodeType": "Core::Logic::members_not_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-307.27 2023.2"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "all_members_true5",
+                            "nodeType": "Core::Logic::all_members_true",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-60.1156 2003.83"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "value.output",
+                            "target": "equal1.first"
+                        },
+                        {
+                            "source": "value1.output",
+                            "target": "equal1.second"
+                        },
+                        {
+                            "source": "equal1.output",
+                            "target": "if1.condition"
+                        },
+                        {
+                            "source": "if1.output",
+                            "target": ".bool"
+                        },
+                        {
+                            "source": "value2.output",
+                            "target": "equal2.first"
+                        },
+                        {
+                            "source": "equal2.output",
+                            "target": "if2.condition"
+                        },
+                        {
+                            "source": "value3.output",
+                            "target": "equal2.second"
+                        },
+                        {
+                            "source": "if2.output",
+                            "target": "if1.false_case"
+                        },
+                        {
+                            "source": "value4.output",
+                            "target": "equal3.first"
+                        },
+                        {
+                            "source": "value5.output",
+                            "target": "equal3.second"
+                        },
+                        {
+                            "source": "equal3.output",
+                            "target": "if3.condition"
+                        },
+                        {
+                            "source": "if3.output",
+                            "target": "if2.false_case"
+                        },
+                        {
+                            "source": "value6.output",
+                            "target": "equal4.second"
+                        },
+                        {
+                            "source": "value7.output",
+                            "target": "equal4.first"
+                        },
+                        {
+                            "source": "equal4.output",
+                            "target": "if4.condition"
+                        },
+                        {
+                            "source": "if4.output",
+                            "target": "if3.false_case"
+                        },
+                        {
+                            "source": "value8.output",
+                            "target": "equal5.second"
+                        },
+                        {
+                            "source": "value9.output",
+                            "target": "equal5.first"
+                        },
+                        {
+                            "source": "equal5.output",
+                            "target": "if5.condition"
+                        },
+                        {
+                            "source": "if5.output",
+                            "target": "if4.false_case"
+                        },
+                        {
+                            "source": "value10.output",
+                            "target": "equal6.second"
+                        },
+                        {
+                            "source": "value11.output",
+                            "target": "equal6.first"
+                        },
+                        {
+                            "source": "equal6.output",
+                            "target": "if6.condition"
+                        },
+                        {
+                            "source": "if6.output",
+                            "target": "if5.false_case"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value.value"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value2.value"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value4.value"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value7.value"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value9.value"
+                        },
+                        {
+                            "source": ".value",
+                            "target": "value11.value"
+                        },
+                        {
+                            "source": "members_equal.output",
+                            "target": "all_members_true.value"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "members_equal.first"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "members_equal.second"
+                        },
+                        {
+                            "source": "all_members_true.output",
+                            "target": "if1.true_case"
+                        },
+                        {
+                            "source": "members_less.output",
+                            "target": "all_members_true1.value"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "members_less.second"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "members_less.first"
+                        },
+                        {
+                            "source": "all_members_true1.output",
+                            "target": "if2.true_case"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "members_greater.first"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "members_greater.second"
+                        },
+                        {
+                            "source": "all_members_true2.output",
+                            "target": "if3.true_case"
+                        },
+                        {
+                            "source": "members_greater.output",
+                            "target": "all_members_true2.value"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "members_less_or_equal.first"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "members_less_or_equal.second"
+                        },
+                        {
+                            "source": "all_members_true3.output",
+                            "target": "if4.true_case"
+                        },
+                        {
+                            "source": "members_less_or_equal.output",
+                            "target": "all_members_true3.value"
+                        },
+                        {
+                            "source": "all_members_true4.output",
+                            "target": "if5.true_case"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "members_greater_or_equal.first"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "members_greater_or_equal.second"
+                        },
+                        {
+                            "source": "members_greater_or_equal.output",
+                            "target": "all_members_true4.value"
+                        },
+                        {
+                            "source": ".first",
+                            "target": "members_not_equal.first"
+                        },
+                        {
+                            "source": ".second",
+                            "target": "members_not_equal.second"
+                        },
+                        {
+                            "source": "members_not_equal.output",
+                            "target": "all_members_true5.value"
+                        },
+                        {
+                            "source": "all_members_true5.output",
+                            "target": "if6.true_case"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "value.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value1.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value2.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value3.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "less [<]"
+                        },
+                        {
+                            "valueName": "value4.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value5.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "greater [>]"
+                        },
+                        {
+                            "valueName": "value6.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "less or equal [<=]"
+                        },
+                        {
+                            "valueName": "value7.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value8.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "greater or equal [>=]"
+                        },
+                        {
+                            "valueName": "value9.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        },
+                        {
+                            "valueName": "value10.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "not equal [!=}"
+                        },
+                        {
+                            "valueName": "value11.value",
+                            "valueType": "VHH::comparisons",
+                            "value": "equal [==]"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "comparisons",
+                    "nodeType": "comparisons",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-239.972 -82.2852"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".test",
+                    "target": "comparisons.value"
+                },
+                {
+                    "source": ".input1",
+                    "target": "comparisons.first"
+                },
+                {
+                    "source": ".input2",
+                    "target": "comparisons.second"
+                },
+                {
+                    "source": "comparisons.bool",
+                    "target": ".bool"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "comparisons.value",
+                    "valueType": "VHH::comparisons",
+                    "value": "equal [==]"
+                },
+                {
+                    "valueName": "comparisons.first",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "comparisons.second",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
