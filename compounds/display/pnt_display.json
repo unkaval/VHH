@@ -1,0 +1,582 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "VHH::Visualize::Display::pnt_display",
+            "uriImported": "stream:/scratchpadShape",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/pnt_disp.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../helper_icons/derhornen.png"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1813.92 -124.381"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "points_in"
+                                                },
+                                                {
+                                                    "metaName": "color_in"
+                                                },
+                                                {
+                                                    "metaName": "default_color"
+                                                },
+                                                {
+                                                    "metaName": "shape"
+                                                },
+                                                {
+                                                    "metaName": "default_size"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "points_out"
+                                                },
+                                                {
+                                                    "metaName": "points"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1685.31 80.9276"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "terminal_node_disabled_flags",
+                    "metaType": "string",
+                    "metaValue": "Core::Graph::terminal::proxy"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Points,construct_points"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Simulation::Common,force_pull_port"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Properties,get_point_count"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Type_Conversion,to_int"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,square_root"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1333.79 -709.613 1389.36 1513.22"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "958.21 -505.745"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "points_in",
+                    "portDirection": "input",
+                    "metadata": [
+                        {
+                            "metaName": "TypeWranglingSuggestedTypes",
+                            "metaType": "string",
+                            "metaValue": "float, string, Math::float3, Core::Fields::ScalarField, Core::Fields::VectorField, array<Math::float3>"
+                        }
+                    ]
+                },
+                {
+                    "portName": "color_in",
+                    "portDirection": "input"
+                },
+                {
+                    "portName": "default_color",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "1f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "shape",
+                    "portDirection": "input",
+                    "portType": "Geometry::PointShapes",
+                    "portDefault": "Sphere"
+                },
+                {
+                    "portName": "default_size",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.25f"
+                },
+                {
+                    "portName": "points_out",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "points",
+                    "portDirection": "output"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "construct_points1",
+                    "nodeType": "Geometry::Points::construct_points",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-559.101 -190.52"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_geo_property",
+                    "nodeType": "Geometry::Properties::set_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "534.293 -321.047"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "point_scope",
+                    "nodeType": "Diagnostic::Display::point_scope",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Point Shape",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Color",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "819.293 -162.047"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "terminal",
+                    "nodeType": "Core::Graph::terminal",
+                    "fanInPortNames": {
+                        "final": [],
+                        "proxy": [],
+                        "diagnostic": [
+                            "diagnostic_geo"
+                        ]
+                    },
+                    "deactivatedTerminals": [
+                        "Core::Graph::terminal::final",
+                        "Core::Graph::terminal::proxy"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1687.3 -227.91"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "interpret_auto_port_as_vector",
+                    "nodeType": "Geometry::Common::interpret_auto_port_as_vector",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-301.366 -4.24452"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "string",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "53.4043 -236"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "point_color"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "interpret_auto_port_as_vector1",
+                    "nodeType": "Geometry::Common::interpret_auto_port_as_vector",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1210.63 -465.965"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "array_is_empty",
+                    "nodeType": "Core::Array::array_is_empty",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-521.901 315.2"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "117.191 291.022"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value1",
+                    "valueType": "array<Math::float3>",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-812.769 340.801"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "construct_points",
+                    "nodeType": "Geometry::Points::construct_points",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1473.83 -272.961"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "set_geo_property.out_geometry",
+                    "target": "point_scope.point_geo"
+                },
+                {
+                    "source": "construct_points1.points",
+                    "target": "set_geo_property.geometry"
+                },
+                {
+                    "source": ".shape",
+                    "target": "point_scope.shape"
+                },
+                {
+                    "source": ".default_size",
+                    "target": "point_scope.default_size"
+                },
+                {
+                    "source": "point_scope.diagnostic_geo",
+                    "target": ".points"
+                },
+                {
+                    "source": "construct_points1.points",
+                    "target": "interpret_auto_port_as_vector.geometry"
+                },
+                {
+                    "source": ".color_in",
+                    "target": "interpret_auto_port_as_vector.interpreted_vector_port"
+                },
+                {
+                    "source": "value.output",
+                    "target": "set_geo_property.property"
+                },
+                {
+                    "source": "value.output",
+                    "target": "point_scope.coloring_property"
+                },
+                {
+                    "source": "interpret_auto_port_as_vector1.data",
+                    "target": ".points_out"
+                },
+                {
+                    "source": "array_is_empty.empty",
+                    "target": "if.condition"
+                },
+                {
+                    "source": "interpret_auto_port_as_vector.data",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": "if.output",
+                    "target": "set_geo_property.data"
+                },
+                {
+                    "source": ".color_in",
+                    "target": "value1.value"
+                },
+                {
+                    "source": "value1.output",
+                    "target": "array_is_empty.array"
+                },
+                {
+                    "source": ".points_in",
+                    "target": "interpret_auto_port_as_vector1.interpreted_vector_port"
+                },
+                {
+                    "source": "interpret_auto_port_as_vector1.data",
+                    "target": "construct_points1.point_position"
+                },
+                {
+                    "source": ".points_in",
+                    "target": "construct_points.point_position"
+                },
+                {
+                    "source": "construct_points.points",
+                    "target": "interpret_auto_port_as_vector1.geometry"
+                },
+                {
+                    "source": ".default_color",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": "point_scope.diagnostic_geo",
+                    "target": "terminal.diagnostic.diagnostic_geo"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "set_geo_property.property",
+                    "valueType": "string",
+                    "value": "point_color"
+                },
+                {
+                    "valueName": "set_geo_property.default",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "set_geo_property.data",
+                    "valueType": "Math::float4",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f",
+                        "w": "0f"
+                    }
+                },
+                {
+                    "valueName": "point_scope.shape",
+                    "valueType": "Geometry::PointShapes",
+                    "value": "Sphere"
+                },
+                {
+                    "valueName": "point_scope.default_size",
+                    "valueType": "float",
+                    "value": "0.200000003f"
+                },
+                {
+                    "valueName": "point_scope.coloring_property",
+                    "valueType": "string",
+                    "value": "color"
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "string",
+                    "value": "point_color"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_vector1.geometry_component",
+                    "valueType": "string",
+                    "value": "point_component"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_vector1.position_property",
+                    "valueType": "string",
+                    "value": "point_position"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_vector1.indices",
+                    "valueType": "array<long>",
+                    "value": []
+                },
+                {
+                    "valueName": "value1.value",
+                    "valueType": "array<Math::float3>",
+                    "value": []
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
