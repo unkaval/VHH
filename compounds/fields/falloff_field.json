@@ -1,0 +1,1446 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "VHH::Core::Fields::falloff_field",
+            "uriImported": "stream:/fallOff_Shape1",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/falloff_field.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../helper_icons/derhornen.png"
+                },            
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-2259.74 884.932"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "loc_in"
+                                                },
+                                                {
+                                                    "metaName": "magnitude"
+                                                },
+                                                {
+                                                    "metaName": "falloff"
+                                                },
+                                                {
+                                                    "metaName": "noise"
+                                                },
+                                                {
+                                                    "metaName": "noise_frequency"
+                                                },
+                                                {
+                                                    "metaName": "seed"
+                                                },
+                                                {
+                                                    "metaName": "display_divisions"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1650.92 832.734"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "field"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,compound"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Fields,curl_noise_field"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Randomization,curl_noise"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,length"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Fields,curl_field"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-2664.89 149.354 2367.53 2283.2"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-1250.45 876.894"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "loc_in",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        }
+                    }
+                },
+                {
+                    "portName": "field",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "magnitude",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "3.42799997f"
+                },
+                {
+                    "portName": "falloff",
+                    "portDirection": "input",
+                    "portType": "Amino::FCurve",
+                    "portDefault": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "-0.40000000000000002",
+                                        "yp": "0",
+                                        "x": "0",
+                                        "y": "0",
+                                        "xn": "0.40000000000000002",
+                                        "yn": "0"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "0.59999999999999998",
+                                        "yp": "1",
+                                        "x": "1",
+                                        "y": "1",
+                                        "xn": "1.3999999999999999",
+                                        "yn": "1"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "portName": "noise",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "noise_frequency",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "1f"
+                },
+                {
+                    "portName": "seed",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "20"
+                },
+                {
+                    "portName": "display_divisions",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "30f"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "compound",
+                    "uriImported": "stream:/fallOff_Shape1",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "loc_half_scale"
+                                                        },
+                                                        {
+                                                            "metaName": "loc_trans"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-1469.26 -42.1286"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "min__bounds"
+                                                        },
+                                                        {
+                                                            "metaName": "max_bounds"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "96.3153 -180.079"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,add"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,negate"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,subtract"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,absolute_value"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,one_over"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-948.189 -814.423 1164.9 1345.25"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "loc_half_scale",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "loc_trans",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "min__bounds",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "max_bounds",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "add",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "loc_half_scale",
+                                "one"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1156.24 -172.757"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "one",
+                            "nodeType": "Core::Constants::one",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1455.8 -327.066"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "negate",
+                            "nodeType": "Core::Math::negate",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-875.798 -301.059"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "add1",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "loc_trans",
+                                "output1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-502.244 -76.7472"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "add2",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "negated",
+                                "loc_trans"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-498.563 -406.158"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": ".loc_half_scale",
+                            "target": "add.first.loc_half_scale"
+                        },
+                        {
+                            "source": "one.one",
+                            "target": "add.first.one"
+                        },
+                        {
+                            "source": "add.output",
+                            "target": "negate.value"
+                        },
+                        {
+                            "source": ".loc_trans",
+                            "target": "add1.first.loc_trans"
+                        },
+                        {
+                            "source": "add.output",
+                            "target": "add1.first.output1"
+                        },
+                        {
+                            "source": "add1.output",
+                            "target": ".max_bounds"
+                        },
+                        {
+                            "source": "negate.negated",
+                            "target": "add2.first.negated"
+                        },
+                        {
+                            "source": ".loc_trans",
+                            "target": "add2.first.loc_trans"
+                        },
+                        {
+                            "source": "add2.output",
+                            "target": ".min__bounds"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "one.type",
+                            "valueType": "Math::float3",
+                            "value": {
+                                "x": "0f",
+                                "y": "0f",
+                                "z": "0f"
+                            }
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "SRT_to_matrix",
+                    "nodeType": "Core::Math::SRT_to_matrix",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1061.23 714.366"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "half_of1",
+                    "nodeType": "Core::Math::half_of",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1324.96 568.63"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "matrix_to_SRT1",
+                    "nodeType": "Core::Math::matrix_to_SRT",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1585.75 738.101"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "sphere_field",
+                    "nodeType": "Core::Fields::sphere_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1886.08 1240.45"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "position_field",
+                    "nodeType": "Core::Fields::position_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1884.01 1074.64"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "terminal1",
+                    "nodeType": "Core::Graph::terminal",
+                    "fanInPortNames": {
+                        "final": [],
+                        "proxy": [],
+                        "diagnostic": [
+                            "diagnostic_geo"
+                        ]
+                    },
+                    "deactivatedTerminals": [
+                        "Core::Graph::terminal::final",
+                        "Core::Graph::terminal::proxy"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1641.25 1003.89"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "mask_field",
+                    "nodeType": "Core::Fields::mask_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1347.84 1373.79"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "multiply",
+                    "nodeType": "Core::Math::multiply",
+                    "multiInPortNames": [
+                        "position",
+                        "mask"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-803.982 1067.6"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "scalar_field1",
+                    "nodeType": "Core::Fields::scalar_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1346.03 1192.02"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "subtract1",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "scalar_field",
+                        "mask"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1080.24 1170.15"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "length",
+                    "nodeType": "Core::Math::length",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-550.39 1372.39"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "scalar_field_scope",
+                    "nodeType": "Diagnostic::Display::scalar_field_scope",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Point Size",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Sampling",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1374.74 1054.17"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "reverse_field",
+                    "nodeType": "Core::Fields::fcurve_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-304.335 1350.21"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "multiply2",
+                    "nodeType": "Core::Math::multiply",
+                    "multiInPortNames": [
+                        "out_field",
+                        "output1",
+                        "output2"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-54.3177 1181.73"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "transform_field1",
+                    "nodeType": "Core::Fields::transform_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "231.015 591.46"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "fcurve_field2",
+                    "nodeType": "Core::Fields::fcurve_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "501.702 640.314"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "magnitude_in",
+                    "nodeType": "Core::Fields::scalar_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "NodeValueDisplay",
+                            "metadata": [
+                                {
+                                    "metaName": "format",
+                                    "metaType": "string",
+                                    "metaValue": "Scalar field ({value})"
+                                },
+                                {
+                                    "metaName": "show",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "485.706 931.94"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "multiply3",
+                    "nodeType": "Core::Math::multiply",
+                    "multiInPortNames": [
+                        "out_field",
+                        "scalar_field"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "907.789 906.818"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "fcurve_field",
+                    "nodeType": "Core::Fields::fcurve_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-555.165 1580.05"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "fractal_noise_field",
+                    "nodeType": "Core::Fields::fractal_noise_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1885.96 1446.12"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "scalar_field",
+                    "nodeType": "Core::Fields::scalar_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-563.675 1780.31"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-310.358 1603.46"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "compound",
+                    "nodeType": "compound",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "897.114 1246.48"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "matrix_to_SRT1.quaternion",
+                    "target": "SRT_to_matrix.quaternion"
+                },
+                {
+                    "source": "matrix_to_SRT1.translation",
+                    "target": "SRT_to_matrix.translation"
+                },
+                {
+                    "source": "matrix_to_SRT1.scale",
+                    "target": "half_of1.value"
+                },
+                {
+                    "source": ".loc_in",
+                    "target": "matrix_to_SRT1.transform"
+                },
+                {
+                    "source": "half_of1.half_value",
+                    "target": "SRT_to_matrix.scale"
+                },
+                {
+                    "source": "sphere_field.sphere_signed_distance",
+                    "target": "mask_field.scalar_field"
+                },
+                {
+                    "source": "scalar_field1.scalar_field",
+                    "target": "subtract1.first.scalar_field"
+                },
+                {
+                    "source": "mask_field.mask",
+                    "target": "subtract1.first.mask"
+                },
+                {
+                    "source": "multiply.output",
+                    "target": "length.vector"
+                },
+                {
+                    "source": "subtract1.output",
+                    "target": "multiply.first.mask"
+                },
+                {
+                    "source": "position_field.position",
+                    "target": "multiply.first.position"
+                },
+                {
+                    "source": "length.length",
+                    "target": "reverse_field.field"
+                },
+                {
+                    "source": "reverse_field.out_field",
+                    "target": "multiply2.first.out_field"
+                },
+                {
+                    "source": "subtract1.output",
+                    "target": "multiply2.first.output1"
+                },
+                {
+                    "source": "SRT_to_matrix.transform",
+                    "target": "transform_field1.transform"
+                },
+                {
+                    "source": ".falloff",
+                    "target": "fcurve_field2.fcurve"
+                },
+                {
+                    "source": "transform_field1.transformed_field",
+                    "target": "fcurve_field2.field"
+                },
+                {
+                    "source": "scalar_field_scope.diagnostic_geo",
+                    "target": "terminal1.diagnostic.diagnostic_geo"
+                },
+                {
+                    "source": ".magnitude",
+                    "target": "magnitude_in.value"
+                },
+                {
+                    "source": "fcurve_field2.out_field",
+                    "target": "multiply3.first.out_field"
+                },
+                {
+                    "source": "magnitude_in.scalar_field",
+                    "target": "multiply3.first.scalar_field"
+                },
+                {
+                    "source": "multiply3.output",
+                    "target": ".field"
+                },
+                {
+                    "source": "multiply3.output",
+                    "target": "scalar_field_scope.scalar_field"
+                },
+                {
+                    "source": "fcurve_field.out_field",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": "scalar_field.scalar_field",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": "multiply2.output",
+                    "target": "transform_field1.field"
+                },
+                {
+                    "source": "if.output",
+                    "target": "multiply2.first.output2"
+                },
+                {
+                    "source": ".noise",
+                    "target": "if.condition"
+                },
+                {
+                    "source": ".noise_frequency",
+                    "target": "fractal_noise_field.frequency"
+                },
+                {
+                    "source": ".seed",
+                    "target": "fractal_noise_field.seed"
+                },
+                {
+                    "source": "fractal_noise_field.noise_field",
+                    "target": "fcurve_field.field"
+                },
+                {
+                    "source": "half_of1.half_value",
+                    "target": "compound.loc_half_scale"
+                },
+                {
+                    "source": "matrix_to_SRT1.translation",
+                    "target": "compound.loc_trans"
+                },
+                {
+                    "source": "compound.min__bounds",
+                    "target": "scalar_field_scope.min__bounds"
+                },
+                {
+                    "source": "compound.max_bounds",
+                    "target": "scalar_field_scope.max_bounds"
+                },
+                {
+                    "source": ".display_divisions",
+                    "target": "scalar_field_scope.divisions"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "sphere_field.radius",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "scalar_field1.value",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "scalar_field_scope.min__bounds",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-10f",
+                        "y": "-10f",
+                        "z": "-10f"
+                    }
+                },
+                {
+                    "valueName": "scalar_field_scope.max_bounds",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "10f",
+                        "y": "10f",
+                        "z": "10f"
+                    }
+                },
+                {
+                    "valueName": "scalar_field_scope.divisions",
+                    "valueType": "float",
+                    "value": "30f"
+                },
+                {
+                    "valueName": "scalar_field_scope.point_size",
+                    "valueType": "float",
+                    "value": "0.200000003f"
+                },
+                {
+                    "valueName": "scalar_field_scope.size_remap",
+                    "valueType": "Amino::FCurve",
+                    "value": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "1",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "-0.10000000000000001",
+                                        "yp": "0",
+                                        "x": "0",
+                                        "y": "0",
+                                        "xn": "0.10000000000000001",
+                                        "yn": "0"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "0.90000000000000002",
+                                        "yp": "1",
+                                        "x": "1",
+                                        "y": "1",
+                                        "xn": "1.1000000000000001",
+                                        "yn": "1"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "valueName": "scalar_field_scope.shape",
+                    "valueType": "Geometry::PointShapes",
+                    "value": "Disk"
+                },
+                {
+                    "valueName": "scalar_field_scope.screen_aligned",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "scalar_field_scope.color_remap",
+                    "valueType": "Amino::FCurve",
+                    "value": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "1",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "-0.33333299999999999",
+                                        "yp": "-0.33333299999999999",
+                                        "x": "0",
+                                        "y": "0",
+                                        "xn": "0.33333299999999999",
+                                        "yn": "0.33333299999999999"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "0.66666700000000001",
+                                        "yp": "0.66666700000000001",
+                                        "x": "1",
+                                        "y": "1",
+                                        "xn": "1.3333330000000001",
+                                        "yn": "1.3333330000000001"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "valueName": "scalar_field_scope.apply_bounds_to_probe",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "reverse_field.fcurve",
+                    "valueType": "Amino::FCurve",
+                    "value": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "-0.10000000000000001",
+                                        "yp": "1",
+                                        "x": "0",
+                                        "y": "1",
+                                        "xn": "0.10000000000000001",
+                                        "yn": "1"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "0.90000000000000002",
+                                        "yp": "0",
+                                        "x": "1",
+                                        "y": "0",
+                                        "xn": "1.1000000000000001",
+                                        "yn": "0"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "valueName": "transform_field1.transform",
+                    "valueType": "Math::float4x4",
+                    "value": {
+                        "c0": {
+                            "x": "1f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "1f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "1f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "valueName": "fcurve_field2.fcurve",
+                    "valueType": "Amino::FCurve",
+                    "value": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "-0.40000000000000002",
+                                        "yp": "0",
+                                        "x": "0",
+                                        "y": "0",
+                                        "xn": "0.40000000000000002",
+                                        "yn": "0"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "0.59999999999999998",
+                                        "yp": "1",
+                                        "x": "1",
+                                        "y": "1",
+                                        "xn": "1.3999999999999999",
+                                        "yn": "1"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "valueName": "magnitude_in.value",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "fcurve_field.fcurve",
+                    "valueType": "Amino::FCurve",
+                    "value": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "-0.75481500000000001",
+                                        "yp": "0.0031020000000000002",
+                                        "x": "-0.5",
+                                        "y": "0",
+                                        "xn": "-0.24518499999999999",
+                                        "yn": "-0.0031020000000000002"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "-0.12479700000000001",
+                                        "yp": "0.99973299999999998",
+                                        "x": "0",
+                                        "y": "1",
+                                        "xn": "0.12479800000000001",
+                                        "yn": "1.000272"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "0.25296400000000002",
+                                        "yp": "0.00017200000000000001",
+                                        "x": "0.5",
+                                        "y": "0",
+                                        "xn": "0.74703600000000003",
+                                        "yn": "-0.00017200000000000001"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "valueName": "fractal_noise_field.magnitude",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "fractal_noise_field.num_frequencies",
+                    "valueType": "float",
+                    "value": "5f"
+                },
+                {
+                    "valueName": "fractal_noise_field.frequency",
+                    "valueType": "float",
+                    "value": "1.27699995f"
+                },
+                {
+                    "valueName": "fractal_noise_field.frequency_ratio",
+                    "valueType": "float",
+                    "value": "0.5f"
+                },
+                {
+                    "valueName": "fractal_noise_field.seed",
+                    "valueType": "long",
+                    "value": "10"
+                },
+                {
+                    "valueName": "scalar_field.value",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "if.condition",
+                    "valueType": "bool",
+                    "value": "false"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
