@@ -1,0 +1,1099 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "VHH::Core::Geometry::wire_deform",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/wire_deform.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../helper_icons/derhornen.png"
+                },            
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-57.1481 58.6622"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "rest_strand"
+                                                },
+                                                {
+                                                    "metaName": "input_strand"
+                                                },
+                                                {
+                                                    "metaName": "geo_to_deform"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1535 112"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "deformed_geo"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,compound"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,ValHallen::Helpers,port_feedback_cache"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,pass"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,negate"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,add"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "142.275 -314.104 1106.65 1385.21"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-1322.7 -549.224"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "rest_strand",
+                    "portDirection": "input",
+                    "portDefaultType": "Amino::Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "input_strand",
+                    "portDirection": "input",
+                    "portDefaultType": "Amino::Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "geo_to_deform",
+                    "portDirection": "input",
+                    "portType": "Amino::Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "deformed_geo",
+                    "portDirection": "output",
+                    "portType": "Amino::Object"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "get_offsets",
+                    "uriImported": "stream:/bifrostGraphShape1",
+                    "metadata": [
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Geometry::Query,get_closest_locations"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,negate"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,add"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Modeling::Points,translate_points"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,subtract"
+                        },
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-672 38"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "rest_strand"
+                                                        },
+                                                        {
+                                                            "metaName": "input_strand"
+                                                        },
+                                                        {
+                                                            "metaName": "geo_to_deform"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "1099.24 144.22"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "offsets"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-866.578 -741.747 971.625 1825.86"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "rest_strand",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "input_strand",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "geo_to_deform",
+                            "portDirection": "input",
+                            "portType": "Amino::Object"
+                        },
+                        {
+                            "portName": "offsets",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "bez_rest1",
+                            "nodeType": "Core::Graph::pass",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-426.196 142.426"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "location_scope",
+                            "nodeType": "Diagnostic::Display::location_scope",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1401.01 -473.057"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "mesh_positions",
+                            "nodeType": "Geometry::Properties::get_point_position",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-101.782 34.2911"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "rest_offsets",
+                            "nodeType": "Core::Math::subtract",
+                            "multiInPortNames": [
+                                "point_position",
+                                "sampled_data"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "743 145"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "sample_property",
+                            "nodeType": "Geometry::Query::sample_property",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "468.017 399.021"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "terminal1",
+                            "nodeType": "Core::Graph::terminal",
+                            "fanInPortNames": {
+                                "final": [],
+                                "proxy": [],
+                                "diagnostic": [
+                                    "diagnostic_geo"
+                                ]
+                            },
+                            "deactivatedTerminals": [
+                                "Core::Graph::terminal::final",
+                                "Core::Graph::terminal::proxy"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1671.01 -353.057"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "get_closest_locations",
+                            "nodeType": "Geometry::Query::get_closest_locations",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "198.61 -43.8698"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "bez_rest1.output",
+                            "target": "location_scope.geometry"
+                        },
+                        {
+                            "source": "bez_rest1.output",
+                            "target": "sample_property.geometry"
+                        },
+                        {
+                            "source": "location_scope.diagnostic_geo",
+                            "target": "terminal1.diagnostic.diagnostic_geo"
+                        },
+                        {
+                            "source": "mesh_positions.point_position",
+                            "target": "location_scope.positions"
+                        },
+                        {
+                            "source": "mesh_positions.point_position",
+                            "target": "get_closest_locations.positions"
+                        },
+                        {
+                            "source": "mesh_positions.point_position",
+                            "target": "rest_offsets.first.point_position"
+                        },
+                        {
+                            "source": "rest_offsets.output",
+                            "target": ".offsets"
+                        },
+                        {
+                            "source": "sample_property.sampled_data",
+                            "target": "rest_offsets.first.sampled_data"
+                        },
+                        {
+                            "source": "get_closest_locations.locations",
+                            "target": "location_scope.locations"
+                        },
+                        {
+                            "source": "get_closest_locations.locations",
+                            "target": "sample_property.locations"
+                        },
+                        {
+                            "source": ".input_strand",
+                            "target": "bez_rest1.input"
+                        },
+                        {
+                            "source": ".geo_to_deform",
+                            "target": "mesh_positions.geometry"
+                        },
+                        {
+                            "source": ".rest_strand",
+                            "target": "get_closest_locations.geometry"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "location_scope.arrows",
+                            "valueType": "bool",
+                            "value": "true"
+                        },
+                        {
+                            "valueName": "location_scope.size",
+                            "valueType": "float",
+                            "value": "0.0500000007f"
+                        },
+                        {
+                            "valueName": "location_scope.miss_size_factor",
+                            "valueType": "float",
+                            "value": "0.5f"
+                        },
+                        {
+                            "valueName": "location_scope.circles_at_origin",
+                            "valueType": "bool",
+                            "value": "true"
+                        },
+                        {
+                            "valueName": "location_scope.circles_at_sample",
+                            "valueType": "bool",
+                            "value": "true"
+                        },
+                        {
+                            "valueName": "sample_property.default",
+                            "valueType": "Math::float3",
+                            "value": {
+                                "x": "0f",
+                                "y": "0f",
+                                "z": "0f"
+                            }
+                        },
+                        {
+                            "valueName": "sample_property.property",
+                            "valueType": "string",
+                            "value": "point_position"
+                        },
+                        {
+                            "valueName": "sample_property.method",
+                            "valueType": "BifrostExp::Geometry::SampleMethod",
+                            "value": "interpolated"
+                        },
+                        {
+                            "valueName": "get_closest_locations.use_cutoff_distance",
+                            "valueType": "bool",
+                            "value": "true"
+                        },
+                        {
+                            "valueName": "get_closest_locations.cutoff_distance",
+                            "valueType": "float",
+                            "value": "10f"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                },
+                {
+                    "name": "get_rest_offsets",
+                    "uriImported": "stream:/bifrostGraphShape1",
+                    "metadata": [
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Geometry::Query,get_closest_locations"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,negate"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,add"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Modeling::Points,translate_points"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,subtract"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "491.139 -226.616 956.623 1287.83"
+                        },
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "10 357"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "rest_strand"
+                                                        },
+                                                        {
+                                                            "metaName": "geo_to_deform"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "1535 362"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "offsets"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "rest_strand",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "geo_to_deform",
+                            "portDirection": "input",
+                            "portType": "Amino::Object"
+                        },
+                        {
+                            "portName": "offsets",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "bez_rest1",
+                            "nodeType": "Core::Graph::pass",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "315 246"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "location_scope",
+                            "nodeType": "Diagnostic::Display::location_scope",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1230 57"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "mesh_positions",
+                            "nodeType": "Geometry::Properties::get_point_position",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "315 441"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "rest_offsets",
+                            "nodeType": "Core::Math::subtract",
+                            "multiInPortNames": [
+                                "point_position",
+                                "sampled_data"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1230 361"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "sample_property",
+                            "nodeType": "Geometry::Query::sample_property",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "925 417"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "terminal1",
+                            "nodeType": "Core::Graph::terminal",
+                            "fanInPortNames": {
+                                "final": [],
+                                "proxy": [],
+                                "diagnostic": [
+                                    "diagnostic_geo"
+                                ]
+                            },
+                            "deactivatedTerminals": [
+                                "Core::Graph::terminal::final",
+                                "Core::Graph::terminal::proxy"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1535 9"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "get_closest_locations",
+                            "nodeType": "Geometry::Query::get_closest_locations",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "617.236 255.193"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "bez_rest1.output",
+                            "target": "location_scope.geometry"
+                        },
+                        {
+                            "source": "bez_rest1.output",
+                            "target": "sample_property.geometry"
+                        },
+                        {
+                            "source": "bez_rest1.output",
+                            "target": "get_closest_locations.geometry"
+                        },
+                        {
+                            "source": "location_scope.diagnostic_geo",
+                            "target": "terminal1.diagnostic.diagnostic_geo"
+                        },
+                        {
+                            "source": "mesh_positions.point_position",
+                            "target": "location_scope.positions"
+                        },
+                        {
+                            "source": "mesh_positions.point_position",
+                            "target": "rest_offsets.first.point_position"
+                        },
+                        {
+                            "source": "mesh_positions.point_position",
+                            "target": "get_closest_locations.positions"
+                        },
+                        {
+                            "source": "rest_offsets.output",
+                            "target": ".offsets"
+                        },
+                        {
+                            "source": "sample_property.sampled_data",
+                            "target": "rest_offsets.first.sampled_data"
+                        },
+                        {
+                            "source": "get_closest_locations.locations",
+                            "target": "sample_property.locations"
+                        },
+                        {
+                            "source": "get_closest_locations.locations",
+                            "target": "location_scope.locations"
+                        },
+                        {
+                            "source": ".rest_strand",
+                            "target": "bez_rest1.input"
+                        },
+                        {
+                            "source": ".geo_to_deform",
+                            "target": "mesh_positions.geometry"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "location_scope.arrows",
+                            "valueType": "bool",
+                            "value": "true"
+                        },
+                        {
+                            "valueName": "location_scope.size",
+                            "valueType": "float",
+                            "value": "0.0500000007f"
+                        },
+                        {
+                            "valueName": "location_scope.miss_size_factor",
+                            "valueType": "float",
+                            "value": "0.5f"
+                        },
+                        {
+                            "valueName": "location_scope.circles_at_origin",
+                            "valueType": "bool",
+                            "value": "true"
+                        },
+                        {
+                            "valueName": "location_scope.circles_at_sample",
+                            "valueType": "bool",
+                            "value": "true"
+                        },
+                        {
+                            "valueName": "sample_property.default",
+                            "valueType": "Math::float3",
+                            "value": {
+                                "x": "0f",
+                                "y": "0f",
+                                "z": "0f"
+                            }
+                        },
+                        {
+                            "valueName": "sample_property.property",
+                            "valueType": "string",
+                            "value": "point_position"
+                        },
+                        {
+                            "valueName": "sample_property.method",
+                            "valueType": "BifrostExp::Geometry::SampleMethod",
+                            "value": "interpolated"
+                        },
+                        {
+                            "valueName": "get_closest_locations.use_cutoff_distance",
+                            "valueType": "bool",
+                            "value": "true"
+                        },
+                        {
+                            "valueName": "get_closest_locations.cutoff_distance",
+                            "valueType": "float",
+                            "value": "10f"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "get_offsets",
+                    "nodeType": "get_offsets",
+                    "deactivatedTerminals": [
+                        "Core::Graph::terminal::diagnostic"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "315 10"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_rest_offsets",
+                    "nodeType": "get_rest_offsets",
+                    "deactivatedTerminals": [
+                        "Core::Graph::terminal::diagnostic"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "317.737 366.654"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "negate",
+                    "nodeType": "Core::Math::negate",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "620 118"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "subtract",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "offsets",
+                        "offsets1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "925 237"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "terminal",
+                    "nodeType": "Core::Graph::terminal",
+                    "fanInPortNames": {
+                        "final": [],
+                        "proxy": [],
+                        "diagnostic": [
+                            "out_points"
+                        ]
+                    },
+                    "deactivatedTerminals": [
+                        "Core::Graph::terminal::final",
+                        "Core::Graph::terminal::proxy"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1535 307"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "translate_points",
+                    "nodeType": "Modeling::Points::translate_points",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1230 190"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".input_strand",
+                    "target": "get_offsets.input_strand"
+                },
+                {
+                    "source": ".rest_strand",
+                    "target": "get_offsets.rest_strand"
+                },
+                {
+                    "source": "get_offsets.offsets",
+                    "target": "negate.value"
+                },
+                {
+                    "source": ".geo_to_deform",
+                    "target": "get_rest_offsets.geo_to_deform"
+                },
+                {
+                    "source": "negate.negated",
+                    "target": "subtract.first.offsets"
+                },
+                {
+                    "source": "subtract.output",
+                    "target": "translate_points.translation"
+                },
+                {
+                    "source": "translate_points.out_points",
+                    "target": "terminal.diagnostic.out_points"
+                },
+                {
+                    "source": "translate_points.out_points",
+                    "target": ".deformed_geo"
+                },
+                {
+                    "source": ".rest_strand",
+                    "target": "get_rest_offsets.rest_strand"
+                },
+                {
+                    "source": ".geo_to_deform",
+                    "target": "translate_points.points"
+                },
+                {
+                    "source": ".geo_to_deform",
+                    "target": "get_offsets.geo_to_deform"
+                },
+                {
+                    "source": "get_rest_offsets.offsets",
+                    "target": "subtract.first.offsets1"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "get_offsets.input_strand",
+                    "valueType": "Amino::Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "get_offsets.geo_to_deform",
+                    "valueType": "Amino::Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "get_rest_offsets.rest_strand",
+                    "valueType": "Amino::Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "get_rest_offsets.geo_to_deform",
+                    "valueType": "Amino::Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "translate_points.local_space",
+                    "valueType": "bool",
+                    "value": "true"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
