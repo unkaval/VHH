@@ -10,14 +10,15 @@ The strand "at rest" - this is the reference strand for the deformation and cann
 The strand to be deformed to. 
 
 ### `geo_to_deform`
-Geometry to be deofrmed by the input_strand.
-
+Geometry to be deformed by the input_strand.
 
 ## Output
 
 ### `deformed_geo`
 The geo deformed along the strand.
 
+### `diagnostic flag`
+Deformed Geometry
 
 
 
