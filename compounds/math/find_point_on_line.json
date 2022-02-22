@@ -15,6 +15,16 @@
             "uriImported": "stream:/bifrostGraphShape1",
             "metadata": [
                 {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/find_point_on_line.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../helper_icons/derhornen.png"
+                },               
+                {
                     "metaName": "io_nodes",
                     "metadata": [
                         {
@@ -71,7 +81,7 @@
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
-                                                    "metaName": "output"
+                                                    "metaName": "point_on_line"
                                                 }
                                             ]
                                         }
@@ -136,7 +146,7 @@
                     "portDirection": "input"
                 },
                 {
-                    "portName": "output",
+                    "portName": "point_on_line",
                     "portDirection": "output"
                 }
             ],
@@ -429,7 +439,7 @@
                 },
                 {
                     "source": "add.output",
-                    "target": ".output"
+                    "target": ".point_on_line"
                 }
             ],
             "values": [],
