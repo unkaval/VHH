@@ -1,0 +1,446 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "VHH::Core::Math::find_point_on_line",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-472.372 -190.11"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "line_start"
+                                                },
+                                                {
+                                                    "metaName": "line_end"
+                                                },
+                                                {
+                                                    "metaName": "point"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1543.26 -176.491"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "343.405 -681.033 1572.71 1339.92"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,add"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,multiply"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,dot"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,divide"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,subtract"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "60.7012 221.421"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "line_start",
+                    "portDirection": "input"
+                },
+                {
+                    "portName": "line_end",
+                    "portDirection": "input"
+                },
+                {
+                    "portName": "point",
+                    "portDirection": "input"
+                },
+                {
+                    "portName": "output",
+                    "portDirection": "output"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "theLine",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "line_end",
+                        "line_start"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-176.971 -214.368"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "direction_and_length",
+                    "nodeType": "Core::Math::direction_and_length",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "100.039 -490.107"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "direction_vector_M",
+                    "nodeType": "Core::Math::normalize",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "79.708 -238.511"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "length",
+                    "nodeType": "Core::Math::length",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "82.2494 -80.9453"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "A",
+                    "nodeType": "Core::Graph::pass",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-166.656 154.715"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "B",
+                    "nodeType": "Core::Graph::pass",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-165.385 336.424"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "subtract",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "point",
+                        "output1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "155.409 91.4152"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dot",
+                    "nodeType": "Core::Math::dot",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "415.642 71.3966"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "divide",
+                    "nodeType": "Core::Math::divide",
+                    "multiInPortNames": [
+                        "dot_product",
+                        "dot_product1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "685.885 47.0897"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dot1",
+                    "nodeType": "Core::Math::dot",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "407.064 284.445"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "multiply",
+                    "nodeType": "Core::Math::multiply",
+                    "multiInPortNames": [
+                        "normalized",
+                        "output1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "963.104 -89.3117"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "output1",
+                        "output2"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1247.22 -177.296"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".line_end",
+                    "target": "theLine.first.line_end"
+                },
+                {
+                    "source": ".line_start",
+                    "target": "theLine.first.line_start"
+                },
+                {
+                    "source": "theLine.output",
+                    "target": "direction_vector_M.value"
+                },
+                {
+                    "source": "theLine.output",
+                    "target": "length.vector"
+                },
+                {
+                    "source": ".line_start",
+                    "target": "A.input"
+                },
+                {
+                    "source": ".line_end",
+                    "target": "B.input"
+                },
+                {
+                    "source": ".point",
+                    "target": "subtract.first.point"
+                },
+                {
+                    "source": "A.output",
+                    "target": "subtract.first.output1"
+                },
+                {
+                    "source": "subtract.output",
+                    "target": "dot.first"
+                },
+                {
+                    "source": "direction_vector_M.normalized",
+                    "target": "dot.second"
+                },
+                {
+                    "source": "dot.dot_product",
+                    "target": "divide.first.dot_product"
+                },
+                {
+                    "source": "direction_vector_M.normalized",
+                    "target": "dot1.first"
+                },
+                {
+                    "source": "direction_vector_M.normalized",
+                    "target": "dot1.second"
+                },
+                {
+                    "source": "dot1.dot_product",
+                    "target": "divide.first.dot_product1"
+                },
+                {
+                    "source": "direction_vector_M.normalized",
+                    "target": "multiply.first.normalized"
+                },
+                {
+                    "source": "divide.output",
+                    "target": "multiply.first.output1"
+                },
+                {
+                    "source": "A.output",
+                    "target": "add.first.output1"
+                },
+                {
+                    "source": "multiply.output",
+                    "target": "add.first.output2"
+                },
+                {
+                    "source": "add.output",
+                    "target": ".output"
+                }
+            ],
+            "values": [],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
