@@ -1,4 +1,5 @@
 import maya.cmds as cmds
+sel = cmds.ls(sl=True)
 
 #create BF
 if len(cmds.ls(type="bifrostGraphShape")) == 0:
@@ -21,7 +22,6 @@ cmds.connectAttr(mid+".worldPosition[0]", bfg+".middle", f=True)
 cmds.connectAttr(mid2+".worldPosition[0]", bfg+".middle_2", f=True)
 cmds.connectAttr(end+".worldPosition[0]", bfg+".end", f=True)
 
-sel = cmds.ls(sl=True)
-
+#colliders
 for count,each in enumerate(sel):
     cmds.connectAttr(each+".worldMesh[0]", bfg+".colliders["+str(count)+"]", f=True)
