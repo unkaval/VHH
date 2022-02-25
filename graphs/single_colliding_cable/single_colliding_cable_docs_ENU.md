@@ -42,7 +42,8 @@ Visualises the curve collision points.
 ### `Display Colorx, Display Colory, Display Colorz`
 The colour of the cable before meshing.  Display only.
 
-
+### `Collision Curve Sag`
+Controls the sag on the dotted, collision curve.
 
 
 
