@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Visualize::Display::pnt_display",
-            "uriImported": "stream:/scratchpadShape",
+            "uriImported": "file:///pnt_display.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -79,6 +79,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1685.31 80.9276"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -88,22 +93,12 @@
                                                     "metaName": "points"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "1685.31 80.9276"
                                         }
                                     ]
                                 }
                             ]
                         }
                     ]
-                },
-                {
-                    "metaName": "terminal_node_disabled_flags",
-                    "metaType": "string",
-                    "metaValue": "Core::Graph::terminal::proxy"
                 },
                 {
                     "metaName": "_recentNode_",
@@ -143,13 +138,30 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "958.21 -505.745"
+                    "metaValue": "-623 3493"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
                 }
             ],
             "ports": [
                 {
                     "portName": "points_in",
                     "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portDefault": [],
+                    "isDefaultFanIn": "true",
                     "metadata": [
                         {
                             "metaName": "TypeWranglingSuggestedTypes",
@@ -160,7 +172,10 @@
                 },
                 {
                     "portName": "color_in",
-                    "portDirection": "input"
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portDefault": [],
+                    "isDefaultFanIn": "true"
                 },
                 {
                     "portName": "default_color",
@@ -267,9 +282,15 @@
                             "diagnostic_geo"
                         ]
                     },
-                    "deactivatedTerminals": [
-                        "Core::Graph::terminal::final",
-                        "Core::Graph::terminal::proxy"
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        }
                     ],
                     "metadata": [
                         {
@@ -443,10 +464,6 @@
                     "target": "interpret_auto_port_as_vector.geometry"
                 },
                 {
-                    "source": ".color_in",
-                    "target": "interpret_auto_port_as_vector.interpreted_vector_port"
-                },
-                {
                     "source": "value.output",
                     "target": "set_geo_property.property"
                 },
@@ -471,24 +488,12 @@
                     "target": "set_geo_property.data"
                 },
                 {
-                    "source": ".color_in",
-                    "target": "value1.value"
-                },
-                {
                     "source": "value1.output",
                     "target": "array_is_empty.array"
                 },
                 {
-                    "source": ".points_in",
-                    "target": "interpret_auto_port_as_vector1.interpreted_vector_port"
-                },
-                {
                     "source": "interpret_auto_port_as_vector1.data",
                     "target": "construct_points1.point_position"
-                },
-                {
-                    "source": ".points_in",
-                    "target": "construct_points.point_position"
                 },
                 {
                     "source": "construct_points.points",
@@ -501,6 +506,22 @@
                 {
                     "source": "point_scope.diagnostic_geo",
                     "target": "terminal.diagnostic.diagnostic_geo"
+                },
+                {
+                    "source": ".points_in",
+                    "target": "interpret_auto_port_as_vector1.interpreted_vector_port"
+                },
+                {
+                    "source": ".points_in",
+                    "target": "construct_points.point_position"
+                },
+                {
+                    "source": ".color_in",
+                    "target": "interpret_auto_port_as_vector.interpreted_vector_port"
+                },
+                {
+                    "source": ".color_in",
+                    "target": "value1.value"
                 }
             ],
             "values": [
