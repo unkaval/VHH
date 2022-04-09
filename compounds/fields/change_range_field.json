@@ -50,11 +50,6 @@
                     "metaValue": "BifrostGraph,Core::Math,subtract"
                 },
                 {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-346.975 -531.751 1692.59 1795.76"
-                },
-                {
                     "metaName": "io_nodes",
                     "metadata": [
                         {
@@ -151,6 +146,11 @@
                     ]
                 },
                 {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1005.55 -258.184 1727.83 1509.01"
+                },
+                {
                     "metaName": "DisplayMode",
                     "metaType": "string",
                     "metaValue": "2"
@@ -158,7 +158,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-116.086 -534.499"
+                    "metaValue": "-440.314 -528.641"
                 }
             ],
             "overloadsUnlocked": "true",
@@ -166,32 +166,48 @@
                 {
                     "portName": "field_in",
                     "portDirection": "input",
-                    "portType": "Core::Fields::ScalarField",
+                    "portType": "Core::Fields::VectorField",
                     "portDefault": {}
                 },
                 {
                     "portName": "min",
                     "portDirection": "input",
-                    "portType": "float",
-                    "portDefault": "0f"
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
                 },
                 {
                     "portName": "max",
                     "portDirection": "input",
-                    "portType": "float",
-                    "portDefault": "1f"
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
                 },
                 {
                     "portName": "oldMin",
                     "portDirection": "input",
-                    "portType": "float",
-                    "portDefault": "-1f"
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
                 },
                 {
                     "portName": "oldMax",
                     "portDirection": "input",
-                    "portType": "float",
-                    "portDefault": "1f"
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
                 },
                 {
                     "portName": "clamp",
@@ -202,134 +218,10 @@
                 {
                     "portName": "output",
                     "portDirection": "output",
-                    "portType": "Core::Fields::ScalarField"
+                    "portType": "Core::Fields::VectorField"
                 }
             ],
             "compoundNodes": [
-                {
-                    "nodeName": "min",
-                    "nodeType": "Core::Fields::scalar_field",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-293 152"
-                        },
-                        {
-                            "metaName": "NodeValueDisplay",
-                            "metadata": [
-                                {
-                                    "metaName": "format",
-                                    "metaType": "string",
-                                    "metaValue": "Scalar field ({value})"
-                                },
-                                {
-                                    "metaName": "show",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "max",
-                    "nodeType": "Core::Fields::scalar_field",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-293 362"
-                        },
-                        {
-                            "metaName": "NodeValueDisplay",
-                            "metadata": [
-                                {
-                                    "metaName": "format",
-                                    "metaType": "string",
-                                    "metaValue": "Scalar field ({value})"
-                                },
-                                {
-                                    "metaName": "show",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "oldMin",
-                    "nodeType": "Core::Fields::scalar_field",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-293 602"
-                        },
-                        {
-                            "metaName": "NodeValueDisplay",
-                            "metadata": [
-                                {
-                                    "metaName": "format",
-                                    "metaType": "string",
-                                    "metaValue": "Scalar field ({value})"
-                                },
-                                {
-                                    "metaName": "show",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "oldMax",
-                    "nodeType": "Core::Fields::scalar_field",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-293 782"
-                        },
-                        {
-                            "metaName": "NodeValueDisplay",
-                            "metadata": [
-                                {
-                                    "metaName": "format",
-                                    "metaType": "string",
-                                    "metaValue": "Scalar field ({value})"
-                                },
-                                {
-                                    "metaName": "show",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "nodeName": "value_minus_oldMin",
                     "nodeType": "Core::Math::subtract",
@@ -481,33 +373,73 @@
                             "metaValue": "1430.58 129.227"
                         }
                     ]
+                },
+                {
+                    "nodeName": "vector_field1",
+                    "nodeType": "Core::Fields::vector_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-289.861 31.5703"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "vector_field3",
+                    "nodeType": "Core::Fields::vector_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-285.584 231.707"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "vector_field4",
+                    "nodeType": "Core::Fields::vector_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-276.876 445.045"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "vector_field5",
+                    "nodeType": "Core::Fields::vector_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-285.584 640.968"
+                        }
+                    ]
                 }
             ],
             "connections": [
-                {
-                    "source": "min.scalar_field",
-                    "target": "max_minus_min.first.scalar_field1"
-                },
-                {
-                    "source": "min.scalar_field",
-                    "target": "add.first.scalar_field"
-                },
-                {
-                    "source": "max.scalar_field",
-                    "target": "max_minus_min.first.scalar_field"
-                },
-                {
-                    "source": "oldMin.scalar_field",
-                    "target": "value_minus_oldMin.first.scalar_field"
-                },
-                {
-                    "source": "oldMin.scalar_field",
-                    "target": "oldMax_minus_oldMin.first.scalar_field1"
-                },
-                {
-                    "source": "oldMax.scalar_field",
-                    "target": "oldMax_minus_oldMin.first.scalar_field"
-                },
                 {
                     "source": "value_minus_oldMin.output",
                     "target": "divide.first.output1"
@@ -541,30 +473,6 @@
                     "target": "if.true_case"
                 },
                 {
-                    "source": ".min",
-                    "target": "min.value"
-                },
-                {
-                    "source": ".min",
-                    "target": "clamp.min"
-                },
-                {
-                    "source": ".max",
-                    "target": "max.value"
-                },
-                {
-                    "source": ".max",
-                    "target": "clamp.max"
-                },
-                {
-                    "source": ".oldMin",
-                    "target": "oldMin.value"
-                },
-                {
-                    "source": ".oldMax",
-                    "target": "oldMax.value"
-                },
-                {
                     "source": ".clamp",
                     "target": "if.condition"
                 },
@@ -573,32 +481,59 @@
                     "target": "value_minus_oldMin.first.field_in"
                 },
                 {
+                    "source": ".min",
+                    "target": "clamp.min"
+                },
+                {
+                    "source": ".max",
+                    "target": "clamp.max"
+                },
+                {
+                    "source": ".min",
+                    "target": "vector_field1.value"
+                },
+                {
+                    "source": "vector_field1.vector_field",
+                    "target": "max_minus_min.first.scalar_field1"
+                },
+                {
+                    "source": "vector_field1.vector_field",
+                    "target": "add.first.scalar_field"
+                },
+                {
+                    "source": ".max",
+                    "target": "vector_field3.value"
+                },
+                {
+                    "source": "vector_field3.vector_field",
+                    "target": "max_minus_min.first.scalar_field"
+                },
+                {
+                    "source": ".oldMin",
+                    "target": "vector_field4.value"
+                },
+                {
+                    "source": "vector_field4.vector_field",
+                    "target": "value_minus_oldMin.first.scalar_field"
+                },
+                {
+                    "source": "vector_field4.vector_field",
+                    "target": "oldMax_minus_oldMin.first.scalar_field1"
+                },
+                {
+                    "source": ".oldMax",
+                    "target": "vector_field5.value"
+                },
+                {
+                    "source": "vector_field5.vector_field",
+                    "target": "oldMax_minus_oldMin.first.scalar_field"
+                },
+                {
                     "source": "if.output",
                     "target": ".output"
                 }
             ],
-            "values": [
-                {
-                    "valueName": "min.value",
-                    "valueType": "float",
-                    "value": "0.5f"
-                },
-                {
-                    "valueName": "max.value",
-                    "valueType": "float",
-                    "value": "0.5f"
-                },
-                {
-                    "valueName": "oldMin.value",
-                    "valueType": "float",
-                    "value": "0.5f"
-                },
-                {
-                    "valueName": "oldMax.value",
-                    "valueType": "float",
-                    "value": "0.5f"
-                }
-            ],
+            "values": [],
             "reservedNodeNames": [
                 {
                     "name": "input"

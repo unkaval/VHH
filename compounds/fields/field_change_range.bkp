@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Fields::change_range_field",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "uriImported": "file:///field_change_range.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -158,10 +158,9 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-116.086 -534.499"
+                    "metaValue": "-160.703 -525.292"
                 }
             ],
-            "overloadsUnlocked": "true",
             "ports": [
                 {
                     "portName": "field_in",
@@ -201,8 +200,7 @@
                 },
                 {
                     "portName": "output",
-                    "portDirection": "output",
-                    "portType": "Core::Fields::ScalarField"
+                    "portDirection": "output"
                 }
             ],
             "compoundNodes": [
@@ -541,6 +539,10 @@
                     "target": "if.true_case"
                 },
                 {
+                    "source": "if.output",
+                    "target": ".output"
+                },
+                {
                     "source": ".min",
                     "target": "min.value"
                 },
@@ -571,10 +573,6 @@
                 {
                     "source": ".field_in",
                     "target": "value_minus_oldMin.first.field_in"
-                },
-                {
-                    "source": "if.output",
-                    "target": ".output"
                 }
             ],
             "values": [

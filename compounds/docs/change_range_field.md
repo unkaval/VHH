@@ -3,25 +3,29 @@ Remaps one or more value from one range to another.  Returns the result that has
 
 ***
 ## Input
-<span style="color:#ff9000">***field_in***</span>
-<br />The input value to remap.<br /><br /><span style="color:#ff9000">***min***</span>
-<br />Lower bound of the *destination* range. 
+<span style="color:#CCB699">***field_in***</span>
+<br />The input value to remap\*.
 
-<span style="color:#ff9000">***max***</span>
-<br />Upper bound of the *destination* range. 
+<span style="color:#A8D977">***min***</span>
+<br />Lower bound of the *destination* range\*.  
 
-<span style="color:#ff9000">***old_min***</span>
-<br />Lower bound of the *source* range. 
+<span style="color:#A8D977">***max***</span>
+<br />Upper bound of the *destination* range\*. 
 
-<span style="color:#ff9000">***old_max***</span>
-<br />Upper bound of the *source* range.
+<span style="color:#A8D977">***old_min***</span>
+<br />Lower bound of the *source* range\*. 
 
-<span style="color:#ff9000">***clamp***</span>
+<span style="color:#A8D977">***old_max***</span>
+<br />Upper bound of the *source* range\*.
+
+<span style="color:#A8D977">***clamp***</span>
 <br />If true then out of bound inputs value are clamped. Default is true.
+
+\* overloaded
 
 ***
 ## Output
-<span style="color:#0090ff">***output***</span>
+<span style="color:#CCB699">***output***</span>
 <br />The remapped field.
 
 
