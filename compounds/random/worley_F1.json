@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Random::worley_F1",
-            "uriImported": "stream:/scratchpadShape",
+            "uriImported": "file:///worley_F1.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -23,11 +23,6 @@
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../helper_icons/derhornen.png"
-                },
-                {
-                    "metaName": "terminal_node_disabled_flags",
-                    "metaType": "string",
-                    "metaValue": "Core::Graph::terminal::proxy"
                 },
                 {
                     "metaName": "io_nodes",
@@ -85,10 +80,10 @@
                                                     "metaName": "feature_points_default_color"
                                                 },
                                                 {
-                                                    "metaName": "feature_points_color_in"
+                                                    "metaName": "magnitude"
                                                 },
                                                 {
-                                                    "metaName": "magnitude"
+                                                    "metaName": "feature_points_color_in"
                                                 }
                                             ]
                                         }
@@ -132,6 +127,11 @@
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
+                    "metaValue": "BifrostGraph,VHH::Visualize::Display,pnt_display"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
                     "metaValue": "BifrostGraph,Core::Math,add"
                 },
                 {
@@ -150,14 +150,9 @@
                     "metaValue": "BifrostGraph,Core::Math,negate"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,change_range"
-                },
-                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-567 -2041.95 3979 4616.9"
+                    "metaValue": "-238.922 -1057.07 2079.63 1893.16"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -167,27 +162,36 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "2211.98 711"
+                    "metaValue": "-427.487 200.638"
                 },
                 {
                     "metaName": "UILayout",
                     "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"geometry\"\n            },\n            {\n                \"port\": \"magnitude\"\n            },\n            {\n                \"port\": \"frequency\"\n            },\n            {\n                \"port\": \"level\"\n            },\n            {\n                \"port\": \"metric\"\n            },\n            {\n                \"port\": \"scatter_type\"\n            },\n            {\n                \"port\": \"padding\"\n            },\n            {\n                \"port\": \"seed\"\n            },\n            {\n                \"port\": \"F\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"scattering Options\",\n                \"items\": [\n                    {\n                        \"group\": \"on Object\",\n                        \"items\": [\n                            {\n                                \"port\": \"mode\"\n                            }\n                        ]\n                    },\n                    {\n                        \"group\": \"Sphere\",\n                        \"items\": [\n                            {\n                                \"port\": \"sphere_interpolation\"\n                            }\n                        ]\n                    },\n                    {\n                        \"port\": \"resolution\"\n                    },\n                    {\n                        \"group\": \"Volume\"\n                    },\n                    {\n                        \"group\": \"Euclidian\",\n                        \"items\": [\n                            {\n                                \"port\": \"adjust_shape\"\n                            }\n                        ]\n                    },\n                    {\n                        \"group\": \"Display\",\n                        \"items\": [\n                            {\n                                \"port\": \"feature_points_default_color\"\n                            },\n                            {\n                                \"port\": \"feature_points_color_in\"\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"geometry\"\n            },\n            {\n                \"port\": \"magnitude\"\n            },\n            {\n                \"port\": \"frequency\"\n            },\n            {\n                \"port\": \"level\"\n            },\n            {\n                \"port\": \"metric\"\n            },\n            {\n                \"port\": \"scatter_type\"\n            },\n            {\n                \"port\": \"padding\"\n            },\n            {\n                \"port\": \"seed\"\n            },\n            {\n                \"port\": \"F\"\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"scattering Options\",\n                \"items\": [\n                    {\n                        \"group\": \"on Object\",\n                        \"items\": [\n                            {\n                                \"port\": \"mode\"\n                            }\n                        ]\n                    },\n                    {\n                        \"group\": \"Sphere\",\n                        \"items\": [\n                            {\n                                \"port\": \"sphere_interpolation\"\n                            }\n                        ]\n                    },\n                    {\n                        \"port\": \"resolution\"\n                    },\n                    {\n                        \"group\": \"Volume\"\n                    },\n                    {\n                        \"group\": \"Euclidian\",\n                        \"items\": [\n                            {\n                                \"port\": \"adjust_shape\"\n                            }\n                        ]\n                    },\n                    {\n                        \"group\": \"Display\",\n                        \"items\": [\n                            {\n                                \"port\": \"feature_points_default_color\"\n                            },\n                            {\n                                \"port\": \"feature_points_color_in\"\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
                 },
                 {
                     "metaName": "PortExpandedState",
                     "metadata": [
                         {
-                            "metaName": "Options",
-                            "metaType": "string",
-                            "metaValue": "1"
-                        },
-                        {
                             "metaName": "scattering Options",
                             "metaType": "string",
-                            "metaValue": "0"
+                            "metaValue": "1"
                         }
                     ]
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
                 }
             ],
             "ports": [
@@ -300,10 +304,6 @@
                     }
                 },
                 {
-                    "portName": "feature_points_color_in",
-                    "portDirection": "input"
-                },
-                {
                     "portName": "magnitude",
                     "portDirection": "input",
                     "portType": "float",
@@ -312,12 +312,19 @@
                 {
                     "portName": "noise",
                     "portDirection": "output"
+                },
+                {
+                    "portName": "feature_points_color_in",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portDefault": [],
+                    "isDefaultFanIn": "true"
                 }
             ],
             "compounds": [
                 {
                     "name": "distance_metric",
-                    "uriImported": "stream:/scratchpadShape",
+                    "uriImported": "file:///worley_F1.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -724,7 +731,7 @@
                 },
                 {
                     "name": "euclid_adjust",
-                    "uriImported": "stream:/scratchpadShape",
+                    "uriImported": "file:///worley_F1.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -981,8 +988,13 @@
                 },
                 {
                     "name": "for_each_in_mesh_points",
-                    "uriImported": "stream:/scratchpadShape",
+                    "uriImported": "file:///worley_F1.json",
                     "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                        },
                         {
                             "metaName": "icon",
                             "metaType": "string",
@@ -1453,7 +1465,7 @@
                 },
                 {
                     "name": "scattering_feature_points_options",
-                    "uriImported": "stream:/scratchpadShape",
+                    "uriImported": "file:///worley_F1.json",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -1628,7 +1640,7 @@
                     "compounds": [
                         {
                             "name": "cases",
-                            "uriImported": "stream:/scratchpadShape",
+                            "uriImported": "file:///worley_F1.json",
                             "metadata": [
                                 {
                                     "metaName": "_recentNode_",
@@ -1862,7 +1874,7 @@
                             "compounds": [
                                 {
                                     "name": "box_bounds",
-                                    "uriImported": "stream:/scratchpadShape",
+                                    "uriImported": "file:///worley_F1.json",
                                     "metadata": [
                                         {
                                             "metaName": "documentation",
@@ -2091,7 +2103,7 @@
                                     "compounds": [
                                         {
                                             "name": "object_logic",
-                                            "uriImported": "stream:/scratchpadShape",
+                                            "uriImported": "file:///worley_F1.json",
                                             "metadata": [
                                                 {
                                                     "metaName": "_recentNode_",
@@ -2684,7 +2696,7 @@
                                         },
                                         {
                                             "name": "padding",
-                                            "uriImported": "stream:/scratchpadShape",
+                                            "uriImported": "file:///worley_F1.json",
                                             "metadata": [
                                                 {
                                                     "metaName": "ViewportRect",
@@ -3023,7 +3035,7 @@
                                         },
                                         {
                                             "name": "compound",
-                                            "uriImported": "stream:/scratchpadShape",
+                                            "uriImported": "file:///worley_F1.json",
                                             "metadata": [
                                                 {
                                                     "metaName": "_recentNode_",
@@ -4521,7 +4533,7 @@
                                 },
                                 {
                                     "name": "points_in_a_cube",
-                                    "uriImported": "stream:/scratchpadShape",
+                                    "uriImported": "file:///worley_F1.json",
                                     "metadata": [
                                         {
                                             "metaName": "io_nodes",
@@ -4691,8 +4703,13 @@
                                     "compounds": [
                                         {
                                             "name": "for_each",
-                                            "uriImported": "stream:/scratchpadShape",
+                                            "uriImported": "file:///worley_F1.json",
                                             "metadata": [
+                                                {
+                                                    "metaName": "icon",
+                                                    "metaType": "string",
+                                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                                                },
                                                 {
                                                     "metaName": "icon",
                                                     "metaType": "string",
@@ -5429,7 +5446,7 @@
                                 },
                                 {
                                     "name": "ball_bounds",
-                                    "uriImported": "stream:/scratchpadShape",
+                                    "uriImported": "file:///worley_F1.json",
                                     "metadata": [
                                         {
                                             "metaName": "documentation",
@@ -5658,7 +5675,7 @@
                                     "compounds": [
                                         {
                                             "name": "object_logic",
-                                            "uriImported": "stream:/scratchpadShape",
+                                            "uriImported": "file:///worley_F1.json",
                                             "metadata": [
                                                 {
                                                     "metaName": "_recentNode_",
@@ -6251,7 +6268,7 @@
                                         },
                                         {
                                             "name": "padding",
-                                            "uriImported": "stream:/scratchpadShape",
+                                            "uriImported": "file:///worley_F1.json",
                                             "metadata": [
                                                 {
                                                     "metaName": "ViewportRect",
@@ -6590,7 +6607,7 @@
                                         },
                                         {
                                             "name": "compound",
-                                            "uriImported": "stream:/scratchpadShape",
+                                            "uriImported": "file:///worley_F1.json",
                                             "metadata": [
                                                 {
                                                     "metaName": "_recentNode_",
@@ -9128,7 +9145,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1535 318"
+                            "metaValue": "1500.69 318"
                         }
                     ]
                 },
@@ -9144,7 +9161,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1230 143"
+                            "metaValue": "1230 211.618"
                         }
                     ]
                 },
@@ -9160,7 +9177,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "923.265 291.147"
+                            "metaValue": "554.896 365.182"
                         }
                     ]
                 },
@@ -9222,7 +9239,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "624.084 79.8522"
+                            "metaValue": "288.218 -263.237"
                         }
                     ]
                 },
@@ -9238,23 +9255,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-16.598 502.187"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "pnt_display1",
-                    "nodeType": "VHH::Visualize::Display::pnt_display",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "928.07 -101.286"
+                            "metaValue": "-5.7636 290.916"
                         }
                     ]
                 },
@@ -9286,7 +9287,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1799.73 572.937"
+                            "metaValue": "1778.06 388.752"
                         }
                     ]
                 },
@@ -9308,6 +9309,42 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2785.99 -60.7991"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "pnt_display",
+                    "nodeType": "VHH::Visualize::Display::pnt_display",
+                    "fanInPortNames": {
+                        "points_in": [],
+                        "color_in": [
+                            "color_in"
+                        ]
+                    },
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "771.308 -447.563"
                         }
                     ]
                 }
@@ -9336,10 +9373,6 @@
                 {
                     "source": "feature_points.output",
                     "target": "for_each_in_mesh_points.feature_points"
-                },
-                {
-                    "source": "feature_points.output",
-                    "target": "pnt_display1.points_in"
                 },
                 {
                     "source": "get_point_position.point_position",
@@ -9390,14 +9423,6 @@
                     "target": "euclid_adjust.adjust_shape"
                 },
                 {
-                    "source": ".feature_points_default_color",
-                    "target": "pnt_display1.default_color"
-                },
-                {
-                    "source": ".feature_points_color_in",
-                    "target": "pnt_display1.color_in"
-                },
-                {
                     "source": "distance_metric.output1",
                     "target": "array_bounds.array"
                 },
@@ -9432,6 +9457,14 @@
                 {
                     "source": "change_range.result",
                     "target": ".noise"
+                },
+                {
+                    "source": ".feature_points_default_color",
+                    "target": "pnt_display.default_color"
+                },
+                {
+                    "source": ".feature_points_color_in",
+                    "target": "pnt_display.color_in.color_in"
                 }
             ],
             "values": [
@@ -9528,25 +9561,6 @@
                     "valueName": "scattering_feature_points_options.padding",
                     "valueType": "float",
                     "value": "10f"
-                },
-                {
-                    "valueName": "pnt_display1.default_color",
-                    "valueType": "Math::float3",
-                    "value": {
-                        "x": "0f",
-                        "y": "0.400000006f",
-                        "z": "1f"
-                    }
-                },
-                {
-                    "valueName": "pnt_display1.shape",
-                    "valueType": "Geometry::PointShapes",
-                    "value": "Disk"
-                },
-                {
-                    "valueName": "pnt_display1.default_size",
-                    "valueType": "float",
-                    "value": "0.200000003f"
                 },
                 {
                     "valueName": "change_range.to_start",
