@@ -1,4 +1,4 @@
-[![](../helper_icons/yt_test.png)](https://youtu.be/-p5VFUqGkWc)
+<br /><br />[**switch(youtube)**](https://youtu.be/-p5VFUqGkWc)
 
 ### ***switch***
 This compound enables the switching between elements in an array.    

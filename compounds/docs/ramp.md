@@ -1,6 +1,6 @@
 ### ***ramp***
 This compound generates a ramp output based on several criteria. It outputs both the color per vertex and the geometry with a colour property written to it.
-<br /><br />[**Ramp Explainer (youtube)**](https://youtu.be/S5Kzf1-eiuU)
+<br /><br />[**ramp(youtube)**](https://youtu.be/S5Kzf1-eiuU)
 
 ***
 ## Input
