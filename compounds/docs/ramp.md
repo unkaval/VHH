@@ -1,6 +1,6 @@
 ### ***ramp***
 This compound generates a ramp output based on several criteria. It outputs both the color per vertex and the geometry with a colour property written to it.
-<br /><br />[**ramp(youtube)**](https://youtu.be/S5Kzf1-eiuU)
+<br /><br />[<span style="color:#CCB699">**ramp (youtube)**</span>](https://youtu.be/S5Kzf1-eiuU)
 
 ***
 ## Input
@@ -8,7 +8,7 @@ This compound generates a ramp output based on several criteria. It outputs both
 <br />Object to generate a ramp for.  
 
 <span style="color:#A8D977">***in_color_array***</span>
-<br />If you have an array of colours, it can be plugged in here.  Plugging an array into this port will override any other colour settings on this compound apart from *constant* and a ramp will be generated from this imput.
+<br />If you have an array of colours, it can be plugged in here.  Plugging an array into this port will override any other colour settings on this compound apart from *constant* and a ramp will be generated from this input.
 
 ***single_color***    
 <span style="color:#A8D977">***constant***</span>
