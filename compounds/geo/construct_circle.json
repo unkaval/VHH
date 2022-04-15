@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Geometry::construct_circle",
-            "uriImported": "stream:/scratchpadShape",
+            "uriImported": "file:///construct_circle.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -39,11 +39,6 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-612.642 -274.835"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -65,6 +60,11 @@
                                                     "metaName": "invert_strand_normals"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-613 -275"
                                         }
                                     ]
                                 }
@@ -119,51 +119,6 @@
                     ]
                 },
                 {
-                    "metaName": "terminal_node_disabled_flags",
-                    "metaType": "string",
-                    "metaValue": "Core::Graph::terminal::proxy"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Constants,float"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,VHH::Visualize::Display,pnt_display"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,ValHallen::Helpers,pnt_display"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,multiply"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,twice_of"
-                },
-                {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "890.645 -812.882 1741.93 1894.41"
-                },
-                {
-                    "metaName": "DisplayMode",
-                    "metaType": "string",
-                    "metaValue": "2"
-                },
-                {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "305.362 -678.308"
-                },
-                {
                     "metaName": "UILayout",
                     "metaType": "string",
                     "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"sides\"\n            },\n            {\n                \"port\": \"radius\"\n            },\n            {\n                \"port\": \"offset\"\n            },\n            {\n                \"port\": \"axis\"\n            },\n            {\n                \"port\": \"invert_mesh_normals\"\n            },\n            {\n                \"port\": \"invert_strand_normals\"\n            }\n        ]\n    }\n}\n"
@@ -177,6 +132,60 @@
                             "metaValue": "0"
                         }
                     ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,divide"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,clamp"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,one_over"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,terminal"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Diagnostic::Display,assign_diagnostic_material"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "643.576 -1047.2 1321.94 1486.67"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "437.289 -86.3361"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
                 }
             ],
             "ports": [
@@ -190,7 +199,7 @@
                     "portName": "radius",
                     "portDirection": "input",
                     "portType": "float",
-                    "portDefault": "6f"
+                    "portDefault": "3f"
                 },
                 {
                     "portName": "points",
@@ -259,7 +268,7 @@
             "compounds": [
                 {
                     "name": "twoPi",
-                    "uriImported": "stream:/scratchpadShape",
+                    "uriImported": "file:///construct_circle.json",
                     "metadata": [
                         {
                             "metaName": "ViewportRect",
@@ -370,8 +379,13 @@
                 },
                 {
                     "name": "generate_points",
-                    "uriImported": "stream:/scratchpadShape",
+                    "uriImported": "file:///construct_circle.json",
                     "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                        },
                         {
                             "metaName": "icon",
                             "metaType": "string",
@@ -522,7 +536,7 @@
                     "compounds": [
                         {
                             "name": "choices",
-                            "uriImported": "stream:/scratchpadShape",
+                            "uriImported": "file:///construct_circle.json",
                             "metadata": [
                                 {
                                     "metaName": "io_nodes",
@@ -1313,7 +1327,7 @@
                 },
                 {
                     "name": "create_mesh",
-                    "uriImported": "stream:/scratchpadShape",
+                    "uriImported": "file:///construct_circle.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -1444,8 +1458,13 @@
                     "compounds": [
                         {
                             "name": "for_each",
-                            "uriImported": "stream:/scratchpadShape",
+                            "uriImported": "file:///construct_circle.json",
                             "metadata": [
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                                },
                                 {
                                     "metaName": "icon",
                                     "metaType": "string",
@@ -2469,8 +2488,8 @@
                     ]
                 },
                 {
-                    "nodeName": "pnt_display",
-                    "nodeType": "VHH::Visualize::Display::pnt_display",
+                    "nodeName": "construct_points",
+                    "nodeType": "Geometry::Points::construct_points",
                     "metadata": [
                         {
                             "metaName": "DisplayMode",
@@ -2480,7 +2499,113 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1632.73 -358.112"
+                            "metaValue": "1184.96 -708.38"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_point_shape",
+                    "nodeType": "Geometry::Properties::set_point_shape",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1475.21 -731.561"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "assign_diagnostic_material",
+                    "nodeType": "Diagnostic::Display::assign_diagnostic_material",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1742.23 -757.528"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "terminal",
+                    "nodeType": "Core::Graph::terminal",
+                    "fanInPortNames": {
+                        "final": [],
+                        "proxy": [],
+                        "diagnostic": [
+                            "geometry_with_material"
+                        ]
+                    },
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2012.27 -805.009"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "divide",
+                    "nodeType": "Core::Math::divide",
+                    "multiInPortNames": [
+                        "radius",
+                        "output1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "831 -652"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "float",
+                    "metadata": [
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "550.709 -537.733"
                         }
                     ]
                 }
@@ -2647,12 +2772,36 @@
                     "target": ".points"
                 },
                 {
-                    "source": "pass.output",
-                    "target": "pnt_display.points_in"
-                },
-                {
                     "source": ".axis",
                     "target": "generate_points.axis"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "construct_points.point_position"
+                },
+                {
+                    "source": "construct_points.points",
+                    "target": "set_point_shape.points"
+                },
+                {
+                    "source": "set_point_shape.out_points",
+                    "target": "assign_diagnostic_material.geometry"
+                },
+                {
+                    "source": "assign_diagnostic_material.geometry_with_material",
+                    "target": "terminal.diagnostic.geometry_with_material"
+                },
+                {
+                    "source": ".radius",
+                    "target": "divide.first.radius"
+                },
+                {
+                    "source": "value.output",
+                    "target": "divide.first.output1"
+                },
+                {
+                    "source": "divide.output",
+                    "target": "set_point_shape.default_size"
                 }
             ],
             "values": [
@@ -2694,6 +2843,25 @@
                     "valueName": "power.exponent",
                     "valueType": "float",
                     "value": "2f"
+                },
+                {
+                    "valueName": "set_point_shape.default_size",
+                    "valueType": "float",
+                    "value": "0.25f"
+                },
+                {
+                    "valueName": "assign_diagnostic_material.emission_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "float",
+                    "value": "30f"
                 }
             ],
             "reservedNodeNames": [
