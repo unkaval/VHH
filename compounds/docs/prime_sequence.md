@@ -7,7 +7,7 @@ Generates a sequence of prime numbers.<br />
 <br />The size of the prime sequence.
 
 <span style="color:#62CFD9">***start***</span>
-<br />the starting value of the prime sequence.
+<br />The starting value of the prime sequence. The closest prime will be used.
 
 ***
 ## Output
