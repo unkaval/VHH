@@ -1,0 +1,807 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "VHH::Core::Math::property_gradient",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-460.963 -128.345"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "in_geo"
+                                                },
+                                                {
+                                                    "metaName": "property"
+                                                },
+                                                {
+                                                    "metaName": "type"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "property_gradient"
+                                                },
+                                                {
+                                                    "metaName": "property_gradient_normalized"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "865.422 235.319"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Iterators,iterate"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Array,array_size"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Iterators,for_each"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "188.178 -303.809 1186.85 1298.76"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-551 -83"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "in_geo",
+                    "portDirection": "input"
+                },
+                {
+                    "portName": "property",
+                    "portDirection": "input"
+                },
+                {
+                    "portName": "type",
+                    "portDirection": "input",
+                    "portType": "array<float>",
+                    "portDefault": [],
+                    "metadata": [
+                        {
+                            "metaName": "TypeWranglingSuggestedTypes",
+                            "metaType": "string",
+                            "metaValue": "array<float>, array<long>, array<uint>, array<bool>, array<string>, array<Math::float2>, array<Math::float3>, array<Math::float4>, array<Math::float3x3>, array<Math::float4x4>"
+                        }
+                    ]
+                },
+                {
+                    "portName": "property_gradient",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "property_gradient_normalized",
+                    "portDirection": "output"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "for_each",
+                    "uriImported": "stream:/bifrostGraphShape1",
+                    "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                        },
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                        },
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-449.5 -61"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "max_iterations"
+                                                        },
+                                                        {
+                                                            "metaName": "current_index"
+                                                        },
+                                                        {
+                                                            "metaName": "neighbors"
+                                                        },
+                                                        {
+                                                            "metaName": "positions"
+                                                        },
+                                                        {
+                                                            "metaName": "property_data"
+                                                        },
+                                                        {
+                                                            "metaName": "GRADIENT"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "1688.85 6.04277"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "property_gradient"
+                                                        },
+                                                        {
+                                                            "metaName": "property_gradient_normalized"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "972.93 -508.41 1213.93 1328.39"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,normalize"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Array,sum_array"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Iterators,iterate"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Array,array_size"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "max_iterations",
+                            "portDirection": "input",
+                            "portType": "long",
+                            "portIterationLimit": "true"
+                        },
+                        {
+                            "portName": "current_index",
+                            "portDirection": "input",
+                            "portType": "long",
+                            "portIterationCounter": "true"
+                        },
+                        {
+                            "portName": "neighbors",
+                            "portDirection": "input",
+                            "portIterationTarget": "true"
+                        },
+                        {
+                            "portName": "positions",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "property_data",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "GRADIENT",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "property_gradient",
+                            "portDirection": "output",
+                            "portIterationTarget": "true"
+                        },
+                        {
+                            "portName": "property_gradient_normalized",
+                            "portDirection": "output",
+                            "portIterationTarget": "true"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "current_position",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "4.5 -77"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "current_neighbors",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "3.5 110"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "N",
+                            "nodeType": "Core::Math::subtract",
+                            "multiInPortNames": [
+                                "value",
+                                "value1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "306.105 -13.353"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "neighbors_property",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "14.208 309.592"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "S",
+                            "nodeType": "Core::Math::subtract",
+                            "multiInPortNames": [
+                                "value",
+                                "value1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "291.623 288.143"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "current_property",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "15.638 508.358"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "multiply",
+                            "nodeType": "Core::Math::multiply",
+                            "multiInPortNames": [
+                                "output1",
+                                "output2"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "601.927 50.7671"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "add",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "sum",
+                                "GRADIENT"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1143.13 4.65154"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "sum_array",
+                            "nodeType": "Core::Array::sum_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "882.5 26.2002"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "normalize",
+                            "nodeType": "Core::Math::normalize",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1411.21 225.045"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "current_position.value",
+                            "target": "N.first.value1"
+                        },
+                        {
+                            "source": "current_neighbors.value",
+                            "target": "N.first.value"
+                        },
+                        {
+                            "source": "N.output",
+                            "target": "multiply.first.output1"
+                        },
+                        {
+                            "source": "neighbors_property.value",
+                            "target": "S.first.value"
+                        },
+                        {
+                            "source": "S.output",
+                            "target": "multiply.first.output2"
+                        },
+                        {
+                            "source": "current_property.value",
+                            "target": "S.first.value1"
+                        },
+                        {
+                            "source": ".positions",
+                            "target": "current_position.array"
+                        },
+                        {
+                            "source": ".positions",
+                            "target": "current_neighbors.array"
+                        },
+                        {
+                            "source": ".property_data",
+                            "target": "neighbors_property.array"
+                        },
+                        {
+                            "source": ".property_data",
+                            "target": "current_property.array"
+                        },
+                        {
+                            "source": ".current_index",
+                            "target": "current_position.index"
+                        },
+                        {
+                            "source": ".current_index",
+                            "target": "current_property.index"
+                        },
+                        {
+                            "source": "multiply.output",
+                            "target": "sum_array.array"
+                        },
+                        {
+                            "source": ".neighbors",
+                            "target": "current_neighbors.index"
+                        },
+                        {
+                            "source": ".neighbors",
+                            "target": "neighbors_property.index"
+                        },
+                        {
+                            "source": "sum_array.sum",
+                            "target": "add.first.sum"
+                        },
+                        {
+                            "source": ".GRADIENT",
+                            "target": "add.first.GRADIENT"
+                        },
+                        {
+                            "source": "add.output",
+                            "target": ".property_gradient"
+                        },
+                        {
+                            "source": "add.output",
+                            "target": "normalize.value"
+                        },
+                        {
+                            "source": "normalize.normalized",
+                            "target": ".property_gradient_normalized"
+                        }
+                    ],
+                    "values": [],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ],
+                    "forEachCompound": {
+                        "ports": []
+                    }
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "get_geo_property",
+                    "nodeType": "Geometry::Properties::get_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-154.366 -201.528"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "update_point_neighbors",
+                    "nodeType": "Geometry::Mesh::update_point_neighbors",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-152.933 73.5837"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "GRADIENT",
+                    "valueType": "Math::float3",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "NodeValueDisplay",
+                            "metadata": [
+                                {
+                                    "metaName": "format",
+                                    "metaType": "string",
+                                    "metaValue": "{value}"
+                                },
+                                {
+                                    "metaName": "show",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "93.5216 672.528"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "for_each",
+                    "nodeType": "for_each",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "517.653 235.499"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "array_size",
+                    "nodeType": "Core::Array::array_size",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "106.417 75.0174"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_point_position",
+                    "nodeType": "Geometry::Properties::get_point_position",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "86.357 486.252"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".type",
+                    "target": "get_geo_property.type"
+                },
+                {
+                    "source": ".in_geo",
+                    "target": "get_geo_property.geometry"
+                },
+                {
+                    "source": ".property",
+                    "target": "get_geo_property.property"
+                },
+                {
+                    "source": ".in_geo",
+                    "target": "update_point_neighbors.mesh"
+                },
+                {
+                    "source": "update_point_neighbors.out_adjacent_vertex",
+                    "target": "array_size.array"
+                },
+                {
+                    "source": "array_size.size",
+                    "target": "for_each.max_iterations"
+                },
+                {
+                    "source": "update_point_neighbors.out_mesh",
+                    "target": "get_point_position.geometry"
+                },
+                {
+                    "source": "get_point_position.point_position",
+                    "target": "for_each.positions"
+                },
+                {
+                    "source": "get_geo_property.data",
+                    "target": "for_each.property_data"
+                },
+                {
+                    "source": "update_point_neighbors.out_adjacent_vertex",
+                    "target": "for_each.neighbors"
+                },
+                {
+                    "source": "GRADIENT.output",
+                    "target": "for_each.GRADIENT"
+                },
+                {
+                    "source": "for_each.property_gradient",
+                    "target": ".property_gradient"
+                },
+                {
+                    "source": "for_each.property_gradient_normalized",
+                    "target": ".property_gradient_normalized"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "GRADIENT.value",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "for_each.max_iterations",
+                    "valueType": "long",
+                    "value": "10"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
