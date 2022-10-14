@@ -6,6 +6,8 @@ Generate ambient occlusion and assign it to the point color as a float4 (RGBA). 
 <span style="color:#90A3F4">***mesh_in***</span>
 <br />The input geometry.
 
+## Gradients
+
 <span style="color:#E69963">***output_greyscale***</span>
 <br />Output all 4 channels as greyscale.
 
@@ -18,14 +20,37 @@ Generate ambient occlusion and assign it to the point color as a float4 (RGBA). 
 <span style="color:#E69963">***show_z***</span>
 <br />Apply an Bounding Box Z gradient to the object.
 
-<span style="color:#A8D977">***adjust_x***</span>
+<span style="color:#CCB699">***adjust_x***</span>
 <br />fCurve for adjustment of the X gradient.
 
-<span style="color:#A8D977">***adjust_y***</span>
+<span style="color:#CCB699">***adjust_y***</span>
 <br />fCurve for adjustment of the Y gradient.
 
-<span style="color:#A8D977">***adjust_z***</span>
+<span style="color:#CCB699">***adjust_z***</span>
 <br />fCurve for adjustment of the Z gradient.
+
+## Skydome
+<span style="color:#E69963">***use_skydome***</span>
+<br />When checked, this replaces the bounding box gradients with a skydome light.
+
+## Skydome Color
+<span style="color:#A8D977">***ground***</span>
+<br />The colour at the bottom of the skydome
+
+<span style="color:#A8D977">***horizon***</span>
+<br />The color at the middle of the skydome
+
+<span style="color:#A8D977">***zenith***</span>
+<br />The color at the top of the skydome
+
+<span style="color:#82D99F">***skydome_intensity***</span>
+<br />The overall brightness of the skydome
+
+<span style="color:#82D99F">***skydome_radius***</span>
+<br />The size of the skydome sphere
+
+<span style="color:#62CFD9">***skydome_resolution***</span>
+<br />The number of points to calculate the skydome lighting from, the higher the number, the smoother the lighting, but the heavier the calculation.
 
 ## Ambient Occlusion
 
@@ -35,7 +60,7 @@ Generate ambient occlusion and assign it to the point color as a float4 (RGBA). 
 <span style="color:#E69963">***normalize_AO***</span>
 <br />scale the AO values to a 0-1 range.
 
-<span style="color:#A8D977">***adjust_normalized_AO***</span>
+<span style="color:#CCB699">***adjust_normalized_AO***</span>
 <br />When normalized, you can adjust the AO with this curve.
 
 
@@ -71,7 +96,7 @@ This compund offers Bifrost USD for ease of workflow, this works by saving out t
 <span style="color:#D9BE6C">***save_asset_to***</span>
 <br />This is the asset on disk.
 
-<span style="color:#82D99F">***stage***</span>
+<span style="color:#D9BE6C">***stage***</span>
 <br />This is the usd file you are working on, on disk.
 
 ***
