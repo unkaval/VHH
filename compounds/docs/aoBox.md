@@ -12,13 +12,13 @@ Generate ambient occlusion and assign it to the point color as a float4 (RGBA). 
 <br />Output all 4 channels as greyscale.
 
 <span style="color:#E69963">***show_x***</span>
-<br />Apply an Bounding Box X gradient to the object
+<br />Apply a Bounding Box X gradient to the object
 
 <span style="color:#E69963">***show_y***</span>
-<br />Apply an Bounding Box Y gradient to the object.
+<br />Apply a Bounding Box Y gradient to the object.
 
 <span style="color:#E69963">***show_z***</span>
-<br />Apply an Bounding Box Z gradient to the object.
+<br />Apply a Bounding Box Z gradient to the object.
 
 <span style="color:#CCB699">***adjust_x***</span>
 <br />fCurve for adjustment of the X gradient.
@@ -58,7 +58,7 @@ Generate ambient occlusion and assign it to the point color as a float4 (RGBA). 
 <br />Enable/Disble ambient occlusion calculations.
 
 <span style="color:#E69963">***normalize_AO***</span>
-<br />scale the AO values to a 0-1 range.
+<br />Scale the AO values to a 0-1 range.
 
 <span style="color:#CCB699">***adjust_normalized_AO***</span>
 <br />When normalized, you can adjust the AO with this curve.
