@@ -34,6 +34,6 @@ This is basically a "sphrand" compound, with various controls.  It uses **math**
 <span style="color:#A8D977">***positions***</span>
 <br />The output positions of the scatter.
 
-<span style="color:#82D99F">***normals***</span>
+<span style="color:#A8D977">***normals***</span>
 <br />Generated normals of the points.  The point outwards from the center.
 
