@@ -12,6 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Visualize::Display::point_color_by_property",
+            "uriImported": "file:///point_color_by_property.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -22,7 +23,7 @@
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../helper_icons/derhornen.png"
-                },              
+                },
                 {
                     "metaName": "io_nodes",
                     "metadata": [
@@ -36,6 +37,11 @@
                                             "metaName": "DisplayMode",
                                             "metaType": "string",
                                             "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-497.082 -494.156"
                                         },
                                         {
                                             "metaName": "io_ports",
@@ -54,13 +60,14 @@
                                                 },
                                                 {
                                                     "metaName": "adjust_property"
+                                                },
+                                                {
+                                                    "metaName": "random_color"
+                                                },
+                                                {
+                                                    "metaName": "random_color_seed"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-1906.17 -68.3543"
                                         }
                                     ]
                                 }
@@ -78,17 +85,17 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "2297.05 -478.611"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "out_geometry"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "3230.82 -466.188"
                                         }
                                     ]
                                 }
@@ -99,32 +106,32 @@
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Graph,pass"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
                     "metaValue": "BifrostGraph,Core::Logic,if"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Type_Conversion,to_float"
+                    "metaValue": "BifrostGraph,Core::Type_Conversion,to_long"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,length"
+                    "metaValue": "BifrostGraph,Simulation::Common,force_pull_port"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Geometry::Properties,get_geo_property_check"
+                    "metaValue": "BifrostGraph,Core::Math,max"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,get_from_interpolated_array"
                 },
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-1884.67 -203.96 1236.84 1103.95"
+                    "metaValue": "899.56 -1142.51 1108.12 981.516"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -134,7 +141,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-100.126 -68.6438"
+                    "metaValue": "704.646 -806.998"
                 }
             ],
             "terminalStates": [
@@ -160,16 +167,16 @@
                     "portName": "property",
                     "portDirection": "input",
                     "portType": "string",
-                    "portDefault": "density"
+                    "portDefault": "patch_id"
                 },
                 {
                     "portName": "color",
                     "portDirection": "input",
                     "portType": "Math::float3",
                     "portDefault": {
-                        "x": "0f",
-                        "y": "0.272500008f",
-                        "z": "1f"
+                        "x": "1f",
+                        "y": "0.271800011f",
+                        "z": "0f"
                     },
                     "metadata": [
                         {
@@ -188,7 +195,7 @@
                 {
                     "portName": "adjust_property",
                     "portDirection": "input",
-                    "portType": "Amino::FCurve",
+                    "portType": "Math::FCurve",
                     "portDefault": {
                         "version": "1",
                         "preExtrapolation": "0",
@@ -197,13 +204,13 @@
                             {
                                 "point": {
                                     "locked": "1",
-                                    "interpolation": "2",
+                                    "interpolation": "1",
                                     "pcn": {
-                                        "xp": "-0.40000000000000002",
+                                        "xp": "-0.10000000000000001",
                                         "yp": "0",
                                         "x": "0",
                                         "y": "0",
-                                        "xn": "0.40000000000000002",
+                                        "xn": "0.10000000000000001",
                                         "yn": "0"
                                     }
                                 }
@@ -211,13 +218,13 @@
                             {
                                 "point": {
                                     "locked": "1",
-                                    "interpolation": "2",
+                                    "interpolation": "1",
                                     "pcn": {
-                                        "xp": "0.59999999999999998",
+                                        "xp": "0.90000000000000002",
                                         "yp": "1",
                                         "x": "1",
                                         "y": "1",
-                                        "xn": "1.3999999999999999",
+                                        "xn": "1.1000000000000001",
                                         "yn": "1"
                                     }
                                 }
@@ -228,11 +235,24 @@
                 {
                     "portName": "out_geometry",
                     "portDirection": "output"
+                },
+                {
+                    "portName": "random_color",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "random_color_seed",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "48"
                 }
             ],
             "compounds": [
                 {
                     "name": "property_types_to_float",
+                    "uriImported": "file:///point_color_by_property.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -244,6 +264,16 @@
                                             "metaName": "input",
                                             "metadata": [
                                                 {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "10 435"
+                                                },
+                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
@@ -253,16 +283,6 @@
                                                             "metaName": "property"
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "10 435"
                                                 }
                                             ]
                                         }
@@ -693,7 +713,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "846.839 -6.80624"
+                            "metaValue": "-70.6606 -23.4459"
                         }
                     ]
                 },
@@ -713,7 +733,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1388.09 -31.1507"
+                            "metaValue": "1046.12 -48.8948"
                         }
                     ]
                 },
@@ -727,9 +747,19 @@
                             "metaValue": "2"
                         },
                         {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Shader",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1974.27 -217.438"
+                            "metaValue": "2931.04 -215.603"
                         }
                     ]
                 },
@@ -766,7 +796,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2292.15 -219.461"
+                            "metaValue": "3234.62 -265.563"
                         }
                     ]
                 },
@@ -782,7 +812,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "199.525 -591.885"
+                            "metaValue": "97.8684 -591.885"
                         }
                     ]
                 },
@@ -798,7 +828,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "471.976 -639.762"
+                            "metaValue": "522.766 -558.788"
                         }
                     ]
                 },
@@ -814,23 +844,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "731.219 -688.094"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "change_range1",
-                    "nodeType": "Core::Math::change_range",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "994.857 -712.995"
+                            "metaValue": "779.274 -691.083"
                         }
                     ]
                 },
@@ -846,7 +860,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1986.63 -477.651"
+                            "metaValue": "2926.61 -463.158"
                         }
                     ]
                 },
@@ -862,7 +876,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1478.17 -888.963"
+                            "metaValue": "1887.11 -878.389"
                         }
                     ]
                 },
@@ -878,7 +892,87 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-1618.98 108.728"
+                            "metaValue": "-164.962 -566.873"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "random_color_array",
+                    "nodeType": "VHH::Visualize::Display::random_color_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1032.44 173.495"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_from_interpolated_array",
+                    "nodeType": "Core::Math::get_from_interpolated_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1290.98 150.123"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "to_long",
+                    "nodeType": "Core::Type_Conversion::to_long",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "765.945 198.194"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if1",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2589.79 -115.539"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "change_range1",
+                    "nodeType": "Core::Math::change_range",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1260.74 -714.797"
                         }
                     ]
                 }
@@ -889,10 +983,6 @@
                     "target": "multiply.first.color"
                 },
                 {
-                    "source": "multiply.output",
-                    "target": "assign_diagnostic_material.emission_color"
-                },
-                {
                     "source": "assign_diagnostic_material.geometry_with_material",
                     "target": "terminal.diagnostic.geometry_with_material"
                 },
@@ -901,32 +991,12 @@
                     "target": "change_range.from_start"
                 },
                 {
-                    "source": "array_bounds.min_bound",
-                    "target": "change_range1.to_start"
-                },
-                {
                     "source": "array_bounds.max_bound",
                     "target": "change_range.from_end"
                 },
                 {
-                    "source": "array_bounds.max_bound",
-                    "target": "change_range1.to_end"
-                },
-                {
                     "source": "change_range.result",
                     "target": "evaluate_fcurve.x"
-                },
-                {
-                    "source": "evaluate_fcurve.y",
-                    "target": "change_range1.value"
-                },
-                {
-                    "source": "change_range1.result",
-                    "target": "multiply.first.result"
-                },
-                {
-                    "source": "change_range1.result",
-                    "target": "set_geo_property.data"
                 },
                 {
                     "source": "if.output",
@@ -957,10 +1027,6 @@
                     "target": "RGB.value"
                 },
                 {
-                    "source": ".write_property",
-                    "target": "if.condition"
-                },
-                {
                     "source": ".adjust_property",
                     "target": "evaluate_fcurve.fcurve"
                 },
@@ -983,6 +1049,66 @@
                 {
                     "source": "property_types_to_float.data",
                     "target": "change_range.value"
+                },
+                {
+                    "source": "array_bounds.max_bound",
+                    "target": "to_long.from"
+                },
+                {
+                    "source": "random_color_array.colours",
+                    "target": "get_from_interpolated_array.array"
+                },
+                {
+                    "source": "to_long.long",
+                    "target": "random_color_array.size"
+                },
+                {
+                    "source": "evaluate_fcurve.y",
+                    "target": "get_from_interpolated_array.float_index"
+                },
+                {
+                    "source": ".random_color",
+                    "target": "if1.condition"
+                },
+                {
+                    "source": "get_from_interpolated_array.interpolated",
+                    "target": "if1.true_case"
+                },
+                {
+                    "source": "if1.output",
+                    "target": "assign_diagnostic_material.emission_color"
+                },
+                {
+                    "source": "multiply.output",
+                    "target": "if1.false_case"
+                },
+                {
+                    "source": ".write_property",
+                    "target": "if.condition"
+                },
+                {
+                    "source": "evaluate_fcurve.y",
+                    "target": "multiply.first.result"
+                },
+                {
+                    "source": ".random_color_seed",
+                    "target": "random_color_array.seed"
+                },
+                {
+                    "source": "array_bounds.max_bound",
+                    "target": "change_range1.to_end"
+                },
+                {
+                    "source": "array_bounds.min_bound",
+                    "target": "change_range1.to_start"
+                },
+                {
+                    "source": "evaluate_fcurve.y",
+                    "target": "change_range1.value"
+                },
+                {
+                    "source": "change_range1.result",
+                    "target": "set_geo_property.data"
                 },
                 {
                     "source": "property_types_to_float.default",
@@ -1020,21 +1146,6 @@
                     "value": "true"
                 },
                 {
-                    "valueName": "change_range1.from_end",
-                    "valueType": "float",
-                    "value": "1f"
-                },
-                {
-                    "valueName": "change_range1.to_end",
-                    "valueType": "float",
-                    "value": "1f"
-                },
-                {
-                    "valueName": "change_range1.clamp",
-                    "valueType": "bool",
-                    "value": "true"
-                },
-                {
                     "valueName": "set_geo_property.property",
                     "valueType": "string",
                     "value": ""
@@ -1048,6 +1159,44 @@
                     "valueName": "property_types_to_float.property",
                     "valueType": "string",
                     "value": ""
+                },
+                {
+                    "valueName": "random_color_array.min",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "random_color_array.max",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "1f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "valueName": "random_color_array.seed",
+                    "valueType": "long",
+                    "value": "22"
+                },
+                {
+                    "valueName": "get_from_interpolated_array.normalized_index",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "change_range1.to_end",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "change_range1.clamp",
+                    "valueType": "bool",
+                    "value": "true"
                 }
             ],
             "reservedNodeNames": [
