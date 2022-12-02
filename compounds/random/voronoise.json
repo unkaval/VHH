@@ -12,6 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Random::voronoise",
+            "uriImported": "stream:/stream",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -62,6 +63,9 @@
                                                 },
                                                 {
                                                     "metaName": "color_diagnostic"
+                                                },
+                                                {
+                                                    "metaName": "control_points_input"
                                                 }
                                             ]
                                         }
@@ -81,11 +85,6 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "3339.09 449.331"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -98,6 +97,11 @@
                                                     "metaName": "out_second_distance"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "4026.39 519.616"
                                         }
                                     ]
                                 }
@@ -108,12 +112,7 @@
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,multiply"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Conversion,scalar_to_vector3"
+                    "metaValue": "BifrostGraph,Geometry::Properties,set_geo_property"
                 },
                 {
                     "metaName": "_recentNode_",
@@ -123,17 +122,22 @@
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,User::Compounds,eval_fCurve_mag"
+                    "metaValue": "BifrostGraph,Core::Logic,equal"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Graph,pass"
+                    "metaValue": "BifrostGraph,Core::Array,array_is_empty"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,multiply"
                 },
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "1874.03 -288.259 953.775 1284.17"
+                    "metaValue": "803.326 -362.671 1234.31 1080.42"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -143,12 +147,12 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-1361.91 -478.182"
+                    "metaValue": "-186.148 -204.332"
                 },
                 {
                     "metaName": "UILayout",
                     "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"geo_in\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Noise\",\n                \"items\": [\n                    {\n                        \"port\": \"scatter_mode\"\n                    },\n                    {\n                        \"port\": \"frequency\"\n                    },\n                    {\n                        \"port\": \"seed\"\n                    }\n                ]\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Diagnostic\",\n                \"items\": [\n                    {\n                        \"port\": \"normalize_diagnostic\"\n                    },\n                    {\n                        \"port\": \"color_diagnostic\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"geo_in\"\n            },\n            {\n                \"port\": \"control_points_input\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Noise\",\n                \"items\": [\n                    {\n                        \"port\": \"scatter_mode\"\n                    },\n                    {\n                        \"port\": \"frequency\"\n                    },\n                    {\n                        \"port\": \"seed\"\n                    }\n                ]\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Diagnostic\",\n                \"items\": [\n                    {\n                        \"port\": \"normalize_diagnostic\"\n                    },\n                    {\n                        \"port\": \"color_diagnostic\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
                 },
                 {
                     "metaName": "PortExpandedState",
@@ -177,7 +181,7 @@
                 },
                 {
                     "name": "Core::Graph::terminal::diagnostic",
-                    "enabled": "true"
+                    "enabled": "false"
                 }
             ],
             "ports": [
@@ -231,11 +235,16 @@
                     "portDirection": "input",
                     "portType": "bool",
                     "portDefault": "false"
+                },
+                {
+                    "portName": "control_points_input",
+                    "portDirection": "input"
                 }
             ],
             "compounds": [
                 {
                     "name": "voro_simple",
+                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "documentation",
@@ -278,7 +287,7 @@
                                                 {
                                                     "metaName": "LayoutPos",
                                                     "metaType": "string",
-                                                    "metaValue": "10 257"
+                                                    "metaValue": "1.56888 336.253"
                                                 }
                                             ]
                                         }
@@ -294,6 +303,11 @@
                                                     "metaName": "DisplayMode",
                                                     "metaType": "string",
                                                     "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "925 290"
                                                 },
                                                 {
                                                     "metaName": "io_ports",
@@ -314,11 +328,6 @@
                                                             "metaName": "out_index"
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "925 290"
                                                 }
                                             ]
                                         }
@@ -364,7 +373,7 @@
                         {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "48.9048 -285.998 1160.69 1270.13"
+                            "metaValue": "-29.8232 -194.037 1311.88 1148.32"
                         }
                     ],
                     "ports": [
@@ -407,7 +416,13 @@
                     "compounds": [
                         {
                             "name": "for_each_in_points",
+                            "uriImported": "stream:/stream",
                             "metadata": [
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                                },
                                 {
                                     "metaName": "icon",
                                     "metaType": "string",
@@ -565,7 +580,13 @@
                             "compounds": [
                                 {
                                     "name": "for_each_in_control",
+                                    "uriImported": "stream:/stream",
                                     "metadata": [
+                                        {
+                                            "metaName": "icon",
+                                            "metaType": "string",
+                                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                                        },
                                         {
                                             "metaName": "icon",
                                             "metaType": "string",
@@ -979,7 +1000,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "315 193"
+                                    "metaValue": "259.355 191.314"
                                 }
                             ]
                         },
@@ -1062,7 +1083,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "894 386"
+                            "metaValue": "1223.47 69.0681"
                         }
                     ]
                 },
@@ -1130,22 +1151,6 @@
                     ]
                 },
                 {
-                    "nodeName": "to_long",
-                    "nodeType": "Core::Type_Conversion::to_long",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "320.24 1100.47"
-                        }
-                    ]
-                },
-                {
                     "nodeName": "terminal1",
                     "nodeType": "Core::Graph::terminal",
                     "fanInPortNames": {
@@ -1178,7 +1183,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "3358 -182"
+                            "metaValue": "3803.93 -310.067"
                         }
                     ]
                 },
@@ -1198,7 +1203,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2687 -72"
+                            "metaValue": "2516.14 -68.827"
                         }
                     ]
                 },
@@ -1234,7 +1239,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1213 175"
+                            "metaValue": "1517.46 71.3046"
                         }
                     ]
                 },
@@ -1250,7 +1255,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2946 -173"
+                            "metaValue": "3177.88 -165.14"
                         }
                     ]
                 },
@@ -1266,7 +1271,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1469 -51"
+                            "metaValue": "1791.27 -161.043"
                         }
                     ]
                 },
@@ -1282,7 +1287,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1998 101"
+                            "metaValue": "2229.88 108.86"
                         }
                     ]
                 },
@@ -1298,7 +1303,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "3272 -269"
+                            "metaValue": "3503.88 -261.14"
                         }
                     ]
                 },
@@ -1314,7 +1319,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2947 96"
+                            "metaValue": "3178.88 103.86"
                         }
                     ]
                 },
@@ -1330,7 +1335,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2698 162"
+                            "metaValue": "2895.8 199.676"
                         }
                     ]
                 },
@@ -1346,7 +1351,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1471 282"
+                            "metaValue": "1702.88 289.86"
                         }
                     ]
                 },
@@ -1362,7 +1367,87 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1737 235"
+                            "metaValue": "1968.88 242.86"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "array_is_empty",
+                    "nodeType": "Core::Array::array_is_empty",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "612.798 997.908"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if2",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "924.79 866.28"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "equal",
+                    "nodeType": "Core::Logic::equal",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2141.53 -395.33"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if3",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2805.93 -435.576"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_geo_property2",
+                    "nodeType": "Geometry::Properties::set_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2422.78 350.8"
                         }
                     ]
                 }
@@ -1379,10 +1464,6 @@
                 {
                     "source": "get_point_position.point_position",
                     "target": "voro_simple.input_point_positions"
-                },
-                {
-                    "source": "scatter_points.positions",
-                    "target": "voro_simple.feature_positions"
                 },
                 {
                     "source": "random_value_array.random_values",
@@ -1415,10 +1496,6 @@
                 {
                     "source": "pass.output",
                     "target": "set_geo_property.geometry"
-                },
-                {
-                    "source": "multiply.output",
-                    "target": "set_geo_property.data"
                 },
                 {
                     "source": "if.output",
@@ -1501,16 +1578,60 @@
                     "target": "pass.input"
                 },
                 {
-                    "source": "pass.output",
-                    "target": ".out_geometry"
-                },
-                {
                     "source": "voro_simple.out_distance",
                     "target": ".out_first_distance"
                 },
                 {
                     "source": "voro_simple.second_distance",
                     "target": ".out_second_distance"
+                },
+                {
+                    "source": ".control_points_input",
+                    "target": "array_is_empty.array"
+                },
+                {
+                    "source": "array_is_empty.empty",
+                    "target": "if2.condition"
+                },
+                {
+                    "source": "scatter_points.positions",
+                    "target": "if2.true_case"
+                },
+                {
+                    "source": ".control_points_input",
+                    "target": "if2.false_case"
+                },
+                {
+                    "source": "if2.output",
+                    "target": "voro_simple.feature_positions"
+                },
+                {
+                    "source": "voro_simple.out_index",
+                    "target": "equal.first"
+                },
+                {
+                    "source": "equal.output",
+                    "target": "if3.condition"
+                },
+                {
+                    "source": "multiply.output",
+                    "target": "if3.false_case"
+                },
+                {
+                    "source": "multiply.output",
+                    "target": "set_geo_property.data"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "set_geo_property2.geometry"
+                },
+                {
+                    "source": "set_geo_property2.out_geometry",
+                    "target": ".out_geometry"
+                },
+                {
+                    "source": "voro_simple.out_index",
+                    "target": "set_geo_property2.data"
                 }
             ],
             "values": [
@@ -1562,6 +1683,25 @@
                     "valueName": "change_range.clamp",
                     "valueType": "bool",
                     "value": "true"
+                },
+                {
+                    "valueName": "equal.second",
+                    "valueType": "long",
+                    "value": "6"
+                },
+                {
+                    "valueName": "if3.true_case",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "0f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "valueName": "set_geo_property2.property",
+                    "valueType": "string",
+                    "value": "patch_id"
                 }
             ],
             "reservedNodeNames": [
