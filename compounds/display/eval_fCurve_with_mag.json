@@ -11,18 +11,19 @@
     "types": [],
     "compounds": [
         {
-            "name": "VHH::Visualize::Display::fCurve_with_magnitude",
+            "name": "VHH::Visualize::Display::eval_fCurve_with_mag",
+            "uriImported": "stream:/bifrostGraphShape1",
             "metadata": [
                 {
                     "metaName": "documentation",
                     "metaType": "string",
-                    "metaValue": "../docs/fCurve_with_magnitude.md"
+                    "metaValue": "../docs/eval_fCurve_with_mag.md"
                 },
                 {
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../helper_icons/derhornen.png"
-                },
+                },                
                 {
                     "metaName": "io_nodes",
                     "metadata": [
@@ -38,11 +39,6 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-939.153 -56.8626"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -52,12 +48,17 @@
                                                     "metaName": "fcurve"
                                                 },
                                                 {
-                                                    "metaName": "magnitude"
+                                                    "metaName": "clamp"
                                                 },
                                                 {
-                                                    "metaName": "clamp"
+                                                    "metaName": "magnitude"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-960.207 -74.2016"
                                         }
                                     ]
                                 }
@@ -124,7 +125,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-685.896 -1285.85 1903.99 3052.31"
+                    "metaValue": "-1045 -347.529 860.757 854.564"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -134,7 +135,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-210.403 180.373"
+                    "metaValue": "-1.47976 -300.597"
                 }
             ],
             "ports": [
@@ -185,26 +186,24 @@
                     }
                 },
                 {
-                    "portName": "output",
-                    "portDirection": "output",
-                    "portType": "array<float>"
-                },
-                {
-                    "portName": "magnitude",
-                    "portDirection": "input",
-                    "portType": "float",
-                    "portDefault": "1f"
-                },
-                {
-                    "portName": "normalised_output",
-                    "portDirection": "output",
-                    "portType": "array<float>"
-                },
-                {
                     "portName": "clamp",
                     "portDirection": "input",
                     "portType": "bool",
                     "portDefault": "false"
+                },
+                {
+                    "portName": "output",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "magnitude",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "1f"
+                },
+                {
+                    "portName": "normalised_output",
+                    "portDirection": "output"
                 }
             ],
             "compoundNodes": [
@@ -220,7 +219,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-692.708 -100.714"
+                            "metaValue": "-662.984 -349.652"
                         }
                     ]
                 },
@@ -351,12 +350,28 @@
                     "target": "change_range1.clamp"
                 },
                 {
+                    "source": ".magnitude",
+                    "target": "multiply.first.magnitude"
+                },
+                {
                     "source": "change_range1.result",
                     "target": "multiply.first.result"
                 },
                 {
+                    "source": "multiply.output",
+                    "target": ".output"
+                },
+                {
+                    "source": ".magnitude",
+                    "target": "multiply1.first.magnitude"
+                },
+                {
                     "source": "evaluate_fcurve.y",
                     "target": "multiply1.first.result"
+                },
+                {
+                    "source": "multiply1.output",
+                    "target": ".normalised_output"
                 },
                 {
                     "source": ".input",
@@ -365,22 +380,6 @@
                 {
                     "source": ".input",
                     "target": "change_range.value"
-                },
-                {
-                    "source": ".magnitude",
-                    "target": "multiply.first.magnitude"
-                },
-                {
-                    "source": ".magnitude",
-                    "target": "multiply1.first.magnitude"
-                },
-                {
-                    "source": "multiply.output",
-                    "target": ".output"
-                },
-                {
-                    "source": "multiply1.output",
-                    "target": ".normalised_output"
                 }
             ],
             "values": [
