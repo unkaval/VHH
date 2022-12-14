@@ -1,5 +1,5 @@
 ### ***mapUV_auto_six***
-Generates and applies a six-axis UV projection along x, y, z, and -x, -y, -z axiis.<br />
+Generates and applies a *basic* six-axis UV projection along x, y, z, and -x, -y, -z axiis.<br />
 
 ***
 ## Input
