@@ -1,5 +1,5 @@
 ### ***rockify***
-Using noise and displacement, turn anything into a rock, or at least a stony-looking blob.<br />
+Using noise and displacement, turn anything into a rock, or at least a stony-looking blob.<br /><br />[<span style="color:#CCB699">**rockify workflow**</span>](https://youtu.be/rqklfVhOtvA) 
 
 ***
 ## Input
@@ -124,7 +124,7 @@ The final displacement.  This uses a scalar field to add smaller and more random
 
 ***
 ***Flatten Base***<br />
-Rocks usually sit on a surface (if they're not asteroids).  This will flatten the base of the rock. 
+Rocks usually sit on a surface (if they're not asteroids).  This will flatten the base of the rock.
 
 <span style="color:#E69963">***flatten_base***</span>
 <br />Flattens the base of the rock.
