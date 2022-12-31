@@ -1,0 +1,1167 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "VHH::Core::Geometry::bounds",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/bounds.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../helper_icons/derhornen.png"
+                },  
+
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1754.1 56.5556"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "in_mesh"
+                                                },
+                                                {
+                                                    "metaName": "bounds_type"
+                                                },
+                                                {
+                                                    "metaName": "offset_bounds"
+                                                },
+                                                {
+                                                    "metaName": "padding"
+                                                },
+                                                {
+                                                    "metaName": "sphere_padding"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "out_mesh"
+                                                },
+                                                {
+                                                    "metaName": "out_bounds"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "2842.47 -94.7447"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Diagnostic::Display,assign_diagnostic_material"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Object,set_property"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Array,array_bounds"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,add"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "1153.7 -422.354 1652.56 1504.3"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-103.281 213.231"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "in_mesh",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "out_mesh",
+                    "portDirection": "output",
+                    "portType": "Object"
+                },
+                {
+                    "portName": "bounds_type",
+                    "portDirection": "input",
+                    "portType": "int",
+                    "portDefault": "4L",
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "ComboBox"
+                        },
+                        {
+                            "metaName": "UIWidgetProp",
+                            "metaType": "string",
+                            "metaValue": "editable=false;items={cube=0;xz_bounds=1;\"yz bounds\"=2;\"xy bounds\"=3;sphere=4}"
+                        }
+                    ]
+                },
+                {
+                    "portName": "offset_bounds",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "padding",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "UiSoftMin",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "portName": "sphere_padding",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0f"
+                },
+                {
+                    "portName": "out_bounds",
+                    "portDirection": "output",
+                    "portType": "Object"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "add1",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "min_bound",
+                        "half_value",
+                        "offset_bounds"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "264 32"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "array_bounds",
+                    "nodeType": "Core::Array::array_bounds",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-721 -108"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "compute_bounding_sphere",
+                    "nodeType": "Geometry::Common::compute_bounding_sphere",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-12.6336 1210.08"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "create_mesh_sphere",
+                    "nodeType": "Modeling::Primitive::create_mesh_sphere",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Dimensions",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Transform",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Geometry",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "682.848 1197.11"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "cube_bounds",
+                    "nodeType": "Modeling::Primitive::create_mesh_cube",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Dimensions",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Transform",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "685 -312"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_point_position",
+                    "nodeType": "Geometry::Properties::get_point_position",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1370.26 -59"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "half_of",
+                    "nodeType": "Core::Math::half_of",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-144 79"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_geo_property",
+                    "nodeType": "Geometry::Properties::set_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1802.83 -70.2406"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "subtract",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "max_bound",
+                        "min_bound"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-416 -129"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "switch",
+                    "nodeType": "VHH::Core::Logic::switch",
+                    "fanInPortNames": {
+                        "inputs": [
+                            "cube_mesh",
+                            "plane_mesh",
+                            "plane_mesh1",
+                            "plane_mesh2",
+                            "sphere_mesh"
+                        ]
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "inputs",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1498.16 26.5366"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "vector3_to_scalar1",
+                    "nodeType": "Core::Conversion::vector3_to_scalar",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "130.86 -318.148"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "xy_bounds",
+                    "nodeType": "Modeling::Primitive::create_mesh_plane",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Transform",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Dimensions",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Geometry",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "676 797"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "xz_bounds",
+                    "nodeType": "Modeling::Primitive::create_mesh_plane",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Transform",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Dimensions",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Geometry",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "676 46"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "yz_bounds",
+                    "nodeType": "Modeling::Primitive::create_mesh_plane",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Transform",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Dimensions",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Geometry",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "681 420"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "Math::float3",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-667.45 436.364"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "offset_bounds",
+                        "center"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "316.559 1308.16"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add2",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "padding",
+                        "output1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-148.62 -426.883"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add3",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "length",
+                        "radius"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "316.69 1062.96"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "array_bounds1",
+                    "nodeType": "Core::Array::array_bounds",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2019.88 347.329"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_point_position1",
+                    "nodeType": "Geometry::Properties::get_point_position",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1790.79 352.258"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2284.39 -325.959"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property1",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2569.75 -350.836"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "array_bounds.min_bound",
+                    "target": "add1.first.min_bound"
+                },
+                {
+                    "source": "half_of.half_value",
+                    "target": "add1.first.half_value"
+                },
+                {
+                    "source": "add1.output",
+                    "target": "cube_bounds.position"
+                },
+                {
+                    "source": "add1.output",
+                    "target": "xz_bounds.position"
+                },
+                {
+                    "source": "add1.output",
+                    "target": "yz_bounds.position"
+                },
+                {
+                    "source": "add1.output",
+                    "target": "xy_bounds.position"
+                },
+                {
+                    "source": "array_bounds.min_bound",
+                    "target": "subtract.first.min_bound"
+                },
+                {
+                    "source": "array_bounds.max_bound",
+                    "target": "subtract.first.max_bound"
+                },
+                {
+                    "source": "get_point_position.point_position",
+                    "target": "compute_bounding_sphere.positions"
+                },
+                {
+                    "source": "vector3_to_scalar1.z",
+                    "target": "cube_bounds.length"
+                },
+                {
+                    "source": "vector3_to_scalar1.x",
+                    "target": "cube_bounds.width"
+                },
+                {
+                    "source": "vector3_to_scalar1.y",
+                    "target": "cube_bounds.height"
+                },
+                {
+                    "source": "cube_bounds.cube_mesh",
+                    "target": "switch.inputs.cube_mesh"
+                },
+                {
+                    "source": ".in_mesh",
+                    "target": "get_point_position.geometry"
+                },
+                {
+                    "source": "subtract.output",
+                    "target": "half_of.value"
+                },
+                {
+                    "source": "switch.output",
+                    "target": "set_geo_property.geometry"
+                },
+                {
+                    "source": "xz_bounds.plane_mesh",
+                    "target": "switch.inputs.plane_mesh"
+                },
+                {
+                    "source": "yz_bounds.plane_mesh",
+                    "target": "switch.inputs.plane_mesh1"
+                },
+                {
+                    "source": "xy_bounds.plane_mesh",
+                    "target": "switch.inputs.plane_mesh2"
+                },
+                {
+                    "source": "vector3_to_scalar1.x",
+                    "target": "xz_bounds.width"
+                },
+                {
+                    "source": "vector3_to_scalar1.y",
+                    "target": "yz_bounds.width"
+                },
+                {
+                    "source": "vector3_to_scalar1.y",
+                    "target": "xy_bounds.length"
+                },
+                {
+                    "source": "vector3_to_scalar1.z",
+                    "target": "xz_bounds.length"
+                },
+                {
+                    "source": "vector3_to_scalar1.z",
+                    "target": "yz_bounds.length"
+                },
+                {
+                    "source": "vector3_to_scalar1.z",
+                    "target": "xy_bounds.width"
+                },
+                {
+                    "source": ".bounds_type",
+                    "target": "switch.select_input"
+                },
+                {
+                    "source": ".offset_bounds",
+                    "target": "add1.first.offset_bounds"
+                },
+                {
+                    "source": ".offset_bounds",
+                    "target": "add.first.offset_bounds"
+                },
+                {
+                    "source": "compute_bounding_sphere.center",
+                    "target": "add.first.center"
+                },
+                {
+                    "source": "add.output",
+                    "target": "create_mesh_sphere.position"
+                },
+                {
+                    "source": "get_point_position.point_position",
+                    "target": "array_bounds.array"
+                },
+                {
+                    "source": ".padding",
+                    "target": "add2.first.padding"
+                },
+                {
+                    "source": "add2.output",
+                    "target": "vector3_to_scalar1.vector3"
+                },
+                {
+                    "source": "subtract.output",
+                    "target": "add2.first.output1"
+                },
+                {
+                    "source": "compute_bounding_sphere.radius",
+                    "target": "add3.first.radius"
+                },
+                {
+                    "source": "add3.output",
+                    "target": "create_mesh_sphere.radius"
+                },
+                {
+                    "source": "create_mesh_sphere.sphere_mesh",
+                    "target": "switch.inputs.sphere_mesh"
+                },
+                {
+                    "source": "switch.output",
+                    "target": "get_point_position1.geometry"
+                },
+                {
+                    "source": "get_point_position1.point_position",
+                    "target": "array_bounds1.array"
+                },
+                {
+                    "source": ".sphere_padding",
+                    "target": "add3.first.length"
+                },
+                {
+                    "source": ".in_mesh",
+                    "target": "set_property.object"
+                },
+                {
+                    "source": "set_property.out_object",
+                    "target": "set_property1.object"
+                },
+                {
+                    "source": "set_property1.out_object",
+                    "target": ".out_mesh"
+                },
+                {
+                    "source": "array_bounds1.min_bound",
+                    "target": "set_property.value"
+                },
+                {
+                    "source": "array_bounds1.max_bound",
+                    "target": "set_property1.value"
+                },
+                {
+                    "source": "set_geo_property.out_geometry",
+                    "target": ".out_bounds"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "create_mesh_sphere.radius",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "create_mesh_sphere.height_segments",
+                    "valueType": "int",
+                    "value": "20L"
+                },
+                {
+                    "valueName": "create_mesh_sphere.axis_segments",
+                    "valueType": "int",
+                    "value": "20L"
+                },
+                {
+                    "valueName": "create_mesh_sphere.position",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "create_mesh_sphere.up_axis",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "1f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "create_mesh_sphere.base_to_pivot",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "cube_bounds.length",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "cube_bounds.width",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "cube_bounds.height",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "cube_bounds.position",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "cube_bounds.up_axis",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "1f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "cube_bounds.base_to_pivot",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "set_geo_property.property",
+                    "valueType": "string",
+                    "value": "color"
+                },
+                {
+                    "valueName": "set_geo_property.data",
+                    "valueType": "Math::float4",
+                    "value": {
+                        "x": "0.300000012f",
+                        "y": "0.300000012f",
+                        "z": "0.300000012f",
+                        "w": "0.5f"
+                    }
+                },
+                {
+                    "valueName": "set_geo_property.target",
+                    "valueType": "string",
+                    "value": "point_component"
+                },
+                {
+                    "valueName": "switch.select_input",
+                    "valueType": "int",
+                    "value": "4L"
+                },
+                {
+                    "valueName": "xy_bounds.length",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "xy_bounds.width",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "xy_bounds.length_segments",
+                    "valueType": "int",
+                    "value": "1L"
+                },
+                {
+                    "valueName": "xy_bounds.width_segments",
+                    "valueType": "int",
+                    "value": "1L"
+                },
+                {
+                    "valueName": "xy_bounds.up_axis",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "valueName": "xy_bounds.position",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "xz_bounds.length",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "xz_bounds.width",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "xz_bounds.length_segments",
+                    "valueType": "int",
+                    "value": "1L"
+                },
+                {
+                    "valueName": "xz_bounds.width_segments",
+                    "valueType": "int",
+                    "value": "1L"
+                },
+                {
+                    "valueName": "xz_bounds.up_axis",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "1f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "xz_bounds.position",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "yz_bounds.length",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "yz_bounds.width",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "yz_bounds.length_segments",
+                    "valueType": "int",
+                    "value": "1L"
+                },
+                {
+                    "valueName": "yz_bounds.width_segments",
+                    "valueType": "int",
+                    "value": "1L"
+                },
+                {
+                    "valueName": "yz_bounds.up_axis",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "yz_bounds.position",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "set_property.key",
+                    "valueType": "string",
+                    "value": "min_bound"
+                },
+                {
+                    "valueName": "set_property.value",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "set_property1.key",
+                    "valueType": "string",
+                    "value": "max_bound"
+                },
+                {
+                    "valueName": "set_property1.value",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

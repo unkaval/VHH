@@ -12,6 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Tool::LB_skydome",
+            "uriImported": "stream:/bifrostGraphShape1",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -142,19 +143,19 @@
                     "metaValue": "-2200.62 -1366.36 1897.86 2038.44"
                 },
                 {
-                    "metaName": "DisplayMode",
-                    "metaType": "string",
-                    "metaValue": "2"
-                },
-                {
                     "metaName": "UILayout",
                     "metaType": "string",
                     "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"enable skydome\"\n            },\n            {\n                \"port\": \"enable_skydome\"\n            },\n            {\n                \"port\": \"input_mesh\"\n            },\n            {\n                \"port\": \"dome_radius\"\n            },\n            {\n                \"port\": \"ground\"\n            },\n            {\n                \"port\": \"sky_horizon\"\n            },\n            {\n                \"port\": \"sky_zenith\"\n            },\n            {\n                \"port\": \"intensity\"\n            },\n            {\n                \"port\": \"dome_resolution\"\n            },\n            {\n                \"port\": \"weight\"\n            },\n            {\n                \"port\": \"black_array\"\n            }\n        ]\n    }\n}\n"
                 },
                 {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-270.5 -292"
+                    "metaValue": "-186 543"
                 }
             ],
             "terminalStates": [
@@ -189,9 +190,9 @@
                     "portDirection": "input",
                     "portType": "Math::float3",
                     "portDefault": {
-                        "x": "0.300000012f",
-                        "y": "0.25f",
-                        "z": "0.200000003f"
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
                     },
                     "metadata": [
                         {
@@ -239,13 +240,13 @@
                     "portName": "intensity",
                     "portDirection": "input",
                     "portType": "float",
-                    "portDefault": "10f"
+                    "portDefault": "0.5f"
                 },
                 {
                     "portName": "dome_resolution",
                     "portDirection": "input",
                     "portType": "int",
-                    "portDefault": "120L"
+                    "portDefault": "30L"
                 },
                 {
                     "portName": "skydome_contribution",
@@ -262,6 +263,12 @@
                             "metaName": "TypeWranglingSuggestedTypes",
                             "metaType": "string",
                             "metaValue": "float, string, Core::Fields::ScalarField, array<float>, array<long>"
+                        },
+                        {
+                            "metaName": "UiSoftMin"
+                        },
+                        {
+                            "metaName": "UiSoftMax"
                         }
                     ]
                 },
@@ -269,7 +276,7 @@
                     "portName": "enable_skydome",
                     "portDirection": "input",
                     "portType": "bool",
-                    "portDefault": "false"
+                    "portDefault": "true"
                 },
                 {
                     "portName": "black_array",
@@ -281,12 +288,8 @@
             "compounds": [
                 {
                     "name": "apply_lighting",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
-                        {
-                            "metaName": "icon",
-                            "metaType": "string",
-                            "metaValue": "<NATIVE>../icons/LoopIterate.svg"
-                        },
                         {
                             "metaName": "icon",
                             "metaType": "string",
@@ -436,6 +439,7 @@
                     "compounds": [
                         {
                             "name": "light_equation",
+                            "uriImported": "stream:/bifrostGraphShape1",
                             "metadata": [
                                 {
                                     "metaName": "ViewportRect",
@@ -862,6 +866,7 @@
                 },
                 {
                     "name": "color_the_dome",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -1530,6 +1535,7 @@
                 },
                 {
                     "name": "create_the_skydome",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -1799,6 +1805,7 @@
                 },
                 {
                     "name": "check_the_black_array_input",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
