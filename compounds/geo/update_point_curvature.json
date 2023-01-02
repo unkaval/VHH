@@ -1,0 +1,814 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Geometry::Properties::update_point_curvature",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/update_point_curvature.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../helper_icons/derhornen.png"
+                },
+
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "in_geo"
+                                                },
+                                                {
+                                                    "metaName": "curvature_scale"
+                                                },
+                                                {
+                                                    "metaName": "curvature_radius"
+                                                },
+                                                {
+                                                    "metaName": "adjust_curvature"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "361.438 1147.56"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "geometry_with_curvature"
+                                                },
+                                                {
+                                                    "metaName": "property"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1613.15 871.155"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,VHH::Core::Geometry,point_curvature"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,VHH::Visualize::Display,point_color_by_property"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,MJCG::Geometry::Mesh,update_point_curvature"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,pass"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,multiply"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "318.828 584.577 1760.96 1146.28"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-20.738 897.428"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "false"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "false"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "false"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "geometry_with_curvature",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "in_geo",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "property",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "curvature_scale",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.100000001f",
+                    "metadata": [
+                        {
+                            "metaName": "TypeWranglingSuggestedTypes",
+                            "metaType": "string",
+                            "metaValue": "float, double"
+                        }
+                    ]
+                },
+                {
+                    "portName": "curvature_radius",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.25f"
+                },
+                {
+                    "portName": "adjust_curvature",
+                    "portDirection": "input",
+                    "portType": "Math::FCurve",
+                    "portDefault": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "-0.29999999999999999",
+                                        "yp": "0",
+                                        "x": "0.10000000000000001",
+                                        "y": "0",
+                                        "xn": "0.5",
+                                        "yn": "0"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "0.5",
+                                        "yp": "1",
+                                        "x": "0.90000000000000002",
+                                        "y": "1",
+                                        "xn": "1.3",
+                                        "yn": "1"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "median_property_blur",
+                    "nodeType": "VHH::Core::Math::median_property_blur",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1353.44 1063.63"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_geo_property",
+                    "nodeType": "Geometry::Properties::set_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1105.3 1052"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "string",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "791.392 891.797"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "point_curvature1",
+                    "nodeType": "VHH::Core::Geometry::point_curvature",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "791.294 1075.65"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "set_geo_property.out_geometry",
+                    "target": "median_property_blur.in_geo"
+                },
+                {
+                    "source": "value.output",
+                    "target": "median_property_blur.property"
+                },
+                {
+                    "source": "value.output",
+                    "target": "set_geo_property.property"
+                },
+                {
+                    "source": ".in_geo",
+                    "target": "point_curvature1.in_geo"
+                },
+                {
+                    "source": "point_curvature1.out_geo",
+                    "target": "set_geo_property.geometry"
+                },
+                {
+                    "source": "point_curvature1.adjusted_curvature",
+                    "target": "set_geo_property.data"
+                },
+                {
+                    "source": "value.output",
+                    "target": ".property"
+                },
+                {
+                    "source": ".adjust_curvature",
+                    "target": "point_curvature1.adjust_curvature"
+                },
+                {
+                    "source": ".curvature_radius",
+                    "target": "point_curvature1.radius"
+                },
+                {
+                    "source": ".curvature_scale",
+                    "target": "point_curvature1.scale"
+                },
+                {
+                    "source": "median_property_blur.out_geo",
+                    "target": ".geometry_with_curvature"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "median_property_blur.property",
+                    "valueType": "string",
+                    "value": "point_position"
+                },
+                {
+                    "valueName": "median_property_blur.property_type",
+                    "valueType": "array<float>",
+                    "value": []
+                },
+                {
+                    "valueName": "median_property_blur.iterations",
+                    "valueType": "long",
+                    "value": "4"
+                },
+                {
+                    "valueName": "set_geo_property.property",
+                    "valueType": "string",
+                    "value": "point_curvature"
+                },
+                {
+                    "valueName": "set_geo_property.target",
+                    "valueType": "string",
+                    "value": "point_component"
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "string",
+                    "value": "point_curvature"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        },
+        {
+            "name": "Geometry::Properties::update_point_curvature",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "361.438 1147.56"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "in_geo"
+                                                },
+                                                {
+                                                    "metaName": "curvature_scale"
+                                                },
+                                                {
+                                                    "metaName": "curvature_radius"
+                                                },
+                                                {
+                                                    "metaName": "adjust_curvature"
+                                                },
+                                                {
+                                                    "metaName": "blur_curvature"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "geometry_with_curvature"
+                                                },
+                                                {
+                                                    "metaName": "property"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1613.15 871.155"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,VHH::Core::Geometry,point_curvature"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,VHH::Visualize::Display,point_color_by_property"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,MJCG::Geometry::Mesh,update_point_curvature"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,pass"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,multiply"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "281 600.377 1638 1066.25"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "143.953 761.8"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "false"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "false"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "false"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "geometry_with_curvature",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "in_geo",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "property",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "curvature_scale",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.100000001f",
+                    "metadata": [
+                        {
+                            "metaName": "TypeWranglingSuggestedTypes",
+                            "metaType": "string",
+                            "metaValue": "float, double"
+                        }
+                    ]
+                },
+                {
+                    "portName": "curvature_radius",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.25f"
+                },
+                {
+                    "portName": "adjust_curvature",
+                    "portDirection": "input",
+                    "portType": "Math::FCurve",
+                    "portDefault": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "-0.29999999999999999",
+                                        "yp": "0",
+                                        "x": "0.10000000000000001",
+                                        "y": "0",
+                                        "xn": "0.5",
+                                        "yn": "0"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "0.5",
+                                        "yp": "1",
+                                        "x": "0.90000000000000002",
+                                        "y": "1",
+                                        "xn": "1.3",
+                                        "yn": "1"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "portName": "blur_curvature",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "4"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "median_property_blur",
+                    "nodeType": "VHH::Core::Math::median_property_blur",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1353.44 1063.63"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_geo_property",
+                    "nodeType": "Geometry::Properties::set_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1105.3 1052"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "string",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "791.392 891.797"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "point_curvature1",
+                    "nodeType": "VHH::Core::Geometry::point_curvature",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "791.294 1075.65"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "set_geo_property.out_geometry",
+                    "target": "median_property_blur.in_geo"
+                },
+                {
+                    "source": "value.output",
+                    "target": "median_property_blur.property"
+                },
+                {
+                    "source": "value.output",
+                    "target": "set_geo_property.property"
+                },
+                {
+                    "source": ".in_geo",
+                    "target": "point_curvature1.in_geo"
+                },
+                {
+                    "source": "point_curvature1.out_geo",
+                    "target": "set_geo_property.geometry"
+                },
+                {
+                    "source": "point_curvature1.adjusted_curvature",
+                    "target": "set_geo_property.data"
+                },
+                {
+                    "source": "value.output",
+                    "target": ".property"
+                },
+                {
+                    "source": ".adjust_curvature",
+                    "target": "point_curvature1.adjust_curvature"
+                },
+                {
+                    "source": ".curvature_radius",
+                    "target": "point_curvature1.radius"
+                },
+                {
+                    "source": ".curvature_scale",
+                    "target": "point_curvature1.scale"
+                },
+                {
+                    "source": "median_property_blur.out_geo",
+                    "target": ".geometry_with_curvature"
+                },
+                {
+                    "source": ".blur_curvature",
+                    "target": "median_property_blur.iterations"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "median_property_blur.property",
+                    "valueType": "string",
+                    "value": "point_position"
+                },
+                {
+                    "valueName": "median_property_blur.property_type",
+                    "valueType": "array<float>",
+                    "value": []
+                },
+                {
+                    "valueName": "median_property_blur.iterations",
+                    "valueType": "long",
+                    "value": "4"
+                },
+                {
+                    "valueName": "set_geo_property.property",
+                    "valueType": "string",
+                    "value": "point_curvature"
+                },
+                {
+                    "valueName": "set_geo_property.target",
+                    "valueType": "string",
+                    "value": "point_component"
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "string",
+                    "value": "point_curvature"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

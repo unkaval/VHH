@@ -12,6 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Geometry::bounds",
+            "uriImported": "stream:/bifrostGraphShape1",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -22,8 +23,7 @@
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../helper_icons/derhornen.png"
-                },  
-
+                },
                 {
                     "metaName": "io_nodes",
                     "metadata": [
@@ -92,13 +92,28 @@
                                         {
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
-                                            "metaValue": "2842.47 -94.7447"
+                                            "metaValue": "3304.22 -108.677"
                                         }
                                     ]
                                 }
                             ]
                         }
                     ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,pass"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,if"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,not_equal"
                 },
                 {
                     "metaName": "_recentNode_",
@@ -111,24 +126,9 @@
                     "metaValue": "BifrostGraph,Core::Object,set_property"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Array,array_bounds"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,add"
-                },
-                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "1153.7 -422.354 1652.56 1504.3"
+                    "metaValue": "2201.26 -756.933 726.833 1211.39"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -138,7 +138,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-103.281 213.231"
+                    "metaValue": "-178.509 -720.894"
                 }
             ],
             "ports": [
@@ -157,7 +157,7 @@
                     "portName": "bounds_type",
                     "portDirection": "input",
                     "portType": "int",
-                    "portDefault": "4L",
+                    "portDefault": "0L",
                     "metadata": [
                         {
                             "metaName": "UIWidget",
@@ -712,6 +712,54 @@
                             "metaValue": "2569.75 -350.836"
                         }
                     ]
+                },
+                {
+                    "nodeName": "not_equal",
+                    "nodeType": "Core::Logic::not_equal",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2567.39 -598.811"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2900.92 -625.441"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "pass",
+                    "nodeType": "Core::Graph::pass",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1956.02 -302.848"
+                        }
+                    ]
                 }
             ],
             "connections": [
@@ -812,10 +860,6 @@
                     "target": "yz_bounds.length"
                 },
                 {
-                    "source": "vector3_to_scalar1.z",
-                    "target": "xy_bounds.width"
-                },
-                {
                     "source": ".bounds_type",
                     "target": "switch.select_input"
                 },
@@ -876,16 +920,8 @@
                     "target": "add3.first.length"
                 },
                 {
-                    "source": ".in_mesh",
-                    "target": "set_property.object"
-                },
-                {
                     "source": "set_property.out_object",
                     "target": "set_property1.object"
-                },
-                {
-                    "source": "set_property1.out_object",
-                    "target": ".out_mesh"
                 },
                 {
                     "source": "array_bounds1.min_bound",
@@ -898,6 +934,38 @@
                 {
                     "source": "set_geo_property.out_geometry",
                     "target": ".out_bounds"
+                },
+                {
+                    "source": "vector3_to_scalar1.x",
+                    "target": "xy_bounds.width"
+                },
+                {
+                    "source": ".bounds_type",
+                    "target": "not_equal.first"
+                },
+                {
+                    "source": "not_equal.output",
+                    "target": "if.condition"
+                },
+                {
+                    "source": "set_property1.out_object",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": ".in_mesh",
+                    "target": "pass.input"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "set_property.object"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".out_mesh"
                 }
             ],
             "values": [
@@ -989,7 +1057,7 @@
                         "x": "0.300000012f",
                         "y": "0.300000012f",
                         "z": "0.300000012f",
-                        "w": "0.5f"
+                        "w": "0.300000012f"
                     }
                 },
                 {
@@ -1152,6 +1220,11 @@
                         "y": "0f",
                         "z": "0f"
                     }
+                },
+                {
+                    "valueName": "not_equal.second",
+                    "valueType": "int",
+                    "value": "4L"
                 }
             ],
             "reservedNodeNames": [

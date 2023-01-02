@@ -26,6 +26,11 @@
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::FCurve,evaluate_fcurve"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
                     "metaValue": "input"
                 },
                 {
@@ -44,11 +49,6 @@
                     "metaValue": "BifrostGraph,Geometry::Properties,set_geo_property"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Type_Conversion,to_unsigned_int"
-                },
-                {
                     "metaName": "io_nodes",
                     "metadata": [
                         {
@@ -63,55 +63,26 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "207 -133"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "in_geo"
                                                 },
                                                 {
-                                                    "metaName": "normalized"
-                                                },
-                                                {
                                                     "metaName": "scale"
                                                 },
                                                 {
                                                     "metaName": "radius"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-902.315 -140.806"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "metaName": "input1",
-                                    "metadata": [
-                                        {
-                                            "metaName": "DisplayMode",
-                                            "metaType": "string",
-                                            "metaValue": "2"
-                                        },
-                                        {
-                                            "metaName": "io_ports",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "remap"
                                                 },
                                                 {
-                                                    "metaName": "min"
-                                                },
-                                                {
-                                                    "metaName": "max"
+                                                    "metaName": "adjust_curvature"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "2199.79 -423.208"
                                         }
                                     ]
                                 }
@@ -129,20 +100,23 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "2547 -478"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "out_geo"
                                                 },
                                                 {
-                                                    "metaName": "curvature"
+                                                    "metaName": "adjusted_curvature"
+                                                },
+                                                {
+                                                    "metaName": "raw_curvature"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "3504.93 356.612"
                                         }
                                     ]
                                 }
@@ -153,7 +127,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-465.919 -1135.85 3175.68 2632"
+                    "metaValue": "1798.39 -895.939 1059.56 970.91"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -163,21 +137,29 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-2347.83 874.989"
+                    "metaValue": "893 1076"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "false"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "false"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "false"
                 }
             ],
             "ports": [
                 {
                     "portName": "in_geo",
                     "portDirection": "input",
-                    "portType": "Amino::Object",
+                    "portType": "Object",
                     "portDefault": {}
-                },
-                {
-                    "portName": "normalized",
-                    "portDirection": "input",
-                    "portType": "bool",
-                    "portDefault": "false"
                 },
                 {
                     "portName": "scale",
@@ -196,35 +178,60 @@
                     "portName": "radius",
                     "portDirection": "input",
                     "portType": "float",
-                    "portDefault": "1f"
+                    "portDefault": "0.25f"
                 },
                 {
-                    "portName": "remap",
+                    "portName": "adjust_curvature",
                     "portDirection": "input",
-                    "portType": "bool",
-                    "portDefault": "true"
-                },
-                {
-                    "portName": "min",
-                    "portDirection": "input",
-                    "portType": "float",
-                    "portDefault": "0f"
-                },
-                {
-                    "portName": "max",
-                    "portDirection": "input",
-                    "portType": "float",
-                    "portDefault": "2f"
+                    "portType": "Math::FCurve",
+                    "portDefault": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "-0.29999999999999999",
+                                        "yp": "0",
+                                        "x": "0.10000000000000001",
+                                        "y": "0",
+                                        "xn": "0.5",
+                                        "yn": "0"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "0.5",
+                                        "yp": "1",
+                                        "x": "0.90000000000000002",
+                                        "y": "1",
+                                        "xn": "1.3",
+                                        "yn": "1"
+                                    }
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
                     "portName": "out_geo",
                     "portDirection": "output",
-                    "portType": "Amino::Object"
+                    "portType": "Object"
                 },
                 {
-                    "portName": "curvature",
-                    "portDirection": "output",
-                    "portType": "array<float>"
+                    "portName": "adjusted_curvature",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "raw_curvature",
+                    "portDirection": "output"
                 }
             ],
             "compounds": [
@@ -259,7 +266,7 @@
                         {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "-881.211 -673.108 1509.86 1251.37"
+                            "metaValue": "-1159.35 -1039.53 1736.76 1591.45"
                         },
                         {
                             "metaName": "io_nodes",
@@ -278,16 +285,13 @@
                                                 {
                                                     "metaName": "LayoutPos",
                                                     "metaType": "string",
-                                                    "metaValue": "-1023.13 -249.935"
+                                                    "metaValue": "-1082 -264"
                                                 },
                                                 {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
                                                             "metaName": "in_geo"
-                                                        },
-                                                        {
-                                                            "metaName": "mesh"
                                                         }
                                                     ]
                                                 }
@@ -309,7 +313,7 @@
                                                 {
                                                     "metaName": "LayoutPos",
                                                     "metaType": "string",
-                                                    "metaValue": "927.656 -306.853"
+                                                    "metaValue": "-131.279 -314.131"
                                                 },
                                                 {
                                                     "metaName": "io_ports",
@@ -332,10 +336,6 @@
                             "portDirection": "input"
                         },
                         {
-                            "portName": "mesh",
-                            "portDirection": "input"
-                        },
-                        {
                             "portName": "out_geo",
                             "portDirection": "output"
                         }
@@ -353,7 +353,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "-765.012 -457.381"
+                                    "metaValue": "-767.044 -397.73"
                                 }
                             ]
                         },
@@ -369,7 +369,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "656.469 -307.005"
+                                    "metaValue": "-436.279 -313.131"
                                 }
                             ]
                         },
@@ -385,107 +385,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "-186.186 -70.7119"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "if1",
-                            "nodeType": "Core::Logic::if",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "367.672 76.2264"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "get_centroid",
-                            "nodeType": "User::Compounds::get_centroid",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-754 381"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "get_point_position",
-                            "nodeType": "Geometry::Properties::get_point_position",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-754 561"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "subtract",
-                            "nodeType": "Core::Math::subtract",
-                            "multiInPortNames": [
-                                "point_position",
-                                "out_centroid"
-                            ],
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-424 561"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "normalize",
-                            "nodeType": "Core::Math::normalize",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-154 561"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "set_point_normal",
-                            "nodeType": "Geometry::Properties::set_point_normal",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "86 381"
+                                    "metaValue": "-766.956 -189.088"
                                 }
                             ]
                         }
@@ -501,31 +401,7 @@
                         },
                         {
                             "source": "update_mesh_normals.out_mesh",
-                            "target": "if1.true_case"
-                        },
-                        {
-                            "source": "if1.output",
                             "target": "if.false_case"
-                        },
-                        {
-                            "source": "get_centroid.out_centroid",
-                            "target": "subtract.first.out_centroid"
-                        },
-                        {
-                            "source": "get_point_position.point_position",
-                            "target": "subtract.first.point_position"
-                        },
-                        {
-                            "source": "subtract.output",
-                            "target": "normalize.value"
-                        },
-                        {
-                            "source": "normalize.normalized",
-                            "target": "set_point_normal.normals"
-                        },
-                        {
-                            "source": "set_point_normal.out_geometry",
-                            "target": "if1.false_case"
                         },
                         {
                             "source": ".in_geo",
@@ -538,22 +414,6 @@
                         {
                             "source": ".in_geo",
                             "target": "update_mesh_normals.mesh"
-                        },
-                        {
-                            "source": ".in_geo",
-                            "target": "get_centroid.in_mesh"
-                        },
-                        {
-                            "source": ".in_geo",
-                            "target": "get_point_position.geometry"
-                        },
-                        {
-                            "source": ".in_geo",
-                            "target": "set_point_normal.geometry"
-                        },
-                        {
-                            "source": ".mesh",
-                            "target": "if1.condition"
                         }
                     ],
                     "values": [
@@ -566,11 +426,6 @@
                             "valueName": "update_mesh_normals.remove_face_vertex_normal",
                             "valueType": "bool",
                             "value": "true"
-                        },
-                        {
-                            "valueName": "get_centroid.in_mesh",
-                            "valueType": "Amino::Object",
-                            "value": {}
                         }
                     ],
                     "reservedNodeNames": [
@@ -596,80 +451,9 @@
                             "metaValue": "<NATIVE>../icons/LoopForEach.svg"
                         },
                         {
-                            "metaName": "io_nodes",
-                            "metadata": [
-                                {
-                                    "metaName": "io_inodes",
-                                    "metadata": [
-                                        {
-                                            "metaName": "input",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "io_ports",
-                                                    "metadata": [
-                                                        {
-                                                            "metaName": "current_index"
-                                                        },
-                                                        {
-                                                            "metaName": "point_position"
-                                                        },
-                                                        {
-                                                            "metaName": "neighbors"
-                                                        },
-                                                        {
-                                                            "metaName": "point_normal"
-                                                        },
-                                                        {
-                                                            "metaName": "scale"
-                                                        },
-                                                        {
-                                                            "metaName": "is_mesh"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "10 228"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "metaName": "io_onodes",
-                                    "metadata": [
-                                        {
-                                            "metaName": "output1",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "io_ports",
-                                                    "metadata": [
-                                                        {
-                                                            "metaName": "raw_curvature"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "3975 691"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
                         },
                         {
                             "metaName": "_recentNode_",
@@ -697,9 +481,85 @@
                             "metaValue": "BifrostGraph,Core::Math,normalize"
                         },
                         {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "10 228"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "current_index"
+                                                        },
+                                                        {
+                                                            "metaName": "point_position"
+                                                        },
+                                                        {
+                                                            "metaName": "neighbors"
+                                                        },
+                                                        {
+                                                            "metaName": "point_normal"
+                                                        },
+                                                        {
+                                                            "metaName": "scale"
+                                                        },
+                                                        {
+                                                            "metaName": "is_mesh"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output1",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "3975 691"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "raw_curvature"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "-69.1966 -1288.8 4353.68 3608.32"
+                            "metaValue": "1969.04 -46.2827 1070.75 981.166"
                         }
                     ],
                     "ports": [
@@ -794,7 +654,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "1230 354"
+                                    "metaValue": "1204.4 126.483"
                                 }
                             ]
                         },
@@ -1099,8 +959,20 @@
                             "target": "normalize.value"
                         },
                         {
+                            "source": "dot.dot_product",
+                            "target": "angles.value"
+                        },
+                        {
+                            "source": "angles.arccosine",
+                            "target": "divide.first.arccosine"
+                        },
+                        {
                             "source": "pi.pi",
                             "target": "divide.first.pi"
+                        },
+                        {
+                            "source": "divide.output",
+                            "target": "divide1.first.output1"
                         },
                         {
                             "source": "edge_length.length",
@@ -1127,6 +999,10 @@
                             "target": "divide2.first.float"
                         },
                         {
+                            "source": "divide2.output",
+                            "target": ".raw_curvature"
+                        },
+                        {
                             "source": "if.output",
                             "target": "current_neighbors.index"
                         },
@@ -1137,6 +1013,14 @@
                         {
                             "source": "value1.output",
                             "target": "remove_from_array.indices_to_remove.output"
+                        },
+                        {
+                            "source": "normalize.normalized",
+                            "target": "dot.first"
+                        },
+                        {
+                            "source": "pass.output",
+                            "target": "dot.second"
                         },
                         {
                             "source": ".current_index",
@@ -1163,40 +1047,16 @@
                             "target": "remove_from_array.array"
                         },
                         {
+                            "source": ".point_normal",
+                            "target": "pass.input"
+                        },
+                        {
                             "source": ".scale",
                             "target": "multiply.first.scale"
                         },
                         {
                             "source": ".is_mesh",
                             "target": "if.condition"
-                        },
-                        {
-                            "source": ".point_normal",
-                            "target": "pass.input"
-                        },
-                        {
-                            "source": "pass.output",
-                            "target": "dot.second"
-                        },
-                        {
-                            "source": "dot.dot_product",
-                            "target": "angles.value"
-                        },
-                        {
-                            "source": "divide.output",
-                            "target": "divide1.first.output1"
-                        },
-                        {
-                            "source": "normalize.normalized",
-                            "target": "dot.first"
-                        },
-                        {
-                            "source": "angles.arccosine",
-                            "target": "divide.first.arccosine"
-                        },
-                        {
-                            "source": "divide2.output",
-                            "target": ".raw_curvature"
                         }
                     ],
                     "values": [
@@ -1237,7 +1097,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-226.52 -174.294"
+                            "metaValue": "507 -223"
                         }
                     ]
                 },
@@ -1253,7 +1113,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-224.947 20.1467"
+                            "metaValue": "507 -43"
                         }
                     ]
                 },
@@ -1269,7 +1129,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "870.583 66.6041"
+                            "metaValue": "1557 -61"
                         }
                     ]
                 },
@@ -1285,7 +1145,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-613.114 202.84"
+                            "metaValue": "777 -283"
                         }
                     ]
                 },
@@ -1301,13 +1161,30 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "953.26 497.008"
+                            "metaValue": "1347 -211"
                         }
                     ]
                 },
                 {
                     "nodeName": "update_point_neighbors",
                     "nodeType": "Geometry::Mesh::update_point_neighbors",
+                    "fanInPortNames": {
+                        "diagnostic_indices": []
+                    },
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
                     "metadata": [
                         {
                             "metaName": "DisplayMode",
@@ -1317,7 +1194,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "302.293 412.259"
+                            "metaValue": "1047 -133"
                         }
                     ]
                 },
@@ -1333,55 +1210,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1284.82 82.4417"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "if1",
-                    "nodeType": "Core::Logic::if",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "2224.45 363.73"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "array_bounds",
-                    "nodeType": "Core::Array::array_bounds",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "1578.65 -306.298"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "change_range",
-                    "nodeType": "Core::Math::change_range",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "1888.77 -20.7325"
+                            "metaValue": "1797 -421"
                         }
                     ]
                 },
@@ -1397,7 +1226,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "45.061 604.763"
+                            "metaValue": "777 137"
                         }
                     ]
                 },
@@ -1413,7 +1242,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "319.277 603.581"
+                            "metaValue": "1047 137"
                         }
                     ]
                 },
@@ -1429,13 +1258,13 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "3274.58 -625.661"
+                            "metaValue": "2307 -688"
                         }
                     ]
                 },
                 {
-                    "nodeName": "set_range",
-                    "nodeType": "VHH::Core::Math::set_range",
+                    "nodeName": "evaluate_fcurve",
+                    "nodeType": "Core::FCurve::evaluate_fcurve",
                     "metadata": [
                         {
                             "metaName": "DisplayMode",
@@ -1445,23 +1274,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2516.11 -20.3997"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "if2",
-                    "nodeType": "Core::Logic::if",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "2849.48 -445.496"
+                            "metaValue": "2067 -511"
                         }
                     ]
                 }
@@ -1496,10 +1309,6 @@
                     "target": "for_each.is_mesh"
                 },
                 {
-                    "source": "get_geo_schema_type.mesh",
-                    "target": "normal_check.mesh"
-                },
-                {
                     "source": "if.output",
                     "target": "for_each.neighbors"
                 },
@@ -1509,35 +1318,7 @@
                 },
                 {
                     "source": "for_each.raw_curvature",
-                    "target": "if1.false_case"
-                },
-                {
-                    "source": "for_each.raw_curvature",
-                    "target": "array_bounds.array"
-                },
-                {
-                    "source": "for_each.raw_curvature",
-                    "target": "change_range.value"
-                },
-                {
-                    "source": "if1.output",
-                    "target": "set_range.in_array"
-                },
-                {
-                    "source": "if1.output",
-                    "target": "if2.false_case"
-                },
-                {
-                    "source": "array_bounds.min_bound",
-                    "target": "change_range.from_start"
-                },
-                {
-                    "source": "array_bounds.max_bound",
-                    "target": "change_range.from_end"
-                },
-                {
-                    "source": "change_range.result",
-                    "target": "if1.true_case"
+                    "target": "evaluate_fcurve.x"
                 },
                 {
                     "source": "get_points_in_radius.point_indices",
@@ -1548,40 +1329,16 @@
                     "target": "if.false_case"
                 },
                 {
-                    "source": "set_range.remapped_array",
-                    "target": "if2.true_case"
+                    "source": "set_geo_property.out_geometry",
+                    "target": ".out_geo"
                 },
                 {
-                    "source": "if2.output",
+                    "source": "evaluate_fcurve.y",
                     "target": "set_geo_property.data"
                 },
                 {
-                    "source": ".normalized",
-                    "target": "if1.condition"
-                },
-                {
-                    "source": ".scale",
-                    "target": "for_each.scale"
-                },
-                {
-                    "source": ".radius",
-                    "target": "get_points_in_radius.radius"
-                },
-                {
-                    "source": ".remap",
-                    "target": "if2.condition"
-                },
-                {
-                    "source": ".min",
-                    "target": "set_range.min"
-                },
-                {
-                    "source": ".max",
-                    "target": "set_range.max"
-                },
-                {
-                    "source": "set_geo_property.out_geometry",
-                    "target": ".out_geo"
+                    "source": "evaluate_fcurve.y",
+                    "target": ".adjusted_curvature"
                 },
                 {
                     "source": ".in_geo",
@@ -1604,29 +1361,41 @@
                     "target": "get_points_in_radius.geometry"
                 },
                 {
-                    "source": "if2.output",
-                    "target": ".curvature"
+                    "source": ".scale",
+                    "target": "for_each.scale"
+                },
+                {
+                    "source": ".radius",
+                    "target": "get_points_in_radius.radius"
+                },
+                {
+                    "source": ".adjust_curvature",
+                    "target": "evaluate_fcurve.fcurve"
+                },
+                {
+                    "source": "for_each.raw_curvature",
+                    "target": ".raw_curvature"
                 }
             ],
             "values": [
+                {
+                    "valueName": "update_point_neighbors.diagnostic_indices",
+                    "valueType": "array<uint>",
+                    "value": []
+                },
+                {
+                    "valueName": "update_point_neighbors.diagnostic_scale",
+                    "valueType": "float",
+                    "value": "0.00999999978f"
+                },
                 {
                     "valueName": "for_each.scale",
                     "valueType": "float",
                     "value": "10f"
                 },
                 {
-                    "valueName": "change_range.to_end",
-                    "valueType": "float",
-                    "value": "1f"
-                },
-                {
-                    "valueName": "change_range.clamp",
-                    "valueType": "bool",
-                    "value": "true"
-                },
-                {
                     "valueName": "get_points_in_radius.geometry",
-                    "valueType": "Amino::Object",
+                    "valueType": "Object",
                     "value": {}
                 },
                 {
@@ -1655,17 +1424,48 @@
                     "value": "point_component"
                 },
                 {
-                    "valueName": "set_range.max",
-                    "valueType": "float",
-                    "value": "1f"
+                    "valueName": "evaluate_fcurve.fcurve",
+                    "valueType": "Math::FCurve",
+                    "value": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "-0.40000000000000002",
+                                        "yp": "0",
+                                        "x": "0",
+                                        "y": "0",
+                                        "xn": "0.40000000000000002",
+                                        "yn": "0"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "0.59999999999999998",
+                                        "yp": "1",
+                                        "x": "1",
+                                        "y": "1",
+                                        "xn": "1.3999999999999999",
+                                        "yn": "1"
+                                    }
+                                }
+                            }
+                        ]
+                    }
                 }
             ],
             "reservedNodeNames": [
                 {
                     "name": "input"
-                },
-                {
-                    "name": "input1"
                 },
                 {
                     "name": "output"

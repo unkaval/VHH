@@ -21,7 +21,7 @@ Generates and returns a bounding object for a geometry.<br />
 ***
 ## Output
 <span style="color:#90A3F4">***out_mesh***</span>
-<br />The incoming mesh with `min_bound` and `max_bound` set as **properties**.
+<br />If the `bounds_type` **is not** set to `sphere`, the outgoing mesh with `min_bound` and `max_bound` set as **properties**.  
 
 <span style="color:#90A3F4">***out_bounds***</span>
 <br />The bounding geometry.
