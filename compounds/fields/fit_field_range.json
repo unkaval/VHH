@@ -1,0 +1,611 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "VHH::Core::Fields::fit_field_range",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/fit_field_range.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../helper_icons/derhornen.png"
+                },                
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Fields,fcurve_field"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,VHH::Core::Fields,change_range_field"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Array,array_bounds"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Fields,sample_field"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/fit_field_range.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../helper_icons/derhornen.png"
+                },                        
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-723.207 -130.278"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "mesh_in"
+                                                },
+                                                {
+                                                    "metaName": "field_in"
+                                                },
+                                                {
+                                                    "metaName": "min"
+                                                },
+                                                {
+                                                    "metaName": "max"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1371.85 -642.248"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "field_out"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-102.094 -955.47 1278.23 1402.19"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-302.442 389.062"
+                }
+            ],
+            "isDefaultOverload": "true",
+            "ports": [
+                {
+                    "portName": "mesh_in",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "field_in",
+                    "portDirection": "input",
+                    "portType": "Core::Fields::ScalarField",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "field_out",
+                    "portDirection": "output",
+                    "portType": "Core::Fields::ScalarField"
+                },
+                {
+                    "portName": "min",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0f"
+                },
+                {
+                    "portName": "max",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "1f"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "get_point_position",
+                    "nodeType": "Geometry::Properties::get_point_position",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-439.327 -233.638"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "sample_field",
+                    "nodeType": "Core::Fields::sample_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-178.924 161.035"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "array_bounds",
+                    "nodeType": "Core::Array::array_bounds",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "98.368 113.037"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "change_range_field",
+                    "nodeType": "VHH::Core::Fields::change_range_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "387.186 16.1572"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "get_point_position.point_position",
+                    "target": "sample_field.position"
+                },
+                {
+                    "source": "sample_field.result",
+                    "target": "array_bounds.array"
+                },
+                {
+                    "source": "array_bounds.min_bound",
+                    "target": "change_range_field.oldMin"
+                },
+                {
+                    "source": "array_bounds.max_bound",
+                    "target": "change_range_field.oldMax"
+                },
+                {
+                    "source": ".min",
+                    "target": "change_range_field.min"
+                },
+                {
+                    "source": ".max",
+                    "target": "change_range_field.max"
+                },
+                {
+                    "source": ".mesh_in",
+                    "target": "get_point_position.geometry"
+                },
+                {
+                    "source": ".field_in",
+                    "target": "sample_field.field"
+                },
+                {
+                    "source": ".field_in",
+                    "target": "change_range_field.field_in"
+                },
+                {
+                    "source": "change_range_field.output",
+                    "target": ".field_out"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "sample_field.position",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "change_range_field.max",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "change_range_field.clamp",
+                    "valueType": "bool",
+                    "value": "false"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        },
+        {
+            "name": "VHH::Core::Fields::fit_field_range",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Fields,fcurve_field"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,VHH::Core::Fields,change_range_field"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Array,array_bounds"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Fields,sample_field"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-102.094 -955.47 1278.23 1402.19"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-723.207 -130.278"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "mesh_in"
+                                                },
+                                                {
+                                                    "metaName": "field_in"
+                                                },
+                                                {
+                                                    "metaName": "min"
+                                                },
+                                                {
+                                                    "metaName": "max"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1371.85 -642.248"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "field_out"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-306.555 998.534"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "mesh_in",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "field_in",
+                    "portDirection": "input",
+                    "portType": "Core::Fields::VectorField",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "field_out",
+                    "portDirection": "output",
+                    "portType": "Core::Fields::VectorField"
+                },
+                {
+                    "portName": "min",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "max",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "get_point_position",
+                    "nodeType": "Geometry::Properties::get_point_position",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-439.327 -233.638"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "sample_field",
+                    "nodeType": "Core::Fields::sample_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-178.924 161.035"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "array_bounds",
+                    "nodeType": "Core::Array::array_bounds",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "98.368 113.037"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "change_range_field",
+                    "nodeType": "VHH::Core::Fields::change_range_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "387.186 16.1572"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "get_point_position.point_position",
+                    "target": "sample_field.position"
+                },
+                {
+                    "source": "sample_field.result",
+                    "target": "array_bounds.array"
+                },
+                {
+                    "source": "array_bounds.min_bound",
+                    "target": "change_range_field.oldMin"
+                },
+                {
+                    "source": "array_bounds.max_bound",
+                    "target": "change_range_field.oldMax"
+                },
+                {
+                    "source": ".mesh_in",
+                    "target": "get_point_position.geometry"
+                },
+                {
+                    "source": ".field_in",
+                    "target": "sample_field.field"
+                },
+                {
+                    "source": ".field_in",
+                    "target": "change_range_field.field_in"
+                },
+                {
+                    "source": ".min",
+                    "target": "change_range_field.min"
+                },
+                {
+                    "source": ".max",
+                    "target": "change_range_field.max"
+                },
+                {
+                    "source": "change_range_field.output",
+                    "target": ".field_out"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "sample_field.position",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "change_range_field.max",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "change_range_field.clamp",
+                    "valueType": "bool",
+                    "value": "false"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
