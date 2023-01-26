@@ -17,6 +17,9 @@ The diagnostic tab will hide and show the shadow rays to the light.<br />
 <span style="color:#A8D977">***directional_intensity***</span>
 <br />Intensity and color of the light.
 
+<span style="color:#A8D977">***icon_position***</span>
+<br />The position of the directional icon in world space.
+
 <span style="color:#82D99F">***directional_weight***</span>
 <br />This is an overall multiplier of the output.  It is a auto-port, allowing for the input of `float`, `floatArray` and `scalar_field` data.
 

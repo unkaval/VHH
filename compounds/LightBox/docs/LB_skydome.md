@@ -28,6 +28,9 @@ The diagnostic tab will hide and show the dome generated sphere.<br />
 <span style="color:#82D99F">***intensity***</span>
 <br />The overall brightness of the domelight.
 
+<span style="color:#82D99F">***horizon_bias***</span>
+<br />Adjusts the position of the dome's horizon.
+
 <span style="color:#62CFD9">***dome_resolution***</span>
 <br />The number of points to calculate the domelight lighting from, the higher the number, the smoother the lighting, but the heavier the calculation.
 
@@ -42,4 +45,5 @@ The diagnostic tab will hide and show the dome generated sphere.<br />
 <span style="color:#A8D977">***skydome_contribution***</span>
 <br />An array of values, per point, of this light's contribution to the lighting.  Add this to the `point_color` of your mesh to see the result. 
 
-
+<span style="color:#90A3F4">***light_data***</span>
+<br />An object carrying the light data - this is intended for use with the `LB_display` compound. 

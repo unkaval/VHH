@@ -18,3 +18,5 @@
 <span style="color:#A8D977">***ambient_contribution***</span>
 <br />An array of values, per point, of this light's contribution to the lighting.  Add this to the `point_color` of your mesh to see the result.
 
+<span style="color:#90A3F4">***light_data***</span>
+<br />The light data output as an object.  This is intended for use with `LB_display`

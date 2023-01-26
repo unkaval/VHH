@@ -103,6 +103,9 @@
                                             "metadata": [
                                                 {
                                                     "metaName": "area_contribution"
+                                                },
+                                                {
+                                                    "metaName": "light_data"
                                                 }
                                             ]
                                         }
@@ -140,7 +143,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-2272.97 -1341.19 1059.53 1153.11"
+                    "metaValue": "-354.15 -510.647 1576.4 1250.25"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -150,7 +153,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "156.602 2386.97"
+                    "metaValue": "461.693 -335.87"
                 }
             ],
             "terminalStates": [
@@ -272,6 +275,10 @@
                     "portDirection": "input",
                     "portType": "array<Math::float3>",
                     "portDefault": []
+                },
+                {
+                    "portName": "light_data",
+                    "portDirection": "output"
                 }
             ],
             "compounds": [
@@ -837,6 +844,11 @@
                     "name": "apply_lighting",
                     "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                        },
                         {
                             "metaName": "icon",
                             "metaType": "string",
@@ -2053,6 +2065,11 @@
                                                     "metaValue": "2"
                                                 },
                                                 {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-2794.59 702.851"
+                                                },
+                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
@@ -2062,11 +2079,6 @@
                                                             "metaName": "areaLight_intensity"
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "-2794.59 702.851"
                                                 }
                                             ]
                                         }
@@ -2084,6 +2096,11 @@
                                                     "metaValue": "2"
                                                 },
                                                 {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-826.333 679.109"
+                                                },
+                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
@@ -2093,11 +2110,6 @@
                                                             "metaName": "out_plane"
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "-826.333 679.109"
                                                 }
                                             ]
                                         }
@@ -2133,7 +2145,7 @@
                         {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "-2104.96 285.005 937.208 1018.38"
+                            "metaValue": "-2457.27 556.033 1481.53 1175.01"
                         }
                     ],
                     "ports": [
@@ -2161,6 +2173,11 @@
                             "name": "for_each",
                             "uriImported": "stream:/bifrostGraphShape1",
                             "metadata": [
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                                },
                                 {
                                     "metaName": "icon",
                                     "metaType": "string",
@@ -2417,6 +2434,192 @@
                             "forEachCompound": {
                                 "ports": []
                             }
+                        },
+                        {
+                            "name": "get_centroid",
+                            "uriImported": "stream:/bifrostGraphShape1",
+                            "metadata": [
+                                {
+                                    "metaName": "io_nodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_inodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "input",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "in_mesh"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "io_onodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "out_centroid"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "283.424 701.01"
+                                }
+                            ],
+                            "ports": [
+                                {
+                                    "portName": "in_mesh",
+                                    "portDirection": "input",
+                                    "portType": "Object",
+                                    "portDefault": {}
+                                },
+                                {
+                                    "portName": "out_centroid",
+                                    "portDirection": "output"
+                                }
+                            ],
+                            "compoundNodes": [
+                                {
+                                    "nodeName": "array_size",
+                                    "nodeType": "Core::Array::array_size",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-130.383 -92.3549"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "divide",
+                                    "nodeType": "Core::Math::divide",
+                                    "multiInPortNames": [
+                                        "sum",
+                                        "float"
+                                    ],
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "371.053 -278.963"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "get_point_position",
+                                    "nodeType": "Geometry::Properties::get_point_position",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-548.535 -238.518"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "sum_array",
+                                    "nodeType": "Core::Array::sum_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-129.112 -260.124"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "to_float",
+                                    "nodeType": "Core::Type_Conversion::to_float",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "106.476 -90.7636"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "connections": [
+                                {
+                                    "source": "array_size.size",
+                                    "target": "to_float.from"
+                                },
+                                {
+                                    "source": "divide.output",
+                                    "target": ".out_centroid"
+                                },
+                                {
+                                    "source": "get_point_position.point_position",
+                                    "target": "array_size.array"
+                                },
+                                {
+                                    "source": "get_point_position.point_position",
+                                    "target": "sum_array.array"
+                                },
+                                {
+                                    "source": "sum_array.sum",
+                                    "target": "divide.first.sum"
+                                },
+                                {
+                                    "source": "to_float.float",
+                                    "target": "divide.first.float"
+                                },
+                                {
+                                    "source": ".in_mesh",
+                                    "target": "get_point_position.geometry"
+                                }
+                            ],
+                            "values": []
                         }
                     ],
                     "compoundNodes": [
@@ -2621,7 +2824,7 @@
                         },
                         {
                             "nodeName": "get_centroid",
-                            "nodeType": "User::Compounds::get_centroid",
+                            "nodeType": "get_centroid",
                             "metadata": [
                                 {
                                     "metaName": "DisplayMode",
@@ -2631,7 +2834,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "-1639.88 1221.86"
+                                    "metaValue": "-1644.99 1117.98"
                                 }
                             ]
                         },
@@ -4626,6 +4829,7 @@
                 },
                 {
                     "name": "handle_black_array",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -5339,6 +5543,38 @@
                             "metaValue": "-2386.47 -370.213"
                         }
                     ]
+                },
+                {
+                    "nodeName": "set_property",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2183.52 327.961"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value1",
+                    "valueType": "Object",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1887.49 355.312"
+                        }
+                    ]
                 }
             ],
             "connections": [
@@ -5581,6 +5817,18 @@
                 {
                     "source": "handle_black_array.output",
                     "target": "if.false_case"
+                },
+                {
+                    "source": "value1.output",
+                    "target": "set_property.object"
+                },
+                {
+                    "source": "multiply_by_weight.output",
+                    "target": "set_property.value"
+                },
+                {
+                    "source": "set_property.out_object",
+                    "target": ".light_data"
                 }
             ],
             "values": [
@@ -5766,6 +6014,11 @@
                     "valueName": "handle_black_array.input_mesh",
                     "valueType": "Object",
                     "value": {}
+                },
+                {
+                    "valueName": "set_property.key",
+                    "valueType": "string",
+                    "value": "LB_area"
                 }
             ],
             "watchPoints": [

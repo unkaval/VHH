@@ -1,7 +1,7 @@
 ### ***LB_spot***
 **Component Compound** - this compound is a light in the the LightBox system.<br /><br />
 **Spotlight** - This is a diffuse light generator that mimics the lighting from a *spot* light.  It does this by taking the light direction and the mesh surface normal, performing a dot product and multiplying by the light's intensity.  Then applying shadow and penumbra information .<br /><br />
-The diagnostic tab will hide and show the shadow rays to the light.<br />
+The diagnostic tab will hide and show the shadow rays to the light.  The proxy tab will show and hide the light's icon.<br />
 
 ***
 ## Input
@@ -11,11 +11,14 @@ The diagnostic tab will hide and show the shadow rays to the light.<br />
 <span style="color:#90A3F4">***accelerator***</span>
 <br />You need to construct a raycast accelerator from the mesh to plug in here.
 
-<span style="color:#E67373">***spotLight_matrix***</span>
-<br />The world matrix for your spot light.  This can come from Maya, or be generated within Bifrost.  This light needs SRT information.
-
 <span style="color:#A8D977">***spotLight_intensity***</span>
-<br />Intensity and color of the point light.
+<br />Intensity and color of the spot light.
+
+<span style="color:#A8D977">***spotLight_position***</span>
+<br />The position in space opf the spotlight.
+
+<span style="color:#A8D977">***spotLight_direction***</span>
+<br />The direction the spotlight is pointing.
 
 <span style="color:#82D99F">***spotLight_cone_angle***</span>
 <br />The spotlight's cone angle, this can be entered, or brought in from Maya.
@@ -37,3 +40,5 @@ The diagnostic tab will hide and show the shadow rays to the light.<br />
 <span style="color:#A8D977">***spot_contribution***</span>
 <br />An array of values, per point, of this light's contribution to the lighting.  Add this to the `point_color` of your mesh to see the result.
 
+<span style="color:#90A3F4">***light_data***</span>
+<br />The light data output as an object.  This is intended for use with `LB_display`

@@ -78,13 +78,16 @@
                                         {
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
-                                            "metaValue": "911.902 188.604"
+                                            "metaValue": "1504.86 177.704"
                                         },
                                         {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "ambient_contribution"
+                                                },
+                                                {
+                                                    "metaName": "light_data"
                                                 }
                                             ]
                                         }
@@ -122,7 +125,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "423.453 -549.404 932.419 994.388"
+                    "metaValue": "-284 -1304.8 2301 2405.59"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -132,7 +135,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-764.301 607.434"
+                    "metaValue": "-191.948 -1565.74"
                 }
             ],
             "terminalStates": [
@@ -142,7 +145,7 @@
                 },
                 {
                     "name": "Core::Graph::terminal::proxy",
-                    "enabled": "true"
+                    "enabled": "false"
                 },
                 {
                     "name": "Core::Graph::terminal::diagnostic",
@@ -192,6 +195,11 @@
                         "y": "0f",
                         "z": "0f"
                     }
+                },
+                {
+                    "portName": "light_data",
+                    "portDirection": "output",
+                    "portType": "Object"
                 }
             ],
             "compounds": [
@@ -2092,6 +2100,38 @@
                             "metaValue": "644.24 -306.498"
                         }
                     ]
+                },
+                {
+                    "nodeName": "value1",
+                    "valueType": "Object",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "630.389 437.657"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "926.419 410.306"
+                        }
+                    ]
                 }
             ],
             "connections": [
@@ -2154,6 +2194,18 @@
                 {
                     "source": "value.output",
                     "target": "multiply1.first.output2"
+                },
+                {
+                    "source": "value1.output",
+                    "target": "set_property.object"
+                },
+                {
+                    "source": "multiply.output",
+                    "target": "set_property.value"
+                },
+                {
+                    "source": "set_property.out_object",
+                    "target": ".light_data"
                 }
             ],
             "values": [
@@ -2199,6 +2251,11 @@
                         "y": "10f",
                         "z": "10f"
                     }
+                },
+                {
+                    "valueName": "set_property.key",
+                    "valueType": "string",
+                    "value": "LB_amb"
                 }
             ],
             "reservedNodeNames": [

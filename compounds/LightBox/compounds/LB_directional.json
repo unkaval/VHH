@@ -84,13 +84,16 @@
                                         {
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
-                                            "metaValue": "711.398 30.7129"
+                                            "metaValue": "1229.25 32.9743"
                                         },
                                         {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "direction_contribution"
+                                                },
+                                                {
+                                                    "metaName": "light_data"
                                                 }
                                             ]
                                         }
@@ -128,7 +131,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-272.673 -545.518 1092.79 1165.42"
+                    "metaValue": "-539 -985.636 2074 2168.27"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -138,7 +141,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "108.871 162.19"
+                    "metaValue": "345.548 -1568.12"
                 }
             ],
             "terminalStates": [
@@ -213,6 +216,10 @@
                 },
                 {
                     "portName": "direction_contribution",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "light_data",
                     "portDirection": "output"
                 }
             ],
@@ -2138,6 +2145,38 @@
                             "metaValue": "-1.32497 -183.849"
                         }
                     ]
+                },
+                {
+                    "nodeName": "set_property",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "731.936 326.803"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value1",
+                    "valueType": "Object",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "435.906 354.154"
+                        }
+                    ]
                 }
             ],
             "connections": [
@@ -2196,6 +2235,18 @@
                 {
                     "source": "multiply.output",
                     "target": "display.directional_intensity"
+                },
+                {
+                    "source": "value1.output",
+                    "target": "set_property.object"
+                },
+                {
+                    "source": "bake_directional_light.directional_contribution",
+                    "target": "set_property.value"
+                },
+                {
+                    "source": "set_property.out_object",
+                    "target": ".light_data"
                 }
             ],
             "values": [
@@ -2231,6 +2282,11 @@
                         "y": "0f",
                         "z": "0f"
                     }
+                },
+                {
+                    "valueName": "set_property.key",
+                    "valueType": "string",
+                    "value": "LB_direct"
                 }
             ],
             "reservedNodeNames": [

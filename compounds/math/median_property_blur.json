@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Math::median_property_blur",
-            "uriImported": "file:///median_property_blur.json",
+            "uriImported": "stream:/bifrostGraphShape5",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -23,7 +23,7 @@
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../helper_icons/derhornen.png"
-                },                
+                },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
@@ -64,11 +64,6 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-914.517 -273.604"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -84,6 +79,11 @@
                                                     "metaName": "iterations"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1005.64 -273.604"
                                         }
                                     ]
                                 }
@@ -122,7 +122,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-806.075 -668.044 855.197 1228.67"
+                    "metaValue": "-1179.4 -815.465 1628.49 1291.56"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -132,7 +132,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-3227.09 -240.999"
+                    "metaValue": "716.702 -2082.71"
                 }
             ],
             "terminalStates": [
@@ -152,7 +152,9 @@
             "ports": [
                 {
                     "portName": "in_geo",
-                    "portDirection": "input"
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
                 },
                 {
                     "portName": "property",
@@ -174,24 +176,15 @@
                 },
                 {
                     "portName": "out_geo",
-                    "portDirection": "output"
+                    "portDirection": "output",
+                    "portType": "Object"
                 }
             ],
             "compounds": [
                 {
                     "name": "iterate",
-                    "uriImported": "file:///median_property_blur.json",
+                    "uriImported": "stream:/bifrostGraphShape5",
                     "metadata": [
-                        {
-                            "metaName": "icon",
-                            "metaType": "string",
-                            "metaValue": "<NATIVE>../icons/LoopIterate.svg"
-                        },
-                        {
-                            "metaName": "icon",
-                            "metaType": "string",
-                            "metaValue": "<NATIVE>../icons/LoopIterate.svg"
-                        },
                         {
                             "metaName": "icon",
                             "metaType": "string",
@@ -314,18 +307,8 @@
                     "compounds": [
                         {
                             "name": "for_each",
-                            "uriImported": "file:///median_property_blur.json",
+                            "uriImported": "stream:/bifrostGraphShape5",
                             "metadata": [
-                                {
-                                    "metaName": "icon",
-                                    "metaType": "string",
-                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
-                                },
-                                {
-                                    "metaName": "icon",
-                                    "metaType": "string",
-                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
-                                },
                                 {
                                     "metaName": "icon",
                                     "metaType": "string",
@@ -843,10 +826,6 @@
                     "target": "if.condition"
                 },
                 {
-                    "source": "if.output",
-                    "target": ".out_geo"
-                },
-                {
                     "source": "array_size.size",
                     "target": "iterate.size"
                 },
@@ -859,10 +838,6 @@
                     "target": "set_geo_property.data"
                 },
                 {
-                    "source": ".in_geo",
-                    "target": "update_point_neighbors.mesh"
-                },
-                {
                     "source": ".property",
                     "target": "get_geo_property_check.property"
                 },
@@ -871,12 +846,20 @@
                     "target": "set_geo_property.property"
                 },
                 {
-                    "source": ".property_type",
-                    "target": "get_geo_property_check.type"
-                },
-                {
                     "source": ".iterations",
                     "target": "iterate.max_iterations"
+                },
+                {
+                    "source": ".in_geo",
+                    "target": "update_point_neighbors.mesh"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".out_geo"
+                },
+                {
+                    "source": ".property_type",
+                    "target": "get_geo_property_check.type"
                 }
             ],
             "values": [

@@ -9,8 +9,12 @@ The diagnostic tab will hide and show the light rays used in the calculations.<b
 <span style="color:#90A3F4">***input_mesh***</span>
 <br />The object you are lighting.
 
-<span style="color:#E67373">***areaLight_matrix***</span>
-<br />The world matrix for your area light.  This can come from Maya, or be generated within Bifrost.  This light needs SRT information.
+<span style="color:#E67373">***maya_geo_plane_matrix***</span>
+<br />The world matrix for your area light.  This can be a Maya plane, or be generated within Bifrost.  This light needs SRT information.
+
+<span style="color:#E67373">***maya_areaLight_matrix***</span>
+<br />The world matrix for your area light.  This can be a Maya area light, or be generated within Bifrost.  This light needs SRT information.
+
 
 <span style="color:#A8D977">***areaLight_intensity***</span>
 <br />Intensity and color of the light.
