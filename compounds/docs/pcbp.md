@@ -24,6 +24,12 @@ Allows you to visualise and edit a property on an object.  Useful for visualizat
 <span style="color:#E69963">***display_on_points***</span>
 <br />Display the color or the ramp on the points, rather than the mesh.  
 
+<span style="color:#E69963">***screen_aligned***</span>
+<br />When clicked, points will always face the camera.
+
+<span style="color:#E69963">***shape***</span>
+<br />The shape of the display points.
+
 <span style="color:#E69963">***random_color***</span>
 <br />Assign a random color to the property.
 

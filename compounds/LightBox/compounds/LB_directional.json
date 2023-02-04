@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Tool::LB_directional",
-            "uriImported": "file:///LB_directional.json",
+            "uriImported": "stream:/bifrostGraphShape1",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -131,7 +131,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-539 -985.636 2074 2168.27"
+                    "metaValue": "-478.175 -699.463 1467.62 1097.14"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -141,7 +141,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "345.548 -1568.12"
+                    "metaValue": "-700.69 499.315"
                 }
             ],
             "terminalStates": [
@@ -151,7 +151,7 @@
                 },
                 {
                     "name": "Core::Graph::terminal::proxy",
-                    "enabled": "false"
+                    "enabled": "true"
                 },
                 {
                     "name": "Core::Graph::terminal::diagnostic",
@@ -187,8 +187,8 @@
                     "portType": "Math::float3",
                     "portDefault": {
                         "x": "0f",
-                        "y": "0.100000001f",
-                        "z": "0.25f"
+                        "y": "0.400000006f",
+                        "z": "1f"
                     },
                     "metadata": [
                         {
@@ -212,7 +212,7 @@
                     "portName": "directional_weight",
                     "portDirection": "input",
                     "portDefaultType": "float",
-                    "portDefault": "0.5f"
+                    "portDefault": "1f"
                 },
                 {
                     "portName": "direction_contribution",
@@ -226,7 +226,7 @@
             "compounds": [
                 {
                     "name": "bake_directional_light",
-                    "uriImported": "file:///LB_directional.json",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -370,7 +370,7 @@
                     "compounds": [
                         {
                             "name": "light_equation1",
-                            "uriImported": "file:///LB_directional.json",
+                            "uriImported": "stream:/bifrostGraphShape1",
                             "metadata": [
                                 {
                                     "metaName": "io_nodes",
@@ -799,7 +799,7 @@
                 },
                 {
                     "name": "pre_calc_ray2",
-                    "uriImported": "file:///LB_directional.json",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -922,7 +922,7 @@
                     "compounds": [
                         {
                             "name": "shadow_calc_PL1",
-                            "uriImported": "file:///LB_directional.json",
+                            "uriImported": "stream:/bifrostGraphShape1",
                             "metadata": [
                                 {
                                     "metaName": "io_nodes",
@@ -1411,7 +1411,7 @@
                 },
                 {
                     "name": "display",
-                    "uriImported": "file:///LB_directional.json",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -1428,6 +1428,11 @@
                                                     "metaValue": "2"
                                                 },
                                                 {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-889.212 -561.96"
+                                                },
+                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
@@ -1440,11 +1445,6 @@
                                                             "metaName": "icon_position"
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "-889.212 -561.96"
                                                 }
                                             ]
                                         }
@@ -1500,7 +1500,7 @@
                         {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "604.559 -697.744 1727.36 1236.39"
+                            "metaValue": "604.506 -724.202 1730.23 1293.45"
                         }
                     ],
                     "ports": [
@@ -2059,6 +2059,257 @@
                             "name": "output"
                         }
                     ]
+                },
+                {
+                    "name": "input_weight_data_handling",
+                    "uriImported": "stream:/bifrostGraphShape1",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-642.961 -1384.68"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "input_mesh"
+                                                        },
+                                                        {
+                                                            "metaName": "intensity"
+                                                        },
+                                                        {
+                                                            "metaName": "weight"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "603.663 -1239.31"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "output"
+                                                        },
+                                                        {
+                                                            "metaName": "max_bound"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-228.426 -1742.83 1308 977.811"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Array,array_bounds"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Geometry::Common,interpret_auto_port_as_scalar"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Type_Conversion,to_float"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,if"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,not_equal"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "input_mesh",
+                            "portDirection": "input",
+                            "portType": "Object"
+                        },
+                        {
+                            "portName": "intensity",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "weight",
+                            "portDirection": "input",
+                            "metadata": [
+                                {
+                                    "metaName": "TypeWranglingSuggestedTypes",
+                                    "metaType": "string",
+                                    "metaValue": "float, string, Core::Fields::ScalarField, array<float>, array<long>"
+                                }
+                            ]
+                        },
+                        {
+                            "portName": "output",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "max_bound",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "multiply",
+                            "nodeType": "Core::Math::multiply",
+                            "multiInPortNames": [
+                                "spotLight_intensity",
+                                "output1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-16.2771 -1238.89"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "interpret_auto_port_as_scalar",
+                            "nodeType": "Geometry::Common::interpret_auto_port_as_scalar",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-275.19 -1455.84"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "array_bounds",
+                            "nodeType": "Core::Array::array_bounds",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "253.59 -1053.19"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "multiply.output",
+                            "target": ".output"
+                        },
+                        {
+                            "source": "interpret_auto_port_as_scalar.data",
+                            "target": "multiply.first.output1"
+                        },
+                        {
+                            "source": ".input_mesh",
+                            "target": "interpret_auto_port_as_scalar.geometry"
+                        },
+                        {
+                            "source": ".intensity",
+                            "target": "multiply.first.spotLight_intensity"
+                        },
+                        {
+                            "source": ".weight",
+                            "target": "interpret_auto_port_as_scalar.interpreted_scalar_port"
+                        },
+                        {
+                            "source": "multiply.output",
+                            "target": "array_bounds.array"
+                        },
+                        {
+                            "source": "array_bounds.max_bound",
+                            "target": ".max_bound"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "interpret_auto_port_as_scalar.default_value",
+                            "valueType": "float",
+                            "value": "1f"
+                        },
+                        {
+                            "valueName": "interpret_auto_port_as_scalar.geometry_component",
+                            "valueType": "string",
+                            "value": "point_component"
+                        },
+                        {
+                            "valueName": "interpret_auto_port_as_scalar.position_property",
+                            "valueType": "string",
+                            "value": "point_position"
+                        },
+                        {
+                            "valueName": "interpret_auto_port_as_scalar.indices",
+                            "valueType": "array<long>",
+                            "value": []
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
                 }
             ],
             "compoundNodes": [
@@ -2122,27 +2373,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "376.336 -329.548"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "multiply",
-                    "nodeType": "Core::Math::multiply",
-                    "multiInPortNames": [
-                        "directional_intensity",
-                        "directional_weight"
-                    ],
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-1.32497 -183.849"
+                            "metaValue": "454.249 -318.418"
                         }
                     ]
                 },
@@ -2175,6 +2406,22 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "435.906 354.154"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "input_weight_data_handling",
+                    "nodeType": "input_weight_data_handling",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-107.937 -587.592"
                         }
                     ]
                 }
@@ -2225,18 +2472,6 @@
                     "target": "bake_directional_light.light_intensity_input"
                 },
                 {
-                    "source": ".directional_intensity",
-                    "target": "multiply.first.directional_intensity"
-                },
-                {
-                    "source": ".directional_weight",
-                    "target": "multiply.first.directional_weight"
-                },
-                {
-                    "source": "multiply.output",
-                    "target": "display.directional_intensity"
-                },
-                {
                     "source": "value1.output",
                     "target": "set_property.object"
                 },
@@ -2247,6 +2482,22 @@
                 {
                     "source": "set_property.out_object",
                     "target": ".light_data"
+                },
+                {
+                    "source": ".input_mesh",
+                    "target": "input_weight_data_handling.input_mesh"
+                },
+                {
+                    "source": ".directional_intensity",
+                    "target": "input_weight_data_handling.intensity"
+                },
+                {
+                    "source": ".directional_weight",
+                    "target": "input_weight_data_handling.weight"
+                },
+                {
+                    "source": "input_weight_data_handling.max_bound",
+                    "target": "display.directional_intensity"
                 }
             ],
             "values": [
@@ -2287,6 +2538,20 @@
                     "valueName": "set_property.key",
                     "valueType": "string",
                     "value": "LB_direct"
+                },
+                {
+                    "valueName": "input_weight_data_handling.input_mesh",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "input_weight_data_handling.intensity",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
                 }
             ],
             "reservedNodeNames": [

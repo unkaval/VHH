@@ -95,6 +95,12 @@
                                                 },
                                                 {
                                                     "metaName": "display_on_points"
+                                                },
+                                                {
+                                                    "metaName": "screen_aligned"
+                                                },
+                                                {
+                                                    "metaName": "shape"
                                                 }
                                             ]
                                         }
@@ -140,17 +146,17 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "4273.29 -874.039"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "out_geometry"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "4873.82 -870.81"
                                         }
                                     ]
                                 }
@@ -159,9 +165,9 @@
                     ]
                 },
                 {
-                    "metaName": "ViewportRect",
+                    "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "-106.084 -1413.19 820.789 1130.43"
+                    "metaValue": "BifrostGraph,Geometry::Properties,set_point_shape"
                 },
                 {
                     "metaName": "_recentNode_",
@@ -184,9 +190,9 @@
                     "metaValue": "BifrostGraph,VHH::Visualize::Display,ramp_switch"
                 },
                 {
-                    "metaName": "_recentNode_",
+                    "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Graph,pass"
+                    "metaValue": "3100.62 -1637.64 1226.57 1826.64"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -196,23 +202,18 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-306.714 274.078"
+                    "metaValue": "2132.71 -574.608"
                 },
                 {
                     "metaName": "UILayout",
                     "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"in_geometry\"\n            },\n            {\n                \"port\": \"property\"\n            },\n            {\n                \"port\": \"write_property\"\n            },\n            {\n                \"port\": \"adjust_property\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Display Options\",\n                \"items\": [\n                    {\n                        \"port\": \"color\"\n                    },\n                    {\n                        \"port\": \"use_ramp\"\n                    },\n                    {\n                        \"port\": \"display_on_points\"\n                    },\n                    {\n                        \"port\": \"display_point_size\"\n                    },\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Random\",\n                        \"items\": [\n                            {\n                                \"port\": \"random_color\"\n                            },\n                            {\n                                \"port\": \"random_color_seed\"\n                            }\n                        ]\n                    },\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Ramp Options\",\n                        \"items\": [\n                            {\n                                \"port\": \"custom_ramp_input\"\n                            },\n                            {\n                                \"port\": \"ramp_preset\"\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"in_geometry\"\n            },\n            {\n                \"port\": \"property\"\n            },\n            {\n                \"port\": \"write_property\"\n            },\n            {\n                \"port\": \"adjust_property\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Display Options\",\n                \"items\": [\n                    {\n                        \"port\": \"color\"\n                    },\n                    {\n                        \"port\": \"use_ramp\"\n                    },\n                    {\n                        \"port\": \"display_on_points\"\n                    },\n                    {\n                        \"port\": \"screen_aligned\"\n                    },\n                    {\n                        \"port\": \"shape\"\n                    },\n                    {\n                        \"port\": \"display_point_size\"\n                    },\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Random\",\n                        \"items\": [\n                            {\n                                \"port\": \"random_color\"\n                            },\n                            {\n                                \"port\": \"random_color_seed\"\n                            }\n                        ]\n                    },\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Ramp Options\",\n                        \"items\": [\n                            {\n                                \"port\": \"custom_ramp_input\"\n                            },\n                            {\n                                \"port\": \"ramp_preset\"\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
                 },
                 {
                     "metaName": "PortExpandedState",
                     "metadata": [
                         {
                             "metaName": "Display Options.Ramp Options",
-                            "metaType": "string",
-                            "metaValue": "0"
-                        },
-                        {
-                            "metaName": "Display Options.Random",
                             "metaType": "string",
                             "metaValue": "0"
                         },
@@ -235,7 +236,7 @@
                 },
                 {
                     "name": "Core::Graph::terminal::diagnostic",
-                    "enabled": "true"
+                    "enabled": "false"
                 }
             ],
             "ports": [
@@ -249,7 +250,7 @@
                     "portName": "property",
                     "portDirection": "input",
                     "portType": "string",
-                    "portDefault": ""
+                    "portDefault": "point_density"
                 },
                 {
                     "portName": "color",
@@ -272,7 +273,7 @@
                     "portName": "write_property",
                     "portDirection": "input",
                     "portType": "bool",
-                    "portDefault": "false"
+                    "portDefault": "true"
                 },
                 {
                     "portName": "adjust_property",
@@ -286,13 +287,13 @@
                             {
                                 "point": {
                                     "locked": "1",
-                                    "interpolation": "1",
+                                    "interpolation": "2",
                                     "pcn": {
-                                        "xp": "-0.10000000000000001",
+                                        "xp": "-0.40000000000000002",
                                         "yp": "0",
                                         "x": "0",
                                         "y": "0",
-                                        "xn": "0.10000000000000001",
+                                        "xn": "0.40000000000000002",
                                         "yn": "0"
                                     }
                                 }
@@ -300,13 +301,13 @@
                             {
                                 "point": {
                                     "locked": "1",
-                                    "interpolation": "1",
+                                    "interpolation": "2",
                                     "pcn": {
-                                        "xp": "0.90000000000000002",
+                                        "xp": "0.59999999999999998",
                                         "yp": "1",
                                         "x": "1",
                                         "y": "1",
-                                        "xn": "1.1000000000000001",
+                                        "xn": "1.3999999999999999",
                                         "yn": "1"
                                     }
                                 }
@@ -330,7 +331,7 @@
                     "portName": "use_ramp",
                     "portDirection": "input",
                     "portType": "bool",
-                    "portDefault": "false"
+                    "portDefault": "true"
                 },
                 {
                     "portName": "display_point_size",
@@ -342,7 +343,7 @@
                     "portName": "display_on_points",
                     "portDirection": "input",
                     "portType": "bool",
-                    "portDefault": "false"
+                    "portDefault": "true"
                 },
                 {
                     "portName": "out_geometry",
@@ -359,6 +360,18 @@
                     "portDirection": "input",
                     "portType": "array<Math::float3>",
                     "portDefault": []
+                },
+                {
+                    "portName": "screen_aligned",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "shape",
+                    "portDirection": "input",
+                    "portType": "Geometry::PointShapes",
+                    "portDefault": "Cube"
                 }
             ],
             "compounds": [
@@ -1818,11 +1831,6 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "4395.57 -234.507"
-                        },
-                        {
                             "metaName": "PortExpandedState",
                             "metadata": [
                                 {
@@ -1831,6 +1839,11 @@
                                     "metaValue": "0"
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "4520.46 -241.768"
                         }
                     ]
                 },
@@ -2000,32 +2013,6 @@
                     ]
                 },
                 {
-                    "nodeName": "point_scope",
-                    "nodeType": "Diagnostic::Display::point_scope",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "3480.16 -616.735"
-                        },
-                        {
-                            "metaName": "PortExpandedState",
-                            "metadata": [
-                                {
-                                    "metaName": "Point Shape",
-                                    "metaType": "string",
-                                    "metaValue": "1"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "nodeName": "pass",
                     "nodeType": "Core::Graph::pass",
                     "metadata": [
@@ -2085,13 +2072,39 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "4148.93 -434.534"
+                            "metaValue": "4292.06 -413.288"
                         }
                     ]
                 },
                 {
-                    "nodeName": "first_in_array",
-                    "nodeType": "Core::Array::first_in_array",
+                    "nodeName": "assign_diagnostic_material1",
+                    "nodeType": "Diagnostic::Display::assign_diagnostic_material",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Shader",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "4411.76 -783.198"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_point_shape",
+                    "nodeType": "Geometry::Properties::set_point_shape",
                     "metadata": [
                         {
                             "metaName": "DisplayMode",
@@ -2101,7 +2114,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "3735.56 -559.823"
+                            "metaValue": "3595.49 -642.361"
                         }
                     ]
                 }
@@ -2110,10 +2123,6 @@
                 {
                     "source": "assign_diagnostic_material.geometry_with_material",
                     "target": "terminal.diagnostic.geometry_with_material"
-                },
-                {
-                    "source": "if.output",
-                    "target": ".out_geometry"
                 },
                 {
                     "source": "set_geo_property.out_geometry",
@@ -2160,14 +2169,6 @@
                     "target": "if2.false_case"
                 },
                 {
-                    "source": "point_scope.diagnostic_geo",
-                    "target": "first_in_array.array"
-                },
-                {
-                    "source": "pass.output",
-                    "target": "point_scope.point_geo"
-                },
-                {
                     "source": "pass.output",
                     "target": "if4.false_case"
                 },
@@ -2190,10 +2191,6 @@
                 {
                     "source": "if4.output",
                     "target": "assign_diagnostic_material.geometry"
-                },
-                {
-                    "source": "first_in_array.first",
-                    "target": "if4.true_case"
                 },
                 {
                     "source": ".property",
@@ -2232,10 +2229,6 @@
                     "target": "if3.condition"
                 },
                 {
-                    "source": ".display_point_size",
-                    "target": "point_scope.default_size"
-                },
-                {
                     "source": ".display_on_points",
                     "target": "if4.condition"
                 },
@@ -2266,6 +2259,38 @@
                 {
                     "source": ".custom_ramp_input",
                     "target": "convert_properties.custom_ramp_input"
+                },
+                {
+                    "source": "if1.output",
+                    "target": "assign_diagnostic_material1.emission_color"
+                },
+                {
+                    "source": "if.output",
+                    "target": "assign_diagnostic_material1.geometry"
+                },
+                {
+                    "source": "assign_diagnostic_material1.geometry_with_material",
+                    "target": ".out_geometry"
+                },
+                {
+                    "source": "set_point_shape.out_points",
+                    "target": "if4.true_case"
+                },
+                {
+                    "source": ".display_point_size",
+                    "target": "set_point_shape.default_size"
+                },
+                {
+                    "source": ".screen_aligned",
+                    "target": "set_point_shape.screen_aligned"
+                },
+                {
+                    "source": ".shape",
+                    "target": "set_point_shape.shape"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "set_point_shape.points"
                 }
             ],
             "values": [
@@ -2368,206 +2393,6 @@
                     "value": "point_component"
                 },
                 {
-                    "valueName": "point_scope.shape",
-                    "valueType": "Geometry::PointShapes",
-                    "value": "Disk"
-                },
-                {
-                    "valueName": "point_scope.default_size",
-                    "valueType": "float",
-                    "value": "0.0500000007f"
-                },
-                {
-                    "valueName": "point_scope.cull_by_scalar_property",
-                    "valueType": "bool",
-                    "value": "false"
-                },
-                {
-                    "valueName": "point_scope.cull_property",
-                    "valueType": "string",
-                    "value": "point_age"
-                },
-                {
-                    "valueName": "point_scope.keep_max_value",
-                    "valueType": "float",
-                    "value": "3f"
-                },
-                {
-                    "valueName": "point_scope.invert_range",
-                    "valueType": "bool",
-                    "value": "false"
-                },
-                {
-                    "valueName": "point_scope.coloring_property",
-                    "valueType": "string",
-                    "value": "point_normal"
-                },
-                {
-                    "valueName": "point_scope.coloring_mode",
-                    "valueType": "Diagnostic::ColoringMode",
-                    "value": "ColoredProperty"
-                },
-                {
-                    "valueName": "point_scope.color",
-                    "valueType": "Math::float3",
-                    "value": {
-                        "x": "1f",
-                        "y": "1f",
-                        "z": "1f"
-                    }
-                },
-                {
-                    "valueName": "point_scope.heatmap_R",
-                    "valueType": "Math::FCurve",
-                    "value": {
-                        "version": "1",
-                        "preExtrapolation": "0",
-                        "postExtrapolation": "0",
-                        "points": [
-                            {
-                                "point": {
-                                    "locked": "1",
-                                    "interpolation": "2",
-                                    "pcn": {
-                                        "xp": "-0.40000000000000002",
-                                        "yp": "0.10000000000000001",
-                                        "x": "0",
-                                        "y": "0.10000000000000001",
-                                        "xn": "0.40000000000000002",
-                                        "yn": "0.10000000000000001"
-                                    }
-                                }
-                            },
-                            {
-                                "point": {
-                                    "locked": "1",
-                                    "interpolation": "2",
-                                    "pcn": {
-                                        "xp": "9.5999999999999996",
-                                        "yp": "1",
-                                        "x": "10",
-                                        "y": "1",
-                                        "xn": "10.4",
-                                        "yn": "1"
-                                    }
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "valueName": "point_scope.heatmap_G",
-                    "valueType": "Math::FCurve",
-                    "value": {
-                        "version": "1",
-                        "preExtrapolation": "0",
-                        "postExtrapolation": "0",
-                        "points": [
-                            {
-                                "point": {
-                                    "locked": "1",
-                                    "interpolation": "2",
-                                    "pcn": {
-                                        "xp": "-1.3999999999999999",
-                                        "yp": "0",
-                                        "x": "-1",
-                                        "y": "0",
-                                        "xn": "-0.59999999999999998",
-                                        "yn": "0"
-                                    }
-                                }
-                            },
-                            {
-                                "point": {
-                                    "locked": "1",
-                                    "interpolation": "2",
-                                    "pcn": {
-                                        "xp": "4.7000000000000002",
-                                        "yp": "1",
-                                        "x": "5",
-                                        "y": "1",
-                                        "xn": "5.2999999999999998",
-                                        "yn": "1"
-                                    }
-                                }
-                            },
-                            {
-                                "point": {
-                                    "locked": "1",
-                                    "interpolation": "2",
-                                    "pcn": {
-                                        "xp": "9.5999999999999996",
-                                        "yp": "0",
-                                        "x": "10",
-                                        "y": "0",
-                                        "xn": "10.4",
-                                        "yn": "0"
-                                    }
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "valueName": "point_scope.heatmap_B",
-                    "valueType": "Math::FCurve",
-                    "value": {
-                        "version": "1",
-                        "preExtrapolation": "0",
-                        "postExtrapolation": "0",
-                        "points": [
-                            {
-                                "point": {
-                                    "locked": "1",
-                                    "interpolation": "2",
-                                    "pcn": {
-                                        "xp": "-0.40000000000000002",
-                                        "yp": "1",
-                                        "x": "0",
-                                        "y": "1",
-                                        "xn": "0.40000000000000002",
-                                        "yn": "1"
-                                    }
-                                }
-                            },
-                            {
-                                "point": {
-                                    "locked": "1",
-                                    "interpolation": "2",
-                                    "pcn": {
-                                        "xp": "9.5999999999999996",
-                                        "yp": "0.10000000000000001",
-                                        "x": "10",
-                                        "y": "0.10000000000000001",
-                                        "xn": "10.4",
-                                        "yn": "0.10000000000000001"
-                                    }
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "valueName": "point_scope.arrow_property",
-                    "valueType": "string",
-                    "value": "point_velocity"
-                },
-                {
-                    "valueName": "point_scope.normalize_arrow",
-                    "valueType": "bool",
-                    "value": "false"
-                },
-                {
-                    "valueName": "point_scope.enable_arrows",
-                    "valueType": "bool",
-                    "value": "false"
-                },
-                {
-                    "valueName": "point_scope.length_scale",
-                    "valueType": "float",
-                    "value": "1f"
-                },
-                {
                     "valueName": "make_interpolation.out_color",
                     "valueType": "array<Math::float3>",
                     "value": []
@@ -2576,6 +2401,21 @@
                     "valueName": "if4.condition",
                     "valueType": "bool",
                     "value": "true"
+                },
+                {
+                    "valueName": "assign_diagnostic_material1.specular",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "assign_diagnostic_material1.emission",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "set_point_shape.shape",
+                    "valueType": "Geometry::PointShapes",
+                    "value": "Cube"
                 }
             ],
             "reservedNodeNames": [

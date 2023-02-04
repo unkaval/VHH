@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Geometry::bounds",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "uriImported": "file:///bounds.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -79,6 +79,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "3304.22 -108.677"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -88,11 +93,6 @@
                                                     "metaName": "out_bounds"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "3304.22 -108.677"
                                         }
                                     ]
                                 }
@@ -103,32 +103,32 @@
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Graph,pass"
+                    "metaValue": "BifrostGraph,Diagnostic::Display,volume_scope"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Logic,if"
+                    "metaValue": "BifrostGraph,Core::Array,resize_array"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Logic,not_equal"
+                    "metaValue": "BifrostGraph,Core::Array,array_size"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Diagnostic::Display,assign_diagnostic_material"
+                    "metaValue": "BifrostGraph,Core::Graph,terminal"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Object,set_property"
+                    "metaValue": "BifrostGraph,Rendering::Materials,assign_material"
                 },
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "2201.26 -756.933 726.833 1211.39"
+                    "metaValue": "61.1809 -3675.95 5444 7645.75"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -138,7 +138,21 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-178.509 -720.894"
+                    "metaValue": "273.232 -501.253"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "true"
                 }
             ],
             "ports": [
@@ -360,22 +374,6 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-144 79"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "set_geo_property",
-                    "nodeType": "Geometry::Properties::set_geo_property",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "1802.83 -70.2406"
                         }
                     ]
                 },
@@ -760,6 +758,54 @@
                             "metaValue": "1956.02 -302.848"
                         }
                     ]
+                },
+                {
+                    "nodeName": "constant_surface_mat",
+                    "nodeType": "Rendering::Materials::constant_surface_mat",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2386.27 181.842"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_geo_property_reference",
+                    "nodeType": "Rendering::Materials::set_geo_property_reference",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2679.31 40.9906"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "assign_material",
+                    "nodeType": "Rendering::Materials::assign_material",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2983.73 -81.1271"
+                        }
+                    ]
                 }
             ],
             "connections": [
@@ -812,32 +858,12 @@
                     "target": "cube_bounds.height"
                 },
                 {
-                    "source": "cube_bounds.cube_mesh",
-                    "target": "switch.inputs.cube_mesh"
-                },
-                {
                     "source": ".in_mesh",
                     "target": "get_point_position.geometry"
                 },
                 {
                     "source": "subtract.output",
                     "target": "half_of.value"
-                },
-                {
-                    "source": "switch.output",
-                    "target": "set_geo_property.geometry"
-                },
-                {
-                    "source": "xz_bounds.plane_mesh",
-                    "target": "switch.inputs.plane_mesh"
-                },
-                {
-                    "source": "yz_bounds.plane_mesh",
-                    "target": "switch.inputs.plane_mesh1"
-                },
-                {
-                    "source": "xy_bounds.plane_mesh",
-                    "target": "switch.inputs.plane_mesh2"
                 },
                 {
                     "source": "vector3_to_scalar1.x",
@@ -904,10 +930,6 @@
                     "target": "create_mesh_sphere.radius"
                 },
                 {
-                    "source": "create_mesh_sphere.sphere_mesh",
-                    "target": "switch.inputs.sphere_mesh"
-                },
-                {
                     "source": "switch.output",
                     "target": "get_point_position1.geometry"
                 },
@@ -930,10 +952,6 @@
                 {
                     "source": "array_bounds1.max_bound",
                     "target": "set_property1.value"
-                },
-                {
-                    "source": "set_geo_property.out_geometry",
-                    "target": ".out_bounds"
                 },
                 {
                     "source": "vector3_to_scalar1.x",
@@ -966,6 +984,42 @@
                 {
                     "source": "if.output",
                     "target": ".out_mesh"
+                },
+                {
+                    "source": "cube_bounds.cube_mesh",
+                    "target": "switch.inputs.cube_mesh"
+                },
+                {
+                    "source": "xz_bounds.plane_mesh",
+                    "target": "switch.inputs.plane_mesh"
+                },
+                {
+                    "source": "yz_bounds.plane_mesh",
+                    "target": "switch.inputs.plane_mesh1"
+                },
+                {
+                    "source": "xy_bounds.plane_mesh",
+                    "target": "switch.inputs.plane_mesh2"
+                },
+                {
+                    "source": "create_mesh_sphere.sphere_mesh",
+                    "target": "switch.inputs.sphere_mesh"
+                },
+                {
+                    "source": "switch.output",
+                    "target": "assign_material.geometry"
+                },
+                {
+                    "source": "assign_material.out_geometry",
+                    "target": ".out_bounds"
+                },
+                {
+                    "source": "set_geo_property_reference.out_material_definition",
+                    "target": "assign_material.surface_material"
+                },
+                {
+                    "source": "constant_surface_mat.material_definition",
+                    "target": "set_geo_property_reference.material_definition"
                 }
             ],
             "values": [
@@ -1044,26 +1098,6 @@
                     "valueName": "cube_bounds.base_to_pivot",
                     "valueType": "bool",
                     "value": "false"
-                },
-                {
-                    "valueName": "set_geo_property.property",
-                    "valueType": "string",
-                    "value": "color"
-                },
-                {
-                    "valueName": "set_geo_property.data",
-                    "valueType": "Math::float4",
-                    "value": {
-                        "x": "0.300000012f",
-                        "y": "0.300000012f",
-                        "z": "0.300000012f",
-                        "w": "0.300000012f"
-                    }
-                },
-                {
-                    "valueName": "set_geo_property.target",
-                    "valueType": "string",
-                    "value": "point_component"
                 },
                 {
                     "valueName": "switch.select_input",
@@ -1225,6 +1259,30 @@
                     "valueName": "not_equal.second",
                     "valueType": "int",
                     "value": "4L"
+                },
+                {
+                    "valueName": "constant_surface_mat.transparency",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.949999988f",
+                        "y": "0.949999988f",
+                        "z": "0.949999988f"
+                    }
+                },
+                {
+                    "valueName": "set_geo_property_reference.material_definition",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "set_geo_property_reference.material_property",
+                    "valueType": "string",
+                    "value": "color"
+                },
+                {
+                    "valueName": "set_geo_property_reference.geo_property",
+                    "valueType": "string",
+                    "value": "point_color"
                 }
             ],
             "reservedNodeNames": [
