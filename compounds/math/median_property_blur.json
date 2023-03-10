@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Math::median_property_blur",
-            "uriImported": "stream:/bifrostGraphShape5",
+            "uriImported": "file:///median_property_blur.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -23,31 +23,6 @@
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../helper_icons/derhornen.png"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Geometry::Properties,set_geo_property"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Array,array_size"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Logic,if"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Constants,float"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Iterators,for_each"
                 },
                 {
                     "metaName": "io_nodes",
@@ -83,7 +58,7 @@
                                         {
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
-                                            "metaValue": "-1005.64 -273.604"
+                                            "metaValue": "-2246.66 -309.577"
                                         }
                                     ]
                                 }
@@ -101,17 +76,17 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "988.734 -598.194"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "out_geo"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1886.38 -630.494"
                                         }
                                     ]
                                 }
@@ -120,9 +95,34 @@
                     ]
                 },
                 {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Modeling::Common,delete_points"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,if"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Type_Conversion,to_unsigned_int"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,pass"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,VHH::Visualize::Display,pnt_display"
+                },
+                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-1179.4 -815.465 1628.49 1291.56"
+                    "metaValue": "-1438.15 -394.316 1340.3 1451.82"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -132,21 +132,21 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "716.702 -2082.71"
+                    "metaValue": "2872.12 2490.02"
                 }
             ],
             "terminalStates": [
                 {
                     "name": "Core::Graph::terminal::final",
-                    "enabled": "false"
+                    "enabled": "true"
                 },
                 {
                     "name": "Core::Graph::terminal::proxy",
-                    "enabled": "false"
+                    "enabled": "true"
                 },
                 {
                     "name": "Core::Graph::terminal::diagnostic",
-                    "enabled": "false"
+                    "enabled": "true"
                 }
             ],
             "ports": [
@@ -172,7 +172,7 @@
                     "portName": "iterations",
                     "portDirection": "input",
                     "portType": "long",
-                    "portDefault": "3"
+                    "portDefault": "6"
                 },
                 {
                     "portName": "out_geo",
@@ -183,8 +183,13 @@
             "compounds": [
                 {
                     "name": "iterate",
-                    "uriImported": "stream:/bifrostGraphShape5",
+                    "uriImported": "file:///median_property_blur.json",
                     "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                        },
                         {
                             "metaName": "icon",
                             "metaType": "string",
@@ -271,7 +276,7 @@
                         {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "-440 -340 881 681"
+                            "metaValue": "-585 -515.469 1117 1209.94"
                         }
                     ],
                     "ports": [
@@ -307,8 +312,13 @@
                     "compounds": [
                         {
                             "name": "for_each",
-                            "uriImported": "stream:/bifrostGraphShape5",
+                            "uriImported": "file:///median_property_blur.json",
                             "metadata": [
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                                },
                                 {
                                     "metaName": "icon",
                                     "metaType": "string",
@@ -685,7 +695,7 @@
                         },
                         {
                             "name": "Core::Graph::terminal::diagnostic",
-                            "enabled": "false"
+                            "enabled": "true"
                         }
                     ],
                     "metadata": [
@@ -693,11 +703,6 @@
                             "metaName": "DisplayMode",
                             "metaType": "string",
                             "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-554.543 -320.936"
                         },
                         {
                             "metaName": "PortExpandedState",
@@ -708,6 +713,11 @@
                                     "metaValue": "0"
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1583.08 -541.407"
                         }
                     ]
                 },
@@ -723,7 +733,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-264.944 -626.012"
+                            "metaValue": "731.15 -819.055"
                         }
                     ]
                 },
@@ -739,7 +749,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "595.954 -604.27"
+                            "metaValue": "1614.62 -631.42"
                         }
                     ]
                 },
@@ -755,7 +765,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-258.678 -265.345"
+                            "metaValue": "759.986 -292.495"
                         }
                     ]
                 },
@@ -771,7 +781,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "290.774 -405.127"
+                            "metaValue": "1309.44 -432.277"
                         }
                     ]
                 },
@@ -787,7 +797,219 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "27.9623 -192.955"
+                            "metaValue": "1046.63 -220.105"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_geo_schema_type",
+                    "nodeType": "Geometry::Common::get_geo_schema_type",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1982.29 -105.236"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if2",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "154.723 -152.75"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "update_strands_length",
+                    "nodeType": "Geometry::Strands::update_strands_length",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1696.84 9.97489"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "array_size1",
+                    "nodeType": "Core::Array::array_size",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1451.93 -41.7069"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "first_in_array",
+                    "nodeType": "Core::Array::first_in_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1443.16 156.923"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "to_float",
+                    "nodeType": "Core::Type_Conversion::to_float",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1189.74 -14.4741"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "average_point_length",
+                    "nodeType": "Core::Math::divide",
+                    "multiInPortNames": [
+                        "first1",
+                        "float"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-938.67 130.862"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_points_in_radius",
+                    "nodeType": "Geometry::Query::get_points_in_radius",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-691.706 260.857"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "pass",
+                    "nodeType": "Core::Graph::pass",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1940.93 194.933"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_point_position",
+                    "nodeType": "Geometry::Properties::get_point_position",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1400.54 390.323"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "connectivity_info",
+                    "nodeType": "Core::Graph::pass",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "440.6 -267.376"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "to_unsigned_int",
+                    "nodeType": "Core::Type_Conversion::to_unsigned_int",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-422.012 261.13"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if3",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-130.416 38.3006"
                         }
                     ]
                 }
@@ -804,14 +1026,6 @@
                 {
                     "source": "update_point_neighbors.out_mesh",
                     "target": "set_geo_property.geometry"
-                },
-                {
-                    "source": "update_point_neighbors.point_neighbors",
-                    "target": "array_size.array"
-                },
-                {
-                    "source": "update_point_neighbors.point_neighbors",
-                    "target": "iterate.point_neighbors"
                 },
                 {
                     "source": "get_geo_property_check.data",
@@ -846,10 +1060,6 @@
                     "target": "set_geo_property.property"
                 },
                 {
-                    "source": ".iterations",
-                    "target": "iterate.max_iterations"
-                },
-                {
                     "source": ".in_geo",
                     "target": "update_point_neighbors.mesh"
                 },
@@ -860,6 +1070,94 @@
                 {
                     "source": ".property_type",
                     "target": "get_geo_property_check.type"
+                },
+                {
+                    "source": ".in_geo",
+                    "target": "get_geo_schema_type.object"
+                },
+                {
+                    "source": "update_strands_length.point_length",
+                    "target": "array_size1.array"
+                },
+                {
+                    "source": "update_strands_length.strand_length",
+                    "target": "first_in_array.array"
+                },
+                {
+                    "source": "array_size1.size",
+                    "target": "to_float.from"
+                },
+                {
+                    "source": "first_in_array.first",
+                    "target": "average_point_length.first.first1"
+                },
+                {
+                    "source": "to_float.float",
+                    "target": "average_point_length.first.float"
+                },
+                {
+                    "source": ".in_geo",
+                    "target": "pass.input"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "update_strands_length.strands"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "get_points_in_radius.geometry"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "get_point_position.geometry"
+                },
+                {
+                    "source": "get_point_position.point_position",
+                    "target": "get_points_in_radius.positions"
+                },
+                {
+                    "source": "average_point_length.output",
+                    "target": "get_points_in_radius.radius"
+                },
+                {
+                    "source": "get_geo_schema_type.mesh",
+                    "target": "if2.condition"
+                },
+                {
+                    "source": ".iterations",
+                    "target": "iterate.max_iterations"
+                },
+                {
+                    "source": "connectivity_info.output",
+                    "target": "array_size.array"
+                },
+                {
+                    "source": "update_point_neighbors.point_neighbors",
+                    "target": "if2.true_case"
+                },
+                {
+                    "source": "if2.output",
+                    "target": "connectivity_info.input"
+                },
+                {
+                    "source": "connectivity_info.output",
+                    "target": "iterate.point_neighbors"
+                },
+                {
+                    "source": "get_points_in_radius.point_indices",
+                    "target": "to_unsigned_int.from"
+                },
+                {
+                    "source": "get_geo_schema_type.strands",
+                    "target": "if3.condition"
+                },
+                {
+                    "source": "to_unsigned_int.unsigned_int",
+                    "target": "if3.true_case"
+                },
+                {
+                    "source": "if3.output",
+                    "target": "if2.false_case"
                 }
             ],
             "values": [

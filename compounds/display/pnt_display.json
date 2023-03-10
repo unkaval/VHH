@@ -12,6 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Visualize::Display::pnt_display",
+            "uriImported": "file:///pnt_display.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -40,7 +41,7 @@
                                         {
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
-                                            "metaValue": "-1813.92 -124.381"
+                                            "metaValue": "-1819.64 -211.575"
                                         },
                                         {
                                             "metaName": "io_ports",
@@ -80,7 +81,7 @@
                                         {
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
-                                            "metaValue": "1685.31 80.9276"
+                                            "metaValue": "50.5014 49.091"
                                         },
                                         {
                                             "metaName": "io_ports",
@@ -102,32 +103,47 @@
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Geometry::Points,construct_points"
+                    "metaValue": "BifrostGraph,Geometry::Common,interpret_auto_port_as_vector"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Simulation::Common,force_pull_port"
+                    "metaValue": "BifrostGraph,Geometry::Common,sample_interpreted_auto_port_as_vector"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Geometry::Properties,get_point_count"
+                    "metaValue": "BifrostGraph,Core::Fields,field_is_empty"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Type_Conversion,to_int"
+                    "metaValue": "BifrostGraph,Core::Array,resize_array"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,square_root"
+                    "metaValue": "BifrostGraph,Core::Array,array_size"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "points_in",
+                            "metaType": "string",
+                            "metaValue": "1"
+                        },
+                        {
+                            "metaName": "color_in",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
                 },
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-1333.79 -709.613 1389.36 1513.22"
+                    "metaValue": "-1768.14 -668.338 1241.88 1117.37"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -137,7 +153,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-90.7935 928.427"
+                    "metaValue": "-629.751 569.267"
                 }
             ],
             "terminalStates": [
@@ -171,10 +187,7 @@
                 },
                 {
                     "portName": "color_in",
-                    "portDirection": "input",
-                    "portType": "array<Math::float3>",
-                    "portDefault": [],
-                    "isDefaultFanIn": "true"
+                    "portDirection": "input"
                 },
                 {
                     "portName": "default_color",
@@ -203,7 +216,7 @@
                     "portName": "default_size",
                     "portDirection": "input",
                     "portType": "float",
-                    "portDefault": "0.25f"
+                    "portDefault": "0.0500000007f"
                 },
                 {
                     "portName": "points_out",
@@ -227,7 +240,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-559.101 -190.52"
+                            "metaValue": "-1046.2 -500.927"
                         }
                     ]
                 },
@@ -243,7 +256,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "534.293 -321.047"
+                            "metaValue": "-557.702 -446.802"
                         }
                     ]
                 },
@@ -257,6 +270,11 @@
                             "metaValue": "2"
                         },
                         {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-210.621 -212.986"
+                        },
+                        {
                             "metaName": "PortExpandedState",
                             "metadata": [
                                 {
@@ -268,13 +286,18 @@
                                     "metaName": "Color",
                                     "metaType": "string",
                                     "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Culling",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "Arrows",
+                                    "metaType": "string",
+                                    "metaValue": "0"
                                 }
                             ]
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "819.293 -162.047"
                         }
                     ]
                 },
@@ -307,7 +330,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1687.3 -227.91"
+                            "metaValue": "52.4913 -259.747"
                         }
                     ]
                 },
@@ -323,7 +346,17 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-301.366 -4.24452"
+                            "metaValue": "-793.169 194.929"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Filter",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -337,109 +370,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "53.4043 -236"
-                        },
-                        {
                             "metaName": "valuenode_defaultvalue",
                             "metaType": "string",
                             "metaValue": "point_color"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "interpret_auto_port_as_vector1",
-                    "nodeType": "Geometry::Common::interpret_auto_port_as_vector",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
                         },
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-1210.63 -465.965"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "array_is_empty",
-                    "nodeType": "Core::Array::array_is_empty",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-521.901 315.2"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "if",
-                    "nodeType": "Core::Logic::if",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "117.191 291.022"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "value1",
-                    "valueType": "array<Math::float3>",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-812.769 340.801"
-                        },
-                        {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": "0"
-                        },
-                        {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": "0"
-                        },
-                        {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": "0"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "construct_points",
-                    "nodeType": "Geometry::Points::construct_points",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-1473.83 -272.961"
+                            "metaValue": "-796.654 -20.1798"
                         }
                     ]
                 }
@@ -478,56 +416,28 @@
                     "target": "point_scope.coloring_property"
                 },
                 {
-                    "source": "interpret_auto_port_as_vector1.data",
-                    "target": ".points_out"
-                },
-                {
-                    "source": "array_is_empty.empty",
-                    "target": "if.condition"
-                },
-                {
-                    "source": "interpret_auto_port_as_vector.data",
-                    "target": "if.false_case"
-                },
-                {
-                    "source": "if.output",
-                    "target": "set_geo_property.data"
-                },
-                {
-                    "source": "value1.output",
-                    "target": "array_is_empty.array"
-                },
-                {
-                    "source": "interpret_auto_port_as_vector1.data",
-                    "target": "construct_points1.point_position"
-                },
-                {
-                    "source": "construct_points.points",
-                    "target": "interpret_auto_port_as_vector1.geometry"
-                },
-                {
-                    "source": ".default_color",
-                    "target": "if.true_case"
-                },
-                {
                     "source": "point_scope.diagnostic_geo",
                     "target": "terminal.diagnostic.diagnostic_geo"
-                },
-                {
-                    "source": ".points_in",
-                    "target": "interpret_auto_port_as_vector1.interpreted_vector_port"
-                },
-                {
-                    "source": ".points_in",
-                    "target": "construct_points.point_position"
                 },
                 {
                     "source": ".color_in",
                     "target": "interpret_auto_port_as_vector.interpreted_vector_port"
                 },
                 {
-                    "source": ".color_in",
-                    "target": "value1.value"
+                    "source": "interpret_auto_port_as_vector.data",
+                    "target": "set_geo_property.data"
+                },
+                {
+                    "source": ".default_color",
+                    "target": "interpret_auto_port_as_vector.default_value"
+                },
+                {
+                    "source": ".points_in",
+                    "target": "construct_points1.point_position"
+                },
+                {
+                    "source": ".points_in",
+                    "target": ".points_out"
                 }
             ],
             "values": [
@@ -574,26 +484,6 @@
                     "valueName": "value.value",
                     "valueType": "string",
                     "value": "point_color"
-                },
-                {
-                    "valueName": "interpret_auto_port_as_vector1.geometry_component",
-                    "valueType": "string",
-                    "value": "point_component"
-                },
-                {
-                    "valueName": "interpret_auto_port_as_vector1.position_property",
-                    "valueType": "string",
-                    "value": "point_position"
-                },
-                {
-                    "valueName": "interpret_auto_port_as_vector1.indices",
-                    "valueType": "array<long>",
-                    "value": []
-                },
-                {
-                    "valueName": "value1.value",
-                    "valueType": "array<Math::float3>",
-                    "value": []
                 }
             ],
             "reservedNodeNames": [
