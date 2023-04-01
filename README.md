@@ -2,8 +2,7 @@
 
 Bifrost stuff!  I'm cleaning and uploading the compounds one by one, so stick around maybe?  
 
-***ValHallen's (little) Helpers:***  my Maya Bifrost compounds and some graphs
+***ValHallen's (little) Helpers.  AKA "VHH":***  my Bifrost "pack" - continually (if slowly) added to, changed, fixed, deleted, rebuilt and ultimately used.
 
-As I am using this as Git learning and practise, there will be some (lots of) weirdness I reckon.
+**NOTE:** I use my own compounds in my compounds, so you kinda need to grab all of them for some of them to work!!
 
-Addendum, yes, I'm building a pack, very very slooooowly.  But I am trying to get stuff done most nights, so maybe check back often?
