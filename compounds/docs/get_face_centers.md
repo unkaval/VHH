@@ -1,5 +1,5 @@
 ### ***get_face_centers***
-When an object with faces is connected to this compound, it will return the face center positions as a geo_property on the object, and a float3 array.  It will also return the face_indicies as a 2d uint array.  This compound only works on meshes.  If an object without faces is connected (points, strand etc) the object will pass through the compound unchanged.<br />
+When an object containing faces is connected to this compound, it will return the face center positions as a geo_property on the object, and a float3 array.  It will also return the face_indicies as a 2d uint array.  This compound only works on meshes.  If an object without faces is connected (points, strand etc) the object will pass through the compound unchanged.<br />
 
 ***
 ## Input
