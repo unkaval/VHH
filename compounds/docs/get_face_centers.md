@@ -25,5 +25,5 @@ When an object with faces is connected to this compound, it will return the face
 <br />The face_center data as a float3 array.
 
 <span style="color:#62CFD9">***face_point_indicies***</span>
-<br />A 2d array containing each the index of each point making up each face.
+<br />A 2d array containing the index of each point making up each face.
 
