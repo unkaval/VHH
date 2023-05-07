@@ -23,7 +23,7 @@ Sorts and displays points by proximity to another point.<br />
 
 ***
 ## Output
-<span style="color:#82D99F">***sorted_array***</span>
+<span style="color:#A8D977">***sorted_array***</span>
 <br />The array, sorted by proximity.
 
 <span style="color:#62CFD9">***sorted_indices***</span>
