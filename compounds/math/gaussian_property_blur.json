@@ -12,6 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Math::gaussian_property_blur",
+            "uriImported": "file:///gaussian_property_blur.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -99,7 +100,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-89.7784 -254.197 1140.62 1046.7"
+                    "metaValue": "-694.752 -673.269 1350.79 1224.21"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -109,7 +110,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-130.079 -72.3896"
+                    "metaValue": "789.115 -782.18"
                 }
             ],
             "ports": [
@@ -164,6 +165,7 @@
             "compounds": [
                 {
                     "name": "do_gaussian",
+                    "uriImported": "file:///gaussian_property_blur.json",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -261,12 +263,12 @@
                             ]
                         },
                         {
-                            "metaName": "backdrop",
+                            "metaName": "sticky_note_backdrop",
                             "metadata": [
                                 {
-                                    "metaName": "type",
+                                    "metaName": "title",
                                     "metaType": "string",
-                                    "metaValue": "backdrop"
+                                    "metaValue": ""
                                 },
                                 {
                                     "metaName": "text",
@@ -274,16 +276,36 @@
                                     "metaValue": "F = ? f_i * exp(-||x-x_i||^2/(2*s^2))\n\nG = ? exp(-||x-x_i||^2/(2*s^2))"
                                 },
                                 {
+                                    "metaName": "type",
+                                    "metaType": "string",
+                                    "metaValue": "sticky_note"
+                                },
+                                {
+                                    "metaName": "fontSize",
+                                    "metaType": "string",
+                                    "metaValue": "6"
+                                },
+                                {
+                                    "metaName": "color",
+                                    "metaType": "string",
+                                    "metaValue": "#ff7cc29f"
+                                },
+                                {
+                                    "metaName": "format",
+                                    "metaType": "string",
+                                    "metaValue": "txt"
+                                },
+                                {
                                     "metaName": "coords",
                                     "metaType": "string",
-                                    "metaValue": "-495.872 435.545 285.228 70.2268"
+                                    "metaValue": "-487.872 435.545 269.228 55"
                                 }
                             ]
                         },
                         {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "-229.829 -88.2947 566.373 794.661"
+                            "metaValue": "-384.556 -87.9597 877.446 795.222"
                         }
                     ],
                     "ports": [
@@ -311,6 +333,7 @@
                     "compounds": [
                         {
                             "name": "for_each",
+                            "uriImported": "file:///gaussian_property_blur.json",
                             "metadata": [
                                 {
                                     "metaName": "icon",
@@ -439,15 +462,15 @@
                                         {
                                             "metaName": "color",
                                             "metaType": "string",
-                                            "metaValue": "#42436d"
+                                            "metaValue": "#288baef7"
                                         },
                                         {
                                             "metaName": "coords",
                                             "metaType": "string",
-                                            "metaValue": "-140 228 814.195 487.973"
+                                            "metaValue": "-140 154 814.195 561.973"
                                         },
                                         {
-                                            "metaName": "text",
+                                            "metaName": "title",
                                             "metaType": "string",
                                             "metaValue": " D I S T A N C E  S Q U A R E D"
                                         }
@@ -1126,42 +1149,6 @@
                             "metaValue": "638.5 -27.9241"
                         }
                     ]
-                },
-                {
-                    "nodeName": "sigma_squared",
-                    "nodeType": "Core::Math::multiply",
-                    "multiInPortNames": [
-                        "sigma",
-                        "sigma1"
-                    ],
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-458.431 652.158"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "twice_of",
-                    "nodeType": "Core::Math::twice_of",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-91.3975 627.774"
-                        }
-                    ]
                 }
             ],
             "connections": [
@@ -1190,10 +1177,6 @@
                     "target": "do_gaussian.neighbor_indicies"
                 },
                 {
-                    "source": "sigma_squared.output",
-                    "target": "twice_of.value"
-                },
-                {
                     "source": ".property",
                     "target": "get_geo_property.property"
                 },
@@ -1212,14 +1195,6 @@
                 {
                     "source": ".sigma",
                     "target": "do_gaussian.sigma"
-                },
-                {
-                    "source": ".sigma",
-                    "target": "sigma_squared.first.sigma"
-                },
-                {
-                    "source": ".sigma",
-                    "target": "sigma_squared.first.sigma1"
                 },
                 {
                     "source": ".in_geo",
