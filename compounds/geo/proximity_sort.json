@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Geometry::proximity_sort",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "uriImported": "file:///proximity_sort.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -23,8 +23,7 @@
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../helper_icons/derhornen.png"
-                }, 
-
+                },
                 {
                     "metaName": "io_nodes",
                     "metadata": [
@@ -205,21 +204,6 @@
                     "metaValue": "BifrostGraph,User::Compounds,fit_array"
                 },
                 {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-965.64 -1295.49 1733.69 1426.14"
-                },
-                {
-                    "metaName": "DisplayMode",
-                    "metaType": "string",
-                    "metaValue": "2"
-                },
-                {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "-373.361 -535.696"
-                },
-                {
                     "metaName": "UILayout",
                     "metaType": "string",
                     "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"expanded\": false,\n                \"group\": \"inputs\",\n                \"items\": [\n                    {\n                        \"port\": \"from_position\"\n                    },\n                    {\n                        \"port\": \"point_positions\"\n                    }\n                ]\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"display options\",\n                \"items\": [\n                    {\n                        \"port\": \"size_display\"\n                    },\n                    {\n                        \"port\": \"closest_size\"\n                    },\n                    {\n                        \"port\": \"furthest_size\"\n                    },\n                    {\n                        \"port\": \"ramp\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
@@ -238,6 +222,21 @@
                             "metaValue": "0"
                         }
                     ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-852.032 -1869.94 1175.67 967.11"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "42.1382 -477.374"
                 }
             ],
             "terminalStates": [
@@ -309,7 +308,7 @@
             "compounds": [
                 {
                     "name": "display",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///proximity_sort.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -658,7 +657,7 @@
                 },
                 {
                     "name": "fit_array",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///proximity_sort.json",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -1147,10 +1146,6 @@
                     "target": "get_from_array.index"
                 },
                 {
-                    "source": "get_from_array.value",
-                    "target": ".value"
-                },
-                {
                     "source": "subtract1.output",
                     "target": "length.vector"
                 },
@@ -1233,6 +1228,10 @@
                 {
                     "source": ".ramp",
                     "target": "display.preset"
+                },
+                {
+                    "source": "get_from_array.value",
+                    "target": ".sorted_array"
                 }
             ],
             "values": [
