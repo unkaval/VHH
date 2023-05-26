@@ -1,0 +1,224 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "VHH::Core::Logic::weighted_activation",
+            "uriImported": "stream:/bifrostGraphShape2",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/weighted_activation.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../helper_icons/derhornen.png"
+                },                 
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-291.717 -64.7184"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "enable"
+                                                },
+                                                {
+                                                    "metaName": "if_false"
+                                                },
+                                                {
+                                                    "metaName": "if_true"
+                                                },
+                                                {
+                                                    "metaName": "weight"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "534.84 66.944"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "data"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-320.88 -321.317 1250.64 861.327"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-1577 -335"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "enable",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "if_false",
+                    "portDirection": "input",
+                    "portDefaultType": "array<float>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "if_true",
+                    "portDirection": "input",
+                    "portDefaultType": "array<float>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "weight",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "1f"
+                },
+                {
+                    "portName": "data",
+                    "portDirection": "output"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "if3",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "257.136 66.4224"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "lerp",
+                    "nodeType": "Core::Math::lerp",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "8.61364 -65.3113"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "if3.output",
+                    "target": ".data"
+                },
+                {
+                    "source": "lerp.interpolated",
+                    "target": "if3.true_case"
+                },
+                {
+                    "source": ".enable",
+                    "target": "if3.condition"
+                },
+                {
+                    "source": ".if_false",
+                    "target": "if3.false_case"
+                },
+                {
+                    "source": ".if_false",
+                    "target": "lerp.first"
+                },
+                {
+                    "source": ".if_true",
+                    "target": "lerp.second"
+                },
+                {
+                    "source": ".weight",
+                    "target": "lerp.fraction"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "lerp.fraction",
+                    "valueType": "float",
+                    "value": "1f"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

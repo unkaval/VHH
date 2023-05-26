@@ -84,10 +84,10 @@
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
-                                                    "metaName": "ambient_contribution"
-                                                },
-                                                {
                                                     "metaName": "light_data"
+                                                },                                                
+                                                {
+                                                    "metaName": "ambient_contribution"
                                                 }
                                             ]
                                         }
@@ -183,10 +183,6 @@
                     "portDefault": "1f"
                 },
                 {
-                    "portName": "ambient_contribution",
-                    "portDirection": "output"
-                },
-                {
                     "portName": "icon_position",
                     "portDirection": "input",
                     "portType": "Math::float3",
@@ -200,7 +196,11 @@
                     "portName": "light_data",
                     "portDirection": "output",
                     "portType": "Object"
-                }
+                },
+                {
+                    "portName": "ambient_contribution",
+                    "portDirection": "output"
+                }                
             ],
             "compounds": [
                 {
