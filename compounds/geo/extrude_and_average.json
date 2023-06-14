@@ -1,0 +1,531 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "VHH::Core::Geometry::extrude_and_average",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/extrude_and_average.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../helper_icons/derhornen.png"
+                },                  
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-821.681 -31.9993"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "mesh_array"
+                                                },
+                                                {
+                                                    "metaName": "blur_amount"
+                                                },
+                                                {
+                                                    "metaName": "extrusion_thickness"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "44.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "821.927 -131.514"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "out_mesh"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Modeling::Points,displace_points"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Fields,fractal_noise_field"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,VHH::Core::Math,median_property_blur"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Mesh,update_mesh_normals"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Array,sequence_array"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "481.893 -645.269 966.602 1103.1"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "44.000000"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "717.525 -317.094"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "mesh_array",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "out_mesh",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "blur_amount",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "6"
+                },
+                {
+                    "portName": "extrusion_thickness",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.100000001f"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "extrude_faces",
+                    "nodeType": "Modeling::Mesh::extrude_faces",
+                    "fanInPortNames": {
+                        "faces_to_extrude": [
+                            "sequence"
+                        ]
+                    },
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "faces_to_extrude",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "General",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-77.6429 -182.693"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_mesh_structure",
+                    "nodeType": "Geometry::Mesh::get_mesh_structure",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "38.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-585.351 102.376"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "sequence_array",
+                    "nodeType": "Core::Array::sequence_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-329.171 124.653"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "update_mesh_normals",
+                    "nodeType": "Geometry::Mesh::update_mesh_normals",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "43.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "503.562 -131.516"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "median_property_blur",
+                    "nodeType": "VHH::Core::Math::median_property_blur",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "208.158 -84.1627"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "42.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".mesh_array",
+                    "target": "extrude_faces.mesh"
+                },
+                {
+                    "source": ".mesh_array",
+                    "target": "get_mesh_structure.mesh"
+                },
+                {
+                    "source": "get_mesh_structure.face_count",
+                    "target": "sequence_array.size"
+                },
+                {
+                    "source": "sequence_array.sequence",
+                    "target": "extrude_faces.faces_to_extrude.sequence"
+                },
+                {
+                    "source": "extrude_faces.out_mesh",
+                    "target": "median_property_blur.in_geo"
+                },
+                {
+                    "source": "update_mesh_normals.out_mesh",
+                    "target": ".out_mesh"
+                },
+                {
+                    "source": "median_property_blur.out_geo",
+                    "target": "update_mesh_normals.mesh"
+                },
+                {
+                    "source": ".blur_amount",
+                    "target": "median_property_blur.iterations"
+                },
+                {
+                    "source": ".extrusion_thickness",
+                    "target": "extrude_faces.thickness"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "extrude_faces.mesh",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "extrude_faces.faces_to_extrude",
+                    "valueType": "array<long>",
+                    "value": []
+                },
+                {
+                    "valueName": "extrude_faces.divisions",
+                    "valueType": "long",
+                    "value": "1"
+                },
+                {
+                    "valueName": "extrude_faces.smoothing_angle",
+                    "valueType": "float",
+                    "value": "30f"
+                },
+                {
+                    "valueName": "extrude_faces.strands_extrusion_path",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "extrude_faces.taper",
+                    "valueType": "Math::FCurve",
+                    "value": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "-0.40000000000000002",
+                                        "yp": "1",
+                                        "x": "0",
+                                        "y": "1",
+                                        "xn": "0.40000000000000002",
+                                        "yn": "1"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "0.28159000000000001",
+                                        "yp": "0.696774",
+                                        "x": "1",
+                                        "y": "1",
+                                        "xn": "1.71841",
+                                        "yn": "1.303226"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "valueName": "extrude_faces.use_extrusion_path",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "extrude_faces.thickness",
+                    "valueType": "float",
+                    "value": "0.5f"
+                },
+                {
+                    "valueName": "extrude_faces.twist",
+                    "valueType": "Math::FCurve",
+                    "value": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "-0.10000000000000001",
+                                        "yp": "0.003225",
+                                        "x": "0",
+                                        "y": "0",
+                                        "xn": "0.10000000000000001",
+                                        "yn": "0.003225"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "0.90000000000000002",
+                                        "yp": "0",
+                                        "x": "1",
+                                        "y": "0",
+                                        "xn": "1.1000000000000001",
+                                        "yn": "0"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "valueName": "extrude_faces.properties",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "sequence_array.start",
+                    "valueType": "long",
+                    "value": "0"
+                },
+                {
+                    "valueName": "sequence_array.step",
+                    "valueType": "long",
+                    "value": "1"
+                },
+                {
+                    "valueName": "median_property_blur.property_type",
+                    "valueType": "array<Math::float3>",
+                    "value": []
+                },
+                {
+                    "valueName": "median_property_blur.iterations",
+                    "valueType": "long",
+                    "value": "6"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
