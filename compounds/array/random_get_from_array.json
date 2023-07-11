@@ -12,13 +12,13 @@
     "compounds": [
         {
             "name": "VHH::Core::Array::random_get_from_array",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "uriImported": "file:///random_get_from_array.json",
             "metadata": [
                 {
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../helper_icons/derhornen.png"
-                },                  
+                },
                 {
                     "metaName": "io_nodes",
                     "metadata": [
@@ -39,10 +39,15 @@
                                             "metaValue": "-1172.65 -133.019"
                                         },
                                         {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "34.000000"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
-                                                    "metaName": "point_position"
+                                                    "metaName": "array"
                                                 },
                                                 {
                                                     "metaName": "seed"
@@ -70,10 +75,15 @@
                                             "metaValue": "-4.46598 -442.943"
                                         },
                                         {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "35.000000"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
-                                                    "metaName": "value"
+                                                    "metaName": "random_value"
                                                 }
                                             ]
                                         }
@@ -111,7 +121,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-1226.06 -714.089 1562.55 1258.42"
+                    "metaValue": "-335 -347 671 694"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -119,14 +129,19 @@
                     "metaValue": "2"
                 },
                 {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "70.000000"
+                },
+                {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "838.219 1330.78"
+                    "metaValue": "419.418 81.0882"
                 }
             ],
             "ports": [
                 {
-                    "portName": "point_position",
+                    "portName": "array",
                     "portDirection": "input"
                 },
                 {
@@ -136,7 +151,7 @@
                     "portDefault": "0"
                 },
                 {
-                    "portName": "value",
+                    "portName": "random_value",
                     "portDirection": "output"
                 }
             ],
@@ -154,6 +169,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-659.808 -208.443"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
                         }
                     ]
                 },
@@ -170,6 +190,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-906.628 -340.759"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
                         }
                     ]
                 },
@@ -186,13 +211,18 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-372.275 -443.813"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
                         }
                     ]
                 }
             ],
             "connections": [
                 {
-                    "source": ".point_position",
+                    "source": ".array",
                     "target": "array_size.array"
                 },
                 {
@@ -204,7 +234,7 @@
                     "target": "random_value.seed"
                 },
                 {
-                    "source": ".point_position",
+                    "source": ".array",
                     "target": "get_from_array.array"
                 },
                 {
@@ -213,7 +243,7 @@
                 },
                 {
                     "source": "get_from_array.value",
-                    "target": ".value"
+                    "target": ".random_value"
                 }
             ],
             "values": [
