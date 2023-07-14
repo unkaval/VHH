@@ -12,6 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Geometry::quick_grid",
+            "uriImported": "file:///quick_grid.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -36,6 +37,11 @@
                                             "metaName": "DisplayMode",
                                             "metaType": "string",
                                             "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-433.131 -360.236"
                                         },
                                         {
                                             "metaName": "io_ports",
@@ -70,9 +76,9 @@
                                             ]
                                         },
                                         {
-                                            "metaName": "LayoutPos",
+                                            "metaName": "zValue",
                                             "metaType": "string",
-                                            "metaValue": "-433.131 -360.236"
+                                            "metaValue": "57.000000"
                                         }
                                     ]
                                 },
@@ -102,6 +108,11 @@
                                                     "metaName": "show_zero"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "58.000000"
                                         }
                                     ]
                                 },
@@ -125,6 +136,11 @@
                                                     "metaName": "point_size"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "59.000000"
                                         }
                                     ]
                                 }
@@ -159,6 +175,11 @@
                                                     "metaName": "number_of_points"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "60.000000"
                                         }
                                     ]
                                 }
@@ -194,7 +215,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "4782.33 -918.99 1077.32 1081.76"
+                    "metaValue": "4357.63 -907.873 1298.9 1241.64"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -204,12 +225,32 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-697.353 -517.007"
+                    "metaValue": "406 -730"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "369.000000"
                 },
                 {
                     "metaName": "UILayout",
                     "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"group\": \"grid\",\n                \"items\": [\n                    {\n                        \"port\": \"x\"\n                    },\n                    {\n                        \"port\": \"y\"\n                    },\n                    {\n                        \"port\": \"z\"\n                    },\n                    {\n                        \"port\": \"x_step\"\n                    },\n                    {\n                        \"port\": \"y_step\"\n                    },\n                    {\n                        \"port\": \"z_step\"\n                    },\n                    {\n                        \"port\": \"offset\"\n                    },\n                    {\n                        \"port\": \"honeycomb\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"display\",\n                \"items\": [\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"centered\"\n                    },\n                    {\n                        \"port\": \"default_color\"\n                    },\n                    {\n                        \"port\": \"show_zero\"\n                    }\n                ]\n            },\n            {\n                \"port\": \"color_in\"\n            }\n        ]\n    }\n}\n"
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"expanded\": true,\n                \"group\": \"grid\",\n                \"items\": [\n                    {\n                        \"port\": \"x\"\n                    },\n                    {\n                        \"port\": \"y\"\n                    },\n                    {\n                        \"port\": \"z\"\n                    },\n                    {\n                        \"port\": \"x_step\"\n                    },\n                    {\n                        \"port\": \"y_step\"\n                    },\n                    {\n                        \"port\": \"z_step\"\n                    },\n                    {\n                        \"port\": \"offset\"\n                    },\n                    {\n                        \"port\": \"honeycomb\"\n                    }\n                ]\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"display\",\n                \"items\": [\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"centered\"\n                    },\n                    {\n                        \"port\": \"default_color\"\n                    },\n                    {\n                        \"port\": \"show_zero\"\n                    }\n                ]\n            },\n            {\n                \"port\": \"color_in\"\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "display",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "grid",
+                            "metaType": "string",
+                            "metaValue": "1"
+                        }
+                    ]
                 }
             ],
             "terminalStates": [
@@ -236,37 +277,37 @@
                     "portName": "x",
                     "portDirection": "input",
                     "portType": "long",
-                    "portDefault": "12"
+                    "portDefault": "100"
                 },
                 {
                     "portName": "y",
                     "portDirection": "input",
                     "portType": "long",
-                    "portDefault": "1"
+                    "portDefault": "100"
                 },
                 {
                     "portName": "z",
                     "portDirection": "input",
                     "portType": "long",
-                    "portDefault": "17"
+                    "portDefault": "100"
                 },
                 {
                     "portName": "x_step",
                     "portDirection": "input",
                     "portType": "float",
-                    "portDefault": "1f"
+                    "portDefault": "0.100000001f"
                 },
                 {
                     "portName": "y_step",
                     "portDirection": "input",
                     "portType": "float",
-                    "portDefault": "1f"
+                    "portDefault": "0.100000001f"
                 },
                 {
                     "portName": "z_step",
                     "portDirection": "input",
                     "portType": "float",
-                    "portDefault": "1f"
+                    "portDefault": "0.100000001f"
                 },
                 {
                     "portName": "offset",
@@ -331,12 +372,13 @@
                     "portName": "point_size",
                     "portDirection": "input",
                     "portType": "float",
-                    "portDefault": "0.0625f"
+                    "portDefault": "0.150000006f"
                 }
             ],
             "compounds": [
                 {
                     "name": "show_zero_logic",
+                    "uriImported": "file:///quick_grid.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -563,6 +605,7 @@
                 },
                 {
                     "name": "case_if_zero",
+                    "uriImported": "file:///quick_grid.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -848,6 +891,7 @@
                 },
                 {
                     "name": "row_offset",
+                    "uriImported": "file:///quick_grid.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -994,6 +1038,7 @@
                     "compounds": [
                         {
                             "name": "edge_case",
+                            "uriImported": "file:///quick_grid.json",
                             "metadata": [
                                 {
                                     "metaName": "io_nodes",
@@ -1096,6 +1141,7 @@
                             "compounds": [
                                 {
                                     "name": "is_odd",
+                                    "uriImported": "file:///quick_grid.json",
                                     "metadata": [
                                         {
                                             "metaName": "ViewportRect",
@@ -2070,6 +2116,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1076 -211"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
                         }
                     ]
                 },
@@ -2086,6 +2137,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1946 119"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
                         }
                     ]
                 },
@@ -2102,6 +2158,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "836 -181"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
                         }
                     ]
                 },
@@ -2118,6 +2179,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1676 149"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
                         }
                     ]
                 },
@@ -2164,6 +2230,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "326 -31"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
                         }
                     ]
                 },
@@ -2205,6 +2276,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1406 299"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
                         }
                     ]
                 },
@@ -2226,6 +2302,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "3626 -1"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
                         }
                     ]
                 },
@@ -2242,6 +2323,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2216 239"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "38.000000"
                         }
                     ]
                 },
@@ -2262,6 +2348,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2486 299"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
                         }
                     ]
                 },
@@ -2278,6 +2369,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2726 359"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
                         }
                     ]
                 },
@@ -2294,6 +2390,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2996 329"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "41.000000"
                         }
                     ]
                 },
@@ -2310,6 +2411,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "3296 209"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "42.000000"
                         }
                     ]
                 },
@@ -2326,6 +2432,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "4016 -631"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "43.000000"
                         }
                     ]
                 },
@@ -2342,6 +2453,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "4346 -451"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "44.000000"
                         }
                     ]
                 },
@@ -2358,6 +2474,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "4616 -391"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "45.000000"
                         }
                     ]
                 },
@@ -2374,6 +2495,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "4006.65 20.9973"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "46.000000"
                         }
                     ]
                 },
@@ -2390,6 +2516,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "4286 -151"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "47.000000"
                         }
                     ]
                 },
@@ -2406,6 +2537,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "5156 -601"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "64.000000"
                         }
                     ]
                 },
@@ -2419,11 +2555,6 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "5485.54 -605.601"
-                        },
-                        {
                             "metaName": "PortExpandedState",
                             "metadata": [
                                 {
@@ -2432,6 +2563,16 @@
                                     "metaValue": "1"
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "61.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "5476.59 -380.173"
                         }
                     ]
                 },
@@ -2445,9 +2586,14 @@
                             "metaValue": "2"
                         },
                         {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "62.000000"
+                        },
+                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "5726 -631"
+                            "metaValue": "5731.37 -403.783"
                         }
                     ]
                 },
@@ -2482,9 +2628,14 @@
                             "metaValue": "2"
                         },
                         {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "63.000000"
+                        },
+                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "6146 -511"
+                            "metaValue": "6004.66 -403.653"
                         }
                     ]
                 },
@@ -2501,6 +2652,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "4916 -271"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "52.000000"
                         }
                     ]
                 },
@@ -2517,6 +2673,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-4 -691"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "53.000000"
                         }
                     ]
                 },
@@ -2533,6 +2694,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "326 -691"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "54.000000"
                         }
                     ]
                 },
@@ -2574,6 +2740,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "596 -511"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "55.000000"
                         }
                     ]
                 },
@@ -2590,6 +2761,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1438.09 -427.276"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "56.000000"
                         }
                     ]
                 }
@@ -2686,10 +2862,6 @@
                 {
                     "source": "point_scope.diagnostic_geo",
                     "target": "first_in_array.array"
-                },
-                {
-                    "source": "first_in_array.first",
-                    "target": ".points"
                 },
                 {
                     "source": "add.output",
@@ -2798,6 +2970,10 @@
                 {
                     "source": ".point_size",
                     "target": "point_scope.default_size"
+                },
+                {
+                    "source": "set_geo_property.out_geometry",
+                    "target": ".points"
                 }
             ],
             "values": [
