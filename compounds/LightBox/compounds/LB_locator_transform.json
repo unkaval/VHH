@@ -50,11 +50,6 @@
                     "metaValue": "BifrostGraph,VHH::Tool,LB_directional"
                 },
                 {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-38 -212 673 690"
-                },
-                {
                     "metaName": "io_nodes",
                     "metadata": [
                         {
@@ -80,6 +75,11 @@
                                                     "metaName": "locator_matrix_in"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "33.000000"
                                         }
                                     ]
                                 }
@@ -102,13 +102,21 @@
                                             "metaValue": "422.5 -88"
                                         },
                                         {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "34.000000"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
+                                                {
+                                                    "metaName": "direction"
+                                                },
                                                 {
                                                     "metaName": "position"
                                                 },
                                                 {
-                                                    "metaName": "direction"
+                                                    "metaName": "scale"
                                                 }
                                             ]
                                         }
@@ -119,14 +127,24 @@
                     ]
                 },
                 {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-198.582 -431.401 883.504 1026.81"
+                },
+                {
                     "metaName": "DisplayMode",
                     "metaType": "string",
                     "metaValue": "2"
                 },
                 {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "61.000000"
+                },
+                {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "333.693 -228.844"
+                    "metaValue": "-1413.35 -357.903"
                 }
             ],
             "ports": [
@@ -136,12 +154,17 @@
                     "portType": "Math::float4x4"
                 },
                 {
+                    "portName": "direction",
+                    "portDirection": "output",
+                    "portType": "Math::float3"
+                },
+                {
                     "portName": "position",
                     "portDirection": "output",
                     "portType": "Math::float3"
                 },
                 {
-                    "portName": "direction",
+                    "portName": "scale",
                     "portDirection": "output",
                     "portType": "Math::float3"
                 }
@@ -160,6 +183,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-143.5 -131"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
                         }
                     ]
                 },
@@ -176,6 +204,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "121.5 141"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
                         }
                     ]
                 }
@@ -196,6 +229,10 @@
                 {
                     "source": ".locator_matrix_in",
                     "target": "matrix_to_SRT2.transform"
+                },
+                {
+                    "source": "matrix_to_SRT2.scale",
+                    "target": ".scale"
                 }
             ],
             "values": [
