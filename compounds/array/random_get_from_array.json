@@ -39,11 +39,6 @@
                                             "metaValue": "-1172.65 -133.019"
                                         },
                                         {
-                                            "metaName": "zValue",
-                                            "metaType": "string",
-                                            "metaValue": "34.000000"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -53,6 +48,11 @@
                                                     "metaName": "seed"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "34.000000"
                                         }
                                     ]
                                 }
@@ -84,6 +84,9 @@
                                             "metadata": [
                                                 {
                                                     "metaName": "random_value"
+                                                },
+                                                {
+                                                    "metaName": "index"
                                                 }
                                             ]
                                         }
@@ -121,7 +124,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-335 -347 671 694"
+                    "metaValue": "-488.853 -770.355 773.832 1028.32"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -131,12 +134,12 @@
                 {
                     "metaName": "zValue",
                     "metaType": "string",
-                    "metaValue": "70.000000"
+                    "metaValue": "180.000000"
                 },
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "419.418 81.0882"
+                    "metaValue": "666.082 1766.07"
                 }
             ],
             "ports": [
@@ -152,6 +155,10 @@
                 },
                 {
                     "portName": "random_value",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "index",
                     "portDirection": "output"
                 }
             ],
@@ -244,6 +251,10 @@
                 {
                     "source": "get_from_array.value",
                     "target": ".random_value"
+                },
+                {
+                    "source": "random_value.random_value",
+                    "target": ".index"
                 }
             ],
             "values": [
