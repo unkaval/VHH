@@ -24,6 +24,9 @@ This compound will bevel the selected faces.<br />
 <span style="color:#82D99F">***mesh_smoothing_angle***</span>
 <br />The smoothing angle of the output mesh.
 
+<span style="color:#62CFD9">***bevel_axis***</span>
+<br />Drop-down selection of the axes you wish to bevel along.
+
 ***
 ## Output
 <span style="color:#90A3F4">***mesh_out***</span>
