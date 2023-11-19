@@ -30,8 +30,14 @@ This compound allows you to select components to tag.  The components can be sel
 <span style="color:#E69963">***faces***</span>
 <br />When true, will return the **face** indicies based on the string input.
 
+<span style="color:#E69963">***tag_name_faces***</span>
+<br />The tag name used when tagging by faces.
+
 <span style="color:#E69963">***points***</span>
 <br />When true, will return the **point** indicies based on the string input.
+
+<span style="color:#E69963">***tag_name_points***</span>
+<br />The tag name used when tagging by points.
 
 <span style="color:#82D99F">***component_id_display_offset***</span>
 <br />When the *display* flag is on, the compound will display the relevant indices in the viewport.  This controls how far off the surface of the object these will be.
@@ -45,7 +51,7 @@ This compound allows you to select components to tag.  The components can be sel
 <br />The indicies selected by the string input.
 
 <span style="color:#E69963">***tag_data***</span>
-<br />The tag data array.  When points are selected, the tag name is <font color="#D9BE6C">selected_points</font>.  When faces are selected, the tag name is <font color="#D9BE6C">selected_faces</font>.
+<br />The tag data array.
 
 <span style="color:#90A3F4">***tagged_geo***</span>
 <br />The geo with the tags included.
