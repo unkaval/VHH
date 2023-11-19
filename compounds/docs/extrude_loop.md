@@ -1,5 +1,5 @@
 ### ***extrude_loop***
-This compound will extrude the selected faces.  It allows you to fake a bevelled look, without actually doing anything as helllishly complicated as an actual bevel.<br />
+This compound will extrude the selected faces in a iteration loop.  It allows you to fake a bevelled look, without actually doing anything as helllishly complicated as an actual bevel.<br />
 
 ***
 ## Input
