@@ -13,11 +13,17 @@
 <span style="color:#CCB699">***warp_velocity_field***</span>
 <br />A ***vector*** field, used to warp the domain of the **curve** field.
 
+<span style="color:#82D99F">***field_weight***</span>
+<br />Overall weight of this field from 0-1.
+
 <span style="color:#CCB699">***adjust_curve***</span>
 <br />This adjusts both the magnitude and the width of the curve displacement.  The Y-axis controls the magnitude and the X-axis controls the width.
 
 <span style="color:#82D99F">***magnitude***</span>
 <br />Overall magnitude of the outgoing field, negative values will reverse the direction of the field.
+
+<span style="color:#82D99F">***curve_width***</span>
+<br />The distance away from the curve that will be displaced.
 
 <span style="color:#A8D977">***translation***</span>
 <br />Translates the field in x, y and z axes.
