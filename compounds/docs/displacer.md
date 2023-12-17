@@ -103,12 +103,26 @@
 <span style="color:#E69963">***use_gaussian_blur***</span>
 <br />Apply a gaussian blur to the point positions after displacement. This is of a higher quality, but slower.
 
-<span style="color:#82D99F">***sigma multiplier***</span>
+<span style="color:#82D99F">***sigma_multiplier***</span>
 <br />A multiplier on the strength of the Gaussian blur.
 
-<span style="color:#82D99F">***sigma multiplier***</span>
-<br />A multiplier on the strength of the Gaussian blur.
+<span style="color:#82D99F">***sigma***</span>
+<br />The strength of the Gaussian blur.
 
+<span style="color:#E69963">***show_weights***</span>
+<br />Displays the weight field.
+
+<span style="color:#82D99F">***display_weights_size***</span>
+<br />The size of the weights display.
+
+<span style="color:#E69963">***show_directions***</span>
+<br />Displays the direction field.
+
+<span style="color:#82D99F">***display_direction_width***</span>
+<br />The width of the direction arrows.
+
+<span style="color:#82D99F">***display_direction_length***</span>
+<br />The length of the direction arrows.
 
 
 ***

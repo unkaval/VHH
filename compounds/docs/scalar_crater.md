@@ -1,6 +1,6 @@
-### ***noise2d_cell***
+### ***scalar_crater***
 <font size = 1>**Component Compound** - this compound is a component in the the *displacer* ecosystem.<br /><br /></font>
-<font size = 2>**Cellular Noise** - One of the pre-made noise fields.  This is a single frequency cellular noise similar to Worley noise.  Full Credit to Duncan Brinsmead for the math.</font><br />
+<font size = 2>**Scalar Crater** - One of the pre-made noise fields.  This is a 2d-based (height) field that generates a crater style-displacement. This can get slow.</font><br />
 
 ***
 ## Input
@@ -10,29 +10,35 @@
 <span style="color:#CCB699">***warp_vector_field***</span>
 <br />Domain warp on the outgoing field.
 
+<span style="color:#CCB699">***crater_noise***</span>
+<br />Noise to be added to the basic crater paraboloid shape.
+
 <span style="color:#82D99F">***field_weight***</span>
 <br />Overall weight of this field from 0-1.
 
-<span style="color:#82D99F">***magnitude***</span>
-<br />Magnitude of the field.
-
-<span style="color:#82D99F">***frequency***</span>
-<br />Frequency of the field.
-
 <span style="color:#82D99F">***radius***</span>
-<br />Controls the base height of the field.
+<br />The radius of the crater.
 
-<span style="color:#82D99F">***randomosity***</span>
-<br />How random the cells are.
+<span style="color:#82D99F">***crater_height***</span>
+<br />The height of the crater's cavity.
 
-<span style="color:#CCB699">***time***</span>
-<br />A scalar field with the time to sample the noise at. 
+<span style="color:#82D99F">***height_offset***</span>
+<br />The overall height of the crater walls.
 
-<span style="color:#62CFD9">***seed***</span>
-<br />The seed to use for randomization.
+<span style="color:#82D99F">***rim_width***</span>
+<br />The width of the slope that makes up the rim of the crater.
 
-<span style="color:#CCB699">***adjust_field***</span>
-<br />An fCurve allowing you to adjust the field across values.
+<span style="color:#82D99F">***rimsteep***</span>
+<br />The steepness of the slope that makes up the rim of the crater.
+
+<span style="color:#82D99F">***smin***</span>
+<br />Smooth Min, controls the smooth transition between the rim and the crater.
+
+<span style="color:#82D99F">***smax***</span>
+<br />Smooth Max, controls the smooth transition between the floor and the walls.
+
+<span style="color:#82D99F">***floor_height***</span>
+<br />Controls the floor height of the crater.
 
 <span style="color:#A8D977">***translate***</span>
 <br />Move the field.

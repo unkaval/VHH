@@ -65,7 +65,22 @@
 <br />The amount to warp the field based on the field used as a domain warp.
 
 <span style="color:#E69963">***sharpen***</span>
-<br />When this is selected, the field's opwn gradient is used for a domain warp.  At lower values this has the effect of "sharpening" the field.
+<br />When this is selected, the field's own gradient is used for a domain warp.  At lower values this has the effect of "sharpening" the field.
+
+<span style="color:#E69963">***step_field***</span>
+<br />When this is selected, the field is discretized into "steps".
+
+<span style="color:#CCB699">***step_shape***</span>
+<br />The shape of the steps.  Because the curve pre- and post-extrapolation is set to "Relative Repeat" this acts like a modulo on the field.  You can vary the shape of your stepping with just the controls on this curve.
+
+<span style="color:#CCB699">***step_mask***</span>
+<br />A scalar field input to mask area of the step field.
+
+<span style="color:#E69963">***invert_step_mask***</span>
+<br />When this is checked, the step_mask is inverted.
+
+<span style="color:#CCB699">***adjust_step_mask***</span>
+<br />An fCurve allowing adjustment of the step_mask.
 
 ***
 ## Output
