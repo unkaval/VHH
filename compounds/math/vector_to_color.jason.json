@@ -25,31 +25,6 @@
                     "metaValue": "../helper_icons/derhornen.png"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Fields,scalar_field"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,multiply"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Fields,vector_field"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,add"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,normalize"
-                },
-                {
                     "metaName": "io_nodes",
                     "metadata": [
                         {
@@ -66,7 +41,7 @@
                                         {
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
-                                            "metaValue": "-815.142 -63.5445"
+                                            "metaValue": "10 35"
                                         },
                                         {
                                             "metaName": "io_ports",
@@ -79,7 +54,7 @@
                                         {
                                             "metaName": "zValue",
                                             "metaType": "string",
-                                            "metaValue": "31.000000"
+                                            "metaValue": "36.000000"
                                         }
                                     ]
                                 }
@@ -99,7 +74,7 @@
                                         {
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
-                                            "metaValue": "532.89 -137.336"
+                                            "metaValue": "1230 47"
                                         },
                                         {
                                             "metaName": "io_ports",
@@ -112,7 +87,7 @@
                                         {
                                             "metaName": "zValue",
                                             "metaType": "string",
-                                            "metaValue": "37.000000"
+                                            "metaValue": "35.000000"
                                         }
                                     ]
                                 }
@@ -121,9 +96,34 @@
                     ]
                 },
                 {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Common,interpret_auto_port_as_vector"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,multiply"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,add"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,normalize"
+                },
+                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-1143.29 -378.981 1712.03 884"
+                    "metaValue": "-644.861 -381 2608.72 1347"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -133,25 +133,30 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-962.536 579.09"
+                    "metaValue": "-965.465 348.249"
                 },
                 {
                     "metaName": "zValue",
                     "metaType": "string",
-                    "metaValue": "47.000000"
+                    "metaValue": "46.000000"
                 }
             ],
+            "overloadsUnlocked": "true",
             "ports": [
                 {
                     "portName": "vector_in",
                     "portDirection": "input",
-                    "portType": "Core::Fields::VectorField",
-                    "portDefault": {}
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
                 },
                 {
                     "portName": "color_out",
                     "portDirection": "output",
-                    "portType": "Core::Fields::VectorField"
+                    "portType": "Math::float3"
                 }
             ],
             "compoundNodes": [
@@ -167,7 +172,32 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-499.295 -88"
+                            "metaValue": "315 10"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "normalized",
+                        "output1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "620 71"
                         },
                         {
                             "metaName": "zValue",
@@ -177,36 +207,11 @@
                     ]
                 },
                 {
-                    "nodeName": "add",
-                    "nodeType": "Core::Math::add",
-                    "multiInPortNames": [
-                        "normalized",
-                        "vector_field"
-                    ],
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-125.302 -113.538"
-                        },
-                        {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "34.000000"
-                        }
-                    ]
-                },
-                {
                     "nodeName": "multiply",
                     "nodeType": "Core::Math::multiply",
                     "multiInPortNames": [
                         "output1",
-                        "scalar_field"
+                        "output2"
                     ],
                     "metadata": [
                         {
@@ -217,18 +222,18 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "199.128 -137.711"
+                            "metaValue": "925 47"
                         },
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "36.000000"
+                            "metaValue": "33.000000"
                         }
                     ]
                 },
                 {
-                    "nodeName": "scalar_field",
-                    "nodeType": "Core::Fields::scalar_field",
+                    "nodeName": "value1",
+                    "valueType": "float",
                     "metadata": [
                         {
                             "metaName": "DisplayMode",
@@ -238,33 +243,48 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-139.297 132.011"
+                            "metaValue": "619.532 316.187"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "float",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
                         },
                         {
                             "metaName": "zValue",
                             "metaType": "string",
                             "metaValue": "38.000000"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "scalar_field1",
-                    "nodeType": "Core::Fields::scalar_field",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
                         },
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-483.343 131.436"
+                            "metaValue": "315 203.062"
                         },
                         {
-                            "metaName": "zValue",
+                            "metaName": "valuenode_defaultvalue",
                             "metaType": "string",
-                            "metaValue": "43.000000"
+                            "metaValue": "1"
                         }
                     ]
                 }
@@ -279,8 +299,8 @@
                     "target": "multiply.first.output1"
                 },
                 {
-                    "source": "scalar_field.scalar_field",
-                    "target": "multiply.first.scalar_field"
+                    "source": "value1.output",
+                    "target": "multiply.first.output2"
                 },
                 {
                     "source": ".vector_in",
@@ -291,18 +311,18 @@
                     "target": ".color_out"
                 },
                 {
-                    "source": "scalar_field1.scalar_field",
-                    "target": "add.first.vector_field"
+                    "source": "value.output",
+                    "target": "add.first.output1"
                 }
             ],
             "values": [
                 {
-                    "valueName": "scalar_field.value",
+                    "valueName": "value1.value",
                     "valueType": "float",
                     "value": "0.5f"
                 },
                 {
-                    "valueName": "scalar_field1.value",
+                    "valueName": "value.value",
                     "valueType": "float",
                     "value": "1f"
                 }
