@@ -71,6 +71,11 @@
                                                     "metaName": "use_ramp"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "46.000000"
                                         }
                                     ]
                                 },
@@ -103,6 +108,11 @@
                                                     "metaName": "shape"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "47.000000"
                                         }
                                     ]
                                 },
@@ -120,13 +130,18 @@
                                             "metaValue": "150.737 -995.611"
                                         },
                                         {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "48.000000"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
-                                                    "metaName": "ramp_preset"
+                                                    "metaName": "custom_ramp_input"
                                                 },
                                                 {
-                                                    "metaName": "custom_ramp_input"
+                                                    "metaName": "preset"
                                                 }
                                             ]
                                         }
@@ -157,6 +172,11 @@
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
                                             "metaValue": "4873.82 -870.81"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "49.000000"
                                         }
                                     ]
                                 }
@@ -190,21 +210,6 @@
                     "metaValue": "BifrostGraph,VHH::Visualize::Display,ramp_switch"
                 },
                 {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "3100.62 -1637.64 1226.57 1826.64"
-                },
-                {
-                    "metaName": "DisplayMode",
-                    "metaType": "string",
-                    "metaValue": "2"
-                },
-                {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "2132.71 -574.608"
-                },
-                {
                     "metaName": "UILayout",
                     "metaType": "string",
                     "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"in_geometry\"\n            },\n            {\n                \"port\": \"property\"\n            },\n            {\n                \"port\": \"write_property\"\n            },\n            {\n                \"port\": \"adjust_property\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Display Options\",\n                \"items\": [\n                    {\n                        \"port\": \"color\"\n                    },\n                    {\n                        \"port\": \"use_ramp\"\n                    },\n                    {\n                        \"port\": \"display_on_points\"\n                    },\n                    {\n                        \"port\": \"screen_aligned\"\n                    },\n                    {\n                        \"port\": \"shape\"\n                    },\n                    {\n                        \"port\": \"display_point_size\"\n                    },\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Random\",\n                        \"items\": [\n                            {\n                                \"port\": \"random_color\"\n                            },\n                            {\n                                \"port\": \"random_color_seed\"\n                            }\n                        ]\n                    },\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Ramp Options\",\n                        \"items\": [\n                            {\n                                \"port\": \"custom_ramp_input\"\n                            },\n                            {\n                                \"port\": \"ramp_preset\"\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
@@ -223,6 +228,26 @@
                             "metaValue": "0"
                         }
                     ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "29.8537 -1483 963.293 935"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "781.573 86.2548"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "358.000000"
                 }
             ],
             "terminalStates": [
@@ -273,7 +298,7 @@
                     "portName": "write_property",
                     "portDirection": "input",
                     "portType": "bool",
-                    "portDefault": "true"
+                    "portDefault": "false"
                 },
                 {
                     "portName": "adjust_property",
@@ -350,12 +375,6 @@
                     "portDirection": "output"
                 },
                 {
-                    "portName": "ramp_preset",
-                    "portDirection": "input",
-                    "portType": "ValHallen::ramp_switch",
-                    "portDefault": "red to green"
-                },
-                {
                     "portName": "custom_ramp_input",
                     "portDirection": "input",
                     "portType": "array<Math::float3>",
@@ -372,6 +391,24 @@
                     "portDirection": "input",
                     "portType": "Geometry::PointShapes",
                     "portDefault": "Cube"
+                },
+                {
+                    "portName": "preset",
+                    "portDirection": "input",
+                    "portType": "int",
+                    "portDefault": "4L",
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "ComboBox"
+                        },
+                        {
+                            "metaName": "UIWidgetProp",
+                            "metaType": "string",
+                            "metaValue": "items={\"color 0 to 1\"=0;monochrome=1;blackbody=2;infrared=3;\"red to blue\"=4}"
+                        }
+                    ]
                 }
             ],
             "compounds": [
@@ -414,6 +451,11 @@
                                                             "metaName": "adjust_property"
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "46.000000"
                                                 }
                                             ]
                                         },
@@ -431,13 +473,18 @@
                                                     "metaValue": "1270.09 -1316.31"
                                                 },
                                                 {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "47.000000"
+                                                },
+                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
-                                                            "metaName": "ramp_preset"
+                                                            "metaName": "custom_ramp_input"
                                                         },
                                                         {
-                                                            "metaName": "custom_ramp_input"
+                                                            "metaName": "preset"
                                                         }
                                                     ]
                                                 }
@@ -480,12 +527,22 @@
                                                             "metaName": "out_ramp"
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "48.000000"
                                                 }
                                             ]
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,VHH::Visualize::Display,ramp_switch"
                         },
                         {
                             "metaName": "_recentNode_",
@@ -508,14 +565,9 @@
                             "metaValue": "BifrostGraph,Core::Math,change_range"
                         },
                         {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Array,array_bounds"
-                        },
-                        {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "1262.73 -1475.01 578.893 797.278"
+                            "metaValue": "1273.01 -1383.01 822.147 798"
                         }
                     ],
                     "ports": [
@@ -559,14 +611,26 @@
                             "portDirection": "output"
                         },
                         {
-                            "portName": "ramp_preset",
-                            "portDirection": "input",
-                            "portType": "ValHallen::ramp_switch"
-                        },
-                        {
                             "portName": "custom_ramp_input",
                             "portDirection": "input",
                             "portType": "array<Math::float3>"
+                        },
+                        {
+                            "portName": "preset",
+                            "portDirection": "input",
+                            "portType": "int",
+                            "metadata": [
+                                {
+                                    "metaName": "UIWidget",
+                                    "metaType": "string",
+                                    "metaValue": "ComboBox"
+                                },
+                                {
+                                    "metaName": "UIWidgetProp",
+                                    "metaType": "string",
+                                    "metaValue": "items={\"color 0 to 1\"=0;monochrome=1;blackbody=2;infrared=3;\"red to blue\"=4}"
+                                }
+                            ]
                         }
                     ],
                     "compounds": [
@@ -1039,6 +1103,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "-497.37 -435.47"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "31.000000"
                                 }
                             ]
                         },
@@ -1055,6 +1124,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "-492 122"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "32.000000"
                                 }
                             ]
                         },
@@ -1071,6 +1145,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "885.272 -287.062"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "33.000000"
                                 }
                             ]
                         },
@@ -1091,6 +1170,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "633.415 -240.14"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "34.000000"
                                 }
                             ]
                         },
@@ -1107,6 +1191,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "-172.698 -11.6627"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "35.000000"
                                 }
                             ]
                         },
@@ -1123,6 +1212,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "-163.627 -301.862"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "36.000000"
                                 }
                             ]
                         },
@@ -1139,6 +1233,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "-1757.29 -142.698"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "37.000000"
                                 }
                             ]
                         },
@@ -1155,6 +1254,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "-1500.11 -166.472"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "38.000000"
                                 }
                             ]
                         },
@@ -1171,6 +1275,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "-1006.3 -139.666"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "39.000000"
                                 }
                             ]
                         },
@@ -1187,6 +1296,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "-1255.03 -166.238"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "40.000000"
                                 }
                             ]
                         },
@@ -1203,37 +1317,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "1015.16 -1078.41"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "ramp_switch",
-                            "nodeType": "VHH::Visualize::Display::ramp_switch",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
                                 },
                                 {
-                                    "metaName": "LayoutPos",
+                                    "metaName": "zValue",
                                     "metaType": "string",
-                                    "metaValue": "1541.31 -1173.35"
-                                },
-                                {
-                                    "metaName": "PortExpandedState",
-                                    "metadata": [
-                                        {
-                                            "metaName": "inputs",
-                                            "metaType": "string",
-                                            "metaValue": "1"
-                                        },
-                                        {
-                                            "metaName": "settings",
-                                            "metaType": "string",
-                                            "metaValue": "1"
-                                        }
-                                    ]
+                                    "metaValue": "41.000000"
                                 }
                             ]
                         },
@@ -1250,6 +1338,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "1283.02 -1126.88"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "43.000000"
                                 }
                             ]
                         },
@@ -1266,6 +1359,11 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "528.036 -728.406"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "44.000000"
                                 }
                             ]
                         },
@@ -1282,6 +1380,32 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "209.757 5.82282"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "45.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "ramp_switch1",
+                            "nodeType": "VHH::Visualize::Display::ramp_switch",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "53.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1570.02 -1401.45"
                                 }
                             ]
                         }
@@ -1368,14 +1492,6 @@
                             "target": "change_range.from_end"
                         },
                         {
-                            "source": "ramp_switch.interpolated",
-                            "target": ".out_ramp"
-                        },
-                        {
-                            "source": "change_range.result",
-                            "target": "ramp_switch.ramp_intensity"
-                        },
-                        {
                             "source": "if2.output",
                             "target": "array_bounds.array"
                         },
@@ -1432,12 +1548,20 @@
                             "target": "eval_fCurve_with_mag.fcurve"
                         },
                         {
-                            "source": ".ramp_preset",
-                            "target": "ramp_switch.preset"
+                            "source": ".custom_ramp_input",
+                            "target": "ramp_switch1.custom_ramp"
                         },
                         {
-                            "source": ".custom_ramp_input",
-                            "target": "ramp_switch.custom_ramp"
+                            "source": ".preset",
+                            "target": "ramp_switch1.preset"
+                        },
+                        {
+                            "source": "change_range.result",
+                            "target": "ramp_switch1.ramp_intensity"
+                        },
+                        {
+                            "source": "ramp_switch1.interpolated",
+                            "target": ".out_ramp"
                         }
                     ],
                     "values": [
@@ -1519,88 +1643,6 @@
                             "valueName": "set_geo_property.target",
                             "valueType": "string",
                             "value": "point_component"
-                        },
-                        {
-                            "valueName": "ramp_switch.ramp_intensity",
-                            "valueType": "array<float>",
-                            "value": []
-                        },
-                        {
-                            "valueName": "ramp_switch.color_0",
-                            "valueType": "Math::float3",
-                            "value": {
-                                "x": "0.148100004f",
-                                "y": "0.00430000015f",
-                                "z": "0.41139999f"
-                            }
-                        },
-                        {
-                            "valueName": "ramp_switch.color_1",
-                            "valueType": "Math::float3",
-                            "value": {
-                                "x": "0f",
-                                "y": "0.440499991f",
-                                "z": "0.0131000001f"
-                            }
-                        },
-                        {
-                            "valueName": "ramp_switch.preset",
-                            "valueType": "ValHallen::ramp_switch",
-                            "value": "red to green"
-                        },
-                        {
-                            "valueName": "ramp_switch.reverse",
-                            "valueType": "bool",
-                            "value": "true"
-                        },
-                        {
-                            "valueName": "ramp_switch.normalized_index",
-                            "valueType": "bool",
-                            "value": "true"
-                        },
-                        {
-                            "valueName": "ramp_switch.adjust_ramp",
-                            "valueType": "Math::FCurve",
-                            "value": {
-                                "version": "1",
-                                "preExtrapolation": "0",
-                                "postExtrapolation": "0",
-                                "points": [
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "1",
-                                            "pcn": {
-                                                "xp": "-0.10000000000000001",
-                                                "yp": "0",
-                                                "x": "0",
-                                                "y": "0",
-                                                "xn": "0.10000000000000001",
-                                                "yn": "0"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "1",
-                                            "pcn": {
-                                                "xp": "0.90000000000000002",
-                                                "yp": "1",
-                                                "x": "1",
-                                                "y": "1",
-                                                "xn": "1.1000000000000001",
-                                                "yn": "1"
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "valueName": "ramp_switch.custom_ramp",
-                            "valueType": "array<Math::float3>",
-                            "value": []
                         },
                         {
                             "valueName": "change_range.to_end",
@@ -1844,6 +1886,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "4520.46 -241.768"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
                         }
                     ]
                 },
@@ -1881,6 +1928,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "4754.51 -282.62"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
                         }
                     ]
                 },
@@ -1897,6 +1949,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "3969.08 -871.009"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
                         }
                     ]
                 },
@@ -1913,6 +1970,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1488.49 -603.045"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
                         }
                     ]
                 },
@@ -1929,6 +1991,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2433.66 82.9522"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
                         }
                     ]
                 },
@@ -1945,6 +2012,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2714.53 59.7599"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
                         }
                     ]
                 },
@@ -1961,6 +2033,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "3152.44 -76.2493"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
                         }
                     ]
                 },
@@ -1977,6 +2054,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "478.628 -1235.01"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "50.000000"
                         }
                     ]
                 },
@@ -1993,6 +2075,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1768 -651"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "38.000000"
                         }
                     ]
                 },
@@ -2009,6 +2096,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1480.03 -330.464"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
                         }
                     ]
                 },
@@ -2025,6 +2117,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2908.66 -484.235"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
                         }
                     ]
                 },
@@ -2041,6 +2138,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2107.81 -1208.36"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "41.000000"
                         }
                     ]
                 },
@@ -2057,6 +2159,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "923.265 -1306.4"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "42.000000"
                         }
                     ]
                 },
@@ -2073,6 +2180,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "4292.06 -413.288"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "43.000000"
                         }
                     ]
                 },
@@ -2099,6 +2211,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "4411.76 -783.198"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "44.000000"
                         }
                     ]
                 },
@@ -2115,6 +2232,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "3595.49 -642.361"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "45.000000"
                         }
                     ]
                 }
@@ -2253,10 +2375,6 @@
                     "target": "pass.input"
                 },
                 {
-                    "source": ".ramp_preset",
-                    "target": "convert_properties.ramp_preset"
-                },
-                {
                     "source": ".custom_ramp_input",
                     "target": "convert_properties.custom_ramp_input"
                 },
@@ -2291,6 +2409,10 @@
                 {
                     "source": "pass.output",
                     "target": "set_point_shape.points"
+                },
+                {
+                    "source": ".preset",
+                    "target": "convert_properties.preset"
                 }
             ],
             "values": [
@@ -2368,14 +2490,14 @@
                     "value": "6"
                 },
                 {
-                    "valueName": "convert_properties.ramp_preset",
-                    "valueType": "ValHallen::ramp_switch",
-                    "value": "red to green"
-                },
-                {
                     "valueName": "convert_properties.custom_ramp_input",
                     "valueType": "array<Math::float3>",
                     "value": []
+                },
+                {
+                    "valueName": "convert_properties.preset",
+                    "valueType": "int",
+                    "value": "4L"
                 },
                 {
                     "valueName": "set_geo_property1.property",
