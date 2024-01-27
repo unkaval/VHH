@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Geometry::property_gradient",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "uriImported": "file:///property_gradient.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -23,7 +23,7 @@
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../helper_icons/derhornen.png"
-                },                
+                },
                 {
                     "metaName": "io_nodes",
                     "metadata": [
@@ -39,11 +39,6 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-505.548 149.621"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -56,6 +51,16 @@
                                                     "metaName": "property_type"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1113.88 176.677"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "42.000000"
                                         }
                                     ]
                                 }
@@ -88,8 +93,16 @@
                                                 },
                                                 {
                                                     "metaName": "property_gradient_normalized"
+                                                },
+                                                {
+                                                    "metaName": "gradient_property"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "37.000000"
                                         }
                                     ]
                                 }
@@ -125,7 +138,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-441.028 -397.355 1891.73 1230.25"
+                    "metaValue": "-1193.96 -997.632 2732.61 2265.75"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -135,7 +148,12 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "486.977 665.313"
+                    "metaValue": "799.706 -247.857"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "135.000000"
                 }
             ],
             "ports": [
@@ -166,7 +184,8 @@
                 },
                 {
                     "portName": "out_geometry",
-                    "portDirection": "output"
+                    "portDirection": "output",
+                    "portType": "Object"
                 },
                 {
                     "portName": "property_gradient",
@@ -177,13 +196,23 @@
                     "portName": "property_gradient_normalized",
                     "portDirection": "output",
                     "portType": "array<Math::float3>"
+                },
+                {
+                    "portName": "gradient_property",
+                    "portDirection": "output",
+                    "portType": "string"
                 }
             ],
             "compounds": [
                 {
                     "name": "for_each",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///property_gradient.json",
                     "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                        },
                         {
                             "metaName": "icon",
                             "metaType": "string",
@@ -620,7 +649,7 @@
                 },
                 {
                     "name": "upn",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///property_gradient.json",
                     "metadata": [
                         {
                             "metaName": "ViewportRect",
@@ -711,7 +740,7 @@
                     "compounds": [
                         {
                             "name": "compute_adjacent_vertex_array",
-                            "uriImported": "stream:/bifrostGraphShape1",
+                            "uriImported": "file:///property_gradient.json",
                             "metadata": [
                                 {
                                     "metaName": "_recentNode_",
@@ -819,7 +848,7 @@
                             "compounds": [
                                 {
                                     "name": "get_mesh_properties",
-                                    "uriImported": "stream:/bifrostGraphShape1",
+                                    "uriImported": "file:///property_gradient.json",
                                     "metadata": [
                                         {
                                             "metaName": "_recentNode_",
@@ -950,7 +979,7 @@
                                     "compounds": [
                                         {
                                             "name": "get_map1_index",
-                                            "uriImported": "stream:/bifrostGraphShape1",
+                                            "uriImported": "file:///property_gradient.json",
                                             "metadata": [
                                                 {
                                                     "metaName": "ViewportRect",
@@ -1539,8 +1568,13 @@
                                 },
                                 {
                                     "name": "iterate_faces",
-                                    "uriImported": "stream:/bifrostGraphShape1",
+                                    "uriImported": "file:///property_gradient.json",
                                     "metadata": [
+                                        {
+                                            "metaName": "icon",
+                                            "metaType": "string",
+                                            "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                        },
                                         {
                                             "metaName": "icon",
                                             "metaType": "string",
@@ -1723,8 +1757,13 @@
                                     "compounds": [
                                         {
                                             "name": "iterate",
-                                            "uriImported": "stream:/bifrostGraphShape1",
+                                            "uriImported": "file:///property_gradient.json",
                                             "metadata": [
+                                                {
+                                                    "metaName": "icon",
+                                                    "metaType": "string",
+                                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                                },
                                                 {
                                                     "metaName": "icon",
                                                     "metaType": "string",
@@ -1865,7 +1904,7 @@
                                             "compounds": [
                                                 {
                                                     "name": "prev_vertex",
-                                                    "uriImported": "stream:/bifrostGraphShape1",
+                                                    "uriImported": "file:///property_gradient.json",
                                                     "metadata": [
                                                         {
                                                             "metaName": "ViewportRect",
@@ -2107,7 +2146,7 @@
                                                 },
                                                 {
                                                     "name": "next_vertex",
-                                                    "uriImported": "stream:/bifrostGraphShape1",
+                                                    "uriImported": "file:///property_gradient.json",
                                                     "metadata": [
                                                         {
                                                             "metaName": "ViewportRect",
@@ -2296,7 +2335,7 @@
                                                 },
                                                 {
                                                     "name": "push_if_not_already_in_array",
-                                                    "uriImported": "stream:/bifrostGraphShape1",
+                                                    "uriImported": "file:///property_gradient.json",
                                                     "metadata": [
                                                         {
                                                             "metaName": "ViewportRect",
@@ -2385,7 +2424,7 @@
                                                     "compounds": [
                                                         {
                                                             "name": "find_in_array",
-                                                            "uriImported": "stream:/bifrostGraphShape1",
+                                                            "uriImported": "file:///property_gradient.json",
                                                             "metadata": [
                                                                 {
                                                                     "metaName": "ViewportRect",
@@ -2474,8 +2513,13 @@
                                                             "compounds": [
                                                                 {
                                                                     "name": "do_while",
-                                                                    "uriImported": "stream:/bifrostGraphShape1",
+                                                                    "uriImported": "file:///property_gradient.json",
                                                                     "metadata": [
+                                                                        {
+                                                                            "metaName": "icon",
+                                                                            "metaType": "string",
+                                                                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                                                                        },
                                                                         {
                                                                             "metaName": "icon",
                                                                             "metaType": "string",
@@ -2889,7 +2933,7 @@
                                                 },
                                                 {
                                                     "name": "push_if_not_already_in_array1",
-                                                    "uriImported": "stream:/bifrostGraphShape1",
+                                                    "uriImported": "file:///property_gradient.json",
                                                     "metadata": [
                                                         {
                                                             "metaName": "ViewportRect",
@@ -2958,7 +3002,7 @@
                                                     "compounds": [
                                                         {
                                                             "name": "find_in_array",
-                                                            "uriImported": "stream:/bifrostGraphShape1",
+                                                            "uriImported": "file:///property_gradient.json",
                                                             "metadata": [
                                                                 {
                                                                     "metaName": "ViewportRect",
@@ -3027,8 +3071,13 @@
                                                             "compounds": [
                                                                 {
                                                                     "name": "do_while",
-                                                                    "uriImported": "stream:/bifrostGraphShape1",
+                                                                    "uriImported": "file:///property_gradient.json",
                                                                     "metadata": [
+                                                                        {
+                                                                            "metaName": "icon",
+                                                                            "metaType": "string",
+                                                                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                                                                        },
                                                                         {
                                                                             "metaName": "icon",
                                                                             "metaType": "string",
@@ -3422,7 +3471,7 @@
                                                 },
                                                 {
                                                     "name": "current_vertex",
-                                                    "uriImported": "stream:/bifrostGraphShape1",
+                                                    "uriImported": "file:///property_gradient.json",
                                                     "metadata": [
                                                         {
                                                             "metaName": "ViewportRect",
@@ -3804,8 +3853,13 @@
                                         },
                                         {
                                             "name": "manual_slice",
-                                            "uriImported": "stream:/bifrostGraphShape1",
+                                            "uriImported": "file:///property_gradient.json",
                                             "metadata": [
+                                                {
+                                                    "metaName": "icon",
+                                                    "metaType": "string",
+                                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                                },
                                                 {
                                                     "metaName": "icon",
                                                     "metaType": "string",
@@ -4418,7 +4472,12 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-171 78"
+                            "metaValue": "-765.483 71.6249"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "44.000000"
                         }
                     ]
                 },
@@ -4465,6 +4524,11 @@
                                     "metaValue": "0"
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
                         }
                     ]
                 },
@@ -4481,6 +4545,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "339 228"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
                         }
                     ]
                 },
@@ -4497,6 +4566,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "99 198"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
                         }
                     ]
                 },
@@ -4513,6 +4587,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "99 378"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
                         }
                     ]
                 },
@@ -4528,7 +4607,12 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-171 318"
+                            "metaValue": "-768.67 434.346"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "43.000000"
                         }
                     ]
                 },
@@ -4545,6 +4629,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "633.453 -44.8658"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
                         }
                     ]
                 },
@@ -4561,6 +4650,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "889.312 -68.3266"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
                         }
                     ]
                 },
@@ -4593,6 +4687,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "653.664 -360.538"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
                         }
                     ]
                 },
@@ -4613,7 +4712,74 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "296.984 -222.872"
+                            "metaValue": "325.631 -240.379"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "38.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value1",
+                    "valueType": "string",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-415.613 -465.413"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "string_join1",
+                    "nodeType": "Core::String::string_join",
+                    "fanInPortNames": {
+                        "strings": [
+                            "property"
+                        ]
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "strings",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-145.057 -241.012"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "41.000000"
                         }
                     ]
                 }
@@ -4688,14 +4854,6 @@
                     "target": "set_geo_property1.data"
                 },
                 {
-                    "source": ".property",
-                    "target": "set_geo_property.property"
-                },
-                {
-                    "source": ".property",
-                    "target": "string_join.strings.property"
-                },
-                {
                     "source": "value.output",
                     "target": "string_join.strings.output"
                 },
@@ -4704,11 +4862,36 @@
                     "target": "set_geo_property1.property"
                 },
                 {
+                    "source": ".property",
+                    "target": "string_join1.strings.property"
+                },
+                {
+                    "source": "value1.output",
+                    "target": "string_join1.separator"
+                },
+                {
+                    "source": "string_join1.joined",
+                    "target": "string_join.strings.property"
+                },
+                {
+                    "source": "string_join1.joined",
+                    "target": "set_geo_property.property"
+                },
+                {
                     "source": "set_geo_property1.out_geometry",
                     "target": ".out_geometry"
+                },
+                {
+                    "source": "string_join1.joined",
+                    "target": ".gradient_property"
                 }
             ],
             "values": [
+                {
+                    "valueName": "get_geo_property.type",
+                    "valueType": "array<float>",
+                    "value": []
+                },
                 {
                     "valueName": "GRADIENT.value",
                     "valueType": "Math::float3",
@@ -4747,6 +4930,16 @@
                     "valueName": "value.value",
                     "valueType": "string",
                     "value": "normalized"
+                },
+                {
+                    "valueName": "value1.value",
+                    "valueType": "string",
+                    "value": "gradient"
+                },
+                {
+                    "valueName": "string_join1.separator",
+                    "valueType": "string",
+                    "value": "_"
                 }
             ],
             "reservedNodeNames": [
