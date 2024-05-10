@@ -30,6 +30,10 @@ A faster and more accurate Ambient Occlusion calculation on a single mesh.  This
 <span style="color:#CCB699">***adjust_AO***</span>
 <br />A curve that allows you to adjust the AO result.
 
+<span style="color:#E69963">***normalize_output***</span>
+<br />When this is checked, the output data is scaled to a 0-1 range.
+
+
 <span style="color:#D9BE6C">***AO_property***</span>
 <br />This is the output property carried on the object.  It defaults to `point_color` but is a `float` property, so you can set a custom property.
 
