@@ -13,6 +13,9 @@
 <span style="color:#CCB699">***noise_3d***</span>
 <br />Inputs for the vector fields, you can right-click on the port to add some preset fields, or connect a vector field here.
 
+<span style="color:#90A3F4">***images_in***</span>
+<br />Inputs for the images, you can right-click on the port to add an *import_image* compound.
+
 <span style="color:#CCB699">***adjust_field***</span>
 <br />An adjustment curve for the weights **output** field.
 
