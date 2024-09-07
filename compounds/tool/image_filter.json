@@ -1,0 +1,2698 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "VHH::Tool::image_filter",
+            "uriImported": "stream:/scatter_plusShape",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/image_filter.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../helper_icons/derhornen.png"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input1",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1787.3 -133.516"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "38.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "enable"
+                                                },
+                                                {
+                                                    "metaName": "weight"
+                                                },
+                                                {
+                                                    "metaName": "reverse"
+                                                },
+                                                {
+                                                    "metaName": "filename"
+                                                },
+                                                {
+                                                    "metaName": "channel_select"
+                                                },
+                                                {
+                                                    "metaName": "sampler"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "829.677 353.841"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "44.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "image_filter_data"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "108.000000"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-12.3109 1769.21"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"enable\"\n            },\n            {\n                \"port\": \"reverse\"\n            },\n            {\n                \"port\": \"weight\"\n            },\n            {\n                \"port\": \"camera_matrix\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"image inputs\",\n                \"items\": [\n                    {\n                        \"port\": \"locator_matrix\"\n                    },\n                    {\n                        \"port\": \"filename\"\n                    }\n                ],\n                \"unique_id\": 23\n            },\n            {\n                \"port\": \"input_mesh\"\n            },\n            {\n                \"port\": \"default_weights\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"image settings\",\n                \"items\": [\n                    {\n                        \"port\": \"gradient_threshold\"\n                    },\n                    {\n                        \"port\": \"show_height_threshold\"\n                    },\n                    {\n                        \"port\": \"adjust_falloff\"\n                    },\n                    {\n                        \"port\": \"tolerance\"\n                    },\n                    {\n                        \"port\": \"channel_select\"\n                    },\n                    {\n                        \"port\": \"sampler\"\n                    }\n                ],\n                \"unique_id\": 4\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "inputs",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "settings",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "gradient settings",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "camera_occlude_inputs",
+                            "metaType": "string",
+                            "metaValue": "1"
+                        },
+                        {
+                            "metaName": "camera_occlude_settings",
+                            "metaType": "string",
+                            "metaValue": "1"
+                        },
+                        {
+                            "metaName": "vector inputs",
+                            "metaType": "string",
+                            "metaValue": "1"
+                        },
+                        {
+                            "metaName": "image inputs",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "image settings",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "enable",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "weight",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "1f",
+                    "metadata": [
+                        {
+                            "metaName": "UISoftMin",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "UISoftMax",
+                            "metaType": "string",
+                            "metaValue": "1"
+                        }
+                    ]
+                },
+                {
+                    "portName": "reverse",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "filename",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "",
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "FileBrowserWidget"
+                        },
+                        {
+                            "metaName": "UIWidgetProp",
+                            "metaType": "string",
+                            "metaValue": "browserMode=open;\"All (*.*)\""
+                        }
+                    ]
+                },
+                {
+                    "portName": "channel_select",
+                    "portDirection": "input",
+                    "portType": "int",
+                    "portDefault": "1L",
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "ComboBox"
+                        },
+                        {
+                            "metaName": "UIWidgetProp",
+                            "metaType": "string",
+                            "metaValue": "items={R=0;G=1;B=2;A=3}"
+                        }
+                    ]
+                },
+                {
+                    "portName": "sampler",
+                    "portDirection": "input",
+                    "portType": "Simulation::BOSS::ImageSamplerType",
+                    "portDefault": "Quadratic"
+                },
+                {
+                    "portName": "image_filter_data",
+                    "portDirection": "output"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "stacked_image_to_fields",
+                    "uriImported": "stream:/scatter_plusShape",
+                    "metadata": [
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,File::Image,read_image_data"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Conversion,vector4_to_vector3"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Conversion,vector3_to_vector4"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Simulation::BOSS::Internal,sample_image"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Simulation::BOSS::Internal,set_image_vector_property"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-3238.51 -2071.58 1366 1375.96"
+                        },
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-4373.26 -1520.74"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "50.000000"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "filepath"
+                                                        },
+                                                        {
+                                                            "metaName": "mesh_input"
+                                                        },
+                                                        {
+                                                            "metaName": "sampler"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-560 -2137"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "31.000000"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "image_out"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "output1",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-1052.71 -1312.91"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "47.000000"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "mesh"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "output2",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-1202.44 -394.788"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "45.000000"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "vector_RGB"
+                                                        },
+                                                        {
+                                                            "metaName": "scalar_R"
+                                                        },
+                                                        {
+                                                            "metaName": "scalar_G"
+                                                        },
+                                                        {
+                                                            "metaName": "scalar_B"
+                                                        },
+                                                        {
+                                                            "metaName": "scalar_A"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "backdrop",
+                            "metadata": [
+                                {
+                                    "metaName": "type",
+                                    "metaType": "string",
+                                    "metaValue": "backdrop"
+                                },
+                                {
+                                    "metaName": "color",
+                                    "metaType": "string",
+                                    "metaValue": "#2835b073"
+                                },
+                                {
+                                    "metaName": "coords",
+                                    "metaType": "string",
+                                    "metaValue": "-4033.36 -2193.43 1247 751"
+                                },
+                                {
+                                    "metaName": "title",
+                                    "metaType": "string",
+                                    "metaValue": "Image Read"
+                                }
+                            ]
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "filepath",
+                            "portDirection": "input",
+                            "portType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "UIWidget",
+                                    "metaType": "string",
+                                    "metaValue": "FileBrowserWidget"
+                                },
+                                {
+                                    "metaName": "UIWidgetProp",
+                                    "metaType": "string",
+                                    "metaValue": "browserMode=open;filter=\"Jpeg (*.jpg);;OpenEXR (*.exr);;Tiff (*.tif);;All (*.*)\""
+                                }
+                            ]
+                        },
+                        {
+                            "portName": "mesh_input",
+                            "portDirection": "input",
+                            "portType": "Object"
+                        },
+                        {
+                            "portName": "sampler",
+                            "portDirection": "input",
+                            "portType": "Simulation::BOSS::ImageSamplerType"
+                        },
+                        {
+                            "portName": "mesh",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "image_out",
+                            "portDirection": "output",
+                            "portType": "Object"
+                        },
+                        {
+                            "portName": "vector_RGB",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "scalar_R",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "scalar_G",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "scalar_B",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "scalar_A",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compounds": [
+                        {
+                            "name": "sample_image_channels",
+                            "uriImported": "stream:/scatter_plusShape",
+                            "metadata": [
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Simulation::BOSS::Internal,sample_image"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,File::Image,read_image_data"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Conversion,vector4_to_vector3"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Conversion,vector3_to_vector4"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Simulation::BOSS::Internal,set_image_vector_property"
+                                },
+                                {
+                                    "metaName": "ViewportRect",
+                                    "metaType": "string",
+                                    "metaValue": "-154.703 -268.624 1053.06 1060.73"
+                                },
+                                {
+                                    "metaName": "io_nodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_inodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "input",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "-132.95 58.5319"
+                                                        },
+                                                        {
+                                                            "metaName": "zValue",
+                                                            "metaType": "string",
+                                                            "metaValue": "33.000000"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "mesh_input"
+                                                                },
+                                                                {
+                                                                    "metaName": "image_out"
+                                                                },
+                                                                {
+                                                                    "metaName": "property"
+                                                                },
+                                                                {
+                                                                    "metaName": "sampler"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "io_onodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "1230 10"
+                                                        },
+                                                        {
+                                                            "metaName": "zValue",
+                                                            "metaType": "string",
+                                                            "metaValue": "31.000000"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "vector3"
+                                                                },
+                                                                {
+                                                                    "metaName": "w"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "ports": [
+                                {
+                                    "portName": "mesh_input",
+                                    "portDirection": "input",
+                                    "portType": "Object"
+                                },
+                                {
+                                    "portName": "image_out",
+                                    "portDirection": "input",
+                                    "portType": "Object"
+                                },
+                                {
+                                    "portName": "property",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "sampler",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "vector3",
+                                    "portDirection": "output"
+                                },
+                                {
+                                    "portName": "w",
+                                    "portDirection": "output"
+                                }
+                            ],
+                            "compoundNodes": [
+                                {
+                                    "nodeName": "get_geo_property",
+                                    "nodeType": "Geometry::Properties::get_geo_property",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "281.807 -39.152"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "34.000000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "vector4_to_vector4",
+                                    "nodeType": "Core::Conversion::vector4_to_vector3",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "925 10"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "32.000000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "sample_image1",
+                                    "nodeType": "Simulation::BOSS::Internal::sample_image",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "530.993 357.985"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "35.000000"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "connections": [
+                                {
+                                    "source": "get_geo_property.data",
+                                    "target": "sample_image1.uvs"
+                                },
+                                {
+                                    "source": "vector4_to_vector4.vector3",
+                                    "target": ".vector3"
+                                },
+                                {
+                                    "source": "vector4_to_vector4.w",
+                                    "target": ".w"
+                                },
+                                {
+                                    "source": "sample_image1.sampled_data",
+                                    "target": "vector4_to_vector4.vector4"
+                                },
+                                {
+                                    "source": ".mesh_input",
+                                    "target": "get_geo_property.geometry"
+                                },
+                                {
+                                    "source": ".image_out",
+                                    "target": "sample_image1.image"
+                                },
+                                {
+                                    "source": ".property",
+                                    "target": "sample_image1.property"
+                                },
+                                {
+                                    "source": ".sampler",
+                                    "target": "sample_image1.sampler"
+                                }
+                            ],
+                            "values": [
+                                {
+                                    "valueName": "get_geo_property.property",
+                                    "valueType": "string",
+                                    "value": "face_vertex_uv"
+                                },
+                                {
+                                    "valueName": "get_geo_property.type",
+                                    "valueType": "array<Math::float2>",
+                                    "value": []
+                                },
+                                {
+                                    "valueName": "sample_image1.default",
+                                    "valueType": "Math::float4",
+                                    "value": {
+                                        "x": "0f",
+                                        "y": "0f",
+                                        "z": "0f",
+                                        "w": "0f"
+                                    }
+                                },
+                                {
+                                    "valueName": "sample_image1.wrap",
+                                    "valueType": "bool",
+                                    "value": "false"
+                                }
+                            ],
+                            "reservedNodeNames": [
+                                {
+                                    "name": "input"
+                                },
+                                {
+                                    "name": "output"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "set_channels",
+                            "uriImported": "stream:/scatter_plusShape",
+                            "metadata": [
+                                {
+                                    "metaName": "io_nodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_inodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "input",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "mesh"
+                                                                },
+                                                                {
+                                                                    "metaName": "rgb_channel"
+                                                                },
+                                                                {
+                                                                    "metaName": "alpha_channel"
+                                                                },
+                                                                {
+                                                                    "metaName": "rgb_channel_name"
+                                                                },
+                                                                {
+                                                                    "metaName": "red_channel_name"
+                                                                },
+                                                                {
+                                                                    "metaName": "green_channel_name"
+                                                                },
+                                                                {
+                                                                    "metaName": "blue_channel_name"
+                                                                },
+                                                                {
+                                                                    "metaName": "alpha_channel_name"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "io_onodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "out_geometry"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "ports": [
+                                {
+                                    "portName": "mesh",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "rgb_channel",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "alpha_channel",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "rgb_channel_name",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "red_channel_name",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "green_channel_name",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "blue_channel_name",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "alpha_channel_name",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "out_geometry",
+                                    "portDirection": "output",
+                                    "portType": "Object"
+                                }
+                            ],
+                            "compoundNodes": [
+                                {
+                                    "nodeName": "set_geo_property",
+                                    "nodeType": "Geometry::Properties::set_geo_property",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "47.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "223 -940"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "set_geo_property1",
+                                    "nodeType": "Geometry::Properties::set_geo_property",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "44.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "527 -964"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "set_geo_property2",
+                                    "nodeType": "Geometry::Properties::set_geo_property",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "45.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "789 -914"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "set_geo_property3",
+                                    "nodeType": "Geometry::Properties::set_geo_property",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "57.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1049 -852"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "set_geo_property4",
+                                    "nodeType": "Geometry::Properties::set_geo_property",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "58.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1358 -711"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "vector3_to_scalar",
+                                    "nodeType": "Core::Conversion::vector3_to_scalar",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "NodeWidthOffset",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "64.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "219 -531"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "connections": [
+                                {
+                                    "source": "set_geo_property.out_geometry",
+                                    "target": "set_geo_property1.geometry"
+                                },
+                                {
+                                    "source": "set_geo_property1.out_geometry",
+                                    "target": "set_geo_property2.geometry"
+                                },
+                                {
+                                    "source": "set_geo_property2.out_geometry",
+                                    "target": "set_geo_property3.geometry"
+                                },
+                                {
+                                    "source": "set_geo_property3.out_geometry",
+                                    "target": "set_geo_property4.geometry"
+                                },
+                                {
+                                    "source": "set_geo_property4.out_geometry",
+                                    "target": ".out_geometry"
+                                },
+                                {
+                                    "source": "vector3_to_scalar.x",
+                                    "target": "set_geo_property1.data"
+                                },
+                                {
+                                    "source": "vector3_to_scalar.y",
+                                    "target": "set_geo_property2.data"
+                                },
+                                {
+                                    "source": "vector3_to_scalar.z",
+                                    "target": "set_geo_property3.data"
+                                },
+                                {
+                                    "source": ".mesh",
+                                    "target": "set_geo_property.geometry"
+                                },
+                                {
+                                    "source": ".rgb_channel",
+                                    "target": "set_geo_property.data"
+                                },
+                                {
+                                    "source": ".rgb_channel",
+                                    "target": "vector3_to_scalar.vector3"
+                                },
+                                {
+                                    "source": ".alpha_channel",
+                                    "target": "set_geo_property4.data"
+                                },
+                                {
+                                    "source": ".rgb_channel_name",
+                                    "target": "set_geo_property.property"
+                                },
+                                {
+                                    "source": ".red_channel_name",
+                                    "target": "set_geo_property1.property"
+                                },
+                                {
+                                    "source": ".green_channel_name",
+                                    "target": "set_geo_property2.property"
+                                },
+                                {
+                                    "source": ".blue_channel_name",
+                                    "target": "set_geo_property3.property"
+                                },
+                                {
+                                    "source": ".alpha_channel_name",
+                                    "target": "set_geo_property4.property"
+                                }
+                            ],
+                            "values": [
+                                {
+                                    "valueName": "set_geo_property.property",
+                                    "valueType": "string",
+                                    "value": "point_color"
+                                },
+                                {
+                                    "valueName": "set_geo_property.target",
+                                    "valueType": "string",
+                                    "value": "point_component"
+                                },
+                                {
+                                    "valueName": "set_geo_property.interpolation_mode",
+                                    "valueType": "Geometry::Common::DataInterpolationMode",
+                                    "value": "Linear"
+                                },
+                                {
+                                    "valueName": "set_geo_property1.property",
+                                    "valueType": "string",
+                                    "value": "point_x"
+                                },
+                                {
+                                    "valueName": "set_geo_property1.target",
+                                    "valueType": "string",
+                                    "value": "point_component"
+                                },
+                                {
+                                    "valueName": "set_geo_property1.interpolation_mode",
+                                    "valueType": "Geometry::Common::DataInterpolationMode",
+                                    "value": "Linear"
+                                },
+                                {
+                                    "valueName": "set_geo_property2.property",
+                                    "valueType": "string",
+                                    "value": "point_y"
+                                },
+                                {
+                                    "valueName": "set_geo_property2.target",
+                                    "valueType": "string",
+                                    "value": "point_component"
+                                },
+                                {
+                                    "valueName": "set_geo_property2.interpolation_mode",
+                                    "valueType": "Geometry::Common::DataInterpolationMode",
+                                    "value": "Linear"
+                                },
+                                {
+                                    "valueName": "set_geo_property3.property",
+                                    "valueType": "string",
+                                    "value": "point_z"
+                                },
+                                {
+                                    "valueName": "set_geo_property3.target",
+                                    "valueType": "string",
+                                    "value": "point_component"
+                                },
+                                {
+                                    "valueName": "set_geo_property3.interpolation_mode",
+                                    "valueType": "Geometry::Common::DataInterpolationMode",
+                                    "value": "Linear"
+                                },
+                                {
+                                    "valueName": "set_geo_property4.property",
+                                    "valueType": "string",
+                                    "value": "point_z"
+                                },
+                                {
+                                    "valueName": "set_geo_property4.target",
+                                    "valueType": "string",
+                                    "value": "point_component"
+                                },
+                                {
+                                    "valueName": "set_geo_property4.interpolation_mode",
+                                    "valueType": "Geometry::Common::DataInterpolationMode",
+                                    "value": "Linear"
+                                }
+                            ],
+                            "reservedNodeNames": [
+                                {
+                                    "name": "input"
+                                },
+                                {
+                                    "name": "output"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "channels_to_fields",
+                            "uriImported": "stream:/scatter_plusShape",
+                            "metadata": [
+                                {
+                                    "metaName": "ViewportRect",
+                                    "metaType": "string",
+                                    "metaValue": "847.219 -665.666 875.818 857.21"
+                                },
+                                {
+                                    "metaName": "io_nodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_inodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "input",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "406.792 179.078"
+                                                        },
+                                                        {
+                                                            "metaName": "zValue",
+                                                            "metaType": "string",
+                                                            "metaValue": "37.000000"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "rgb_channel_name"
+                                                                },
+                                                                {
+                                                                    "metaName": "red_channel_name"
+                                                                },
+                                                                {
+                                                                    "metaName": "grn_channel_name"
+                                                                },
+                                                                {
+                                                                    "metaName": "blu_channel_name"
+                                                                },
+                                                                {
+                                                                    "metaName": "alf_channel_name"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "io_onodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "1305.93 -358.346"
+                                                        },
+                                                        {
+                                                            "metaName": "zValue",
+                                                            "metaType": "string",
+                                                            "metaValue": "36.000000"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "rgb_field"
+                                                                },
+                                                                {
+                                                                    "metaName": "red_field"
+                                                                },
+                                                                {
+                                                                    "metaName": "green_field"
+                                                                },
+                                                                {
+                                                                    "metaName": "blue_field"
+                                                                },
+                                                                {
+                                                                    "metaName": "alpha_field"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "ports": [
+                                {
+                                    "portName": "rgb_channel_name",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "red_channel_name",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "grn_channel_name",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "blu_channel_name",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "alf_channel_name",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "rgb_field",
+                                    "portDirection": "output"
+                                },
+                                {
+                                    "portName": "red_field",
+                                    "portDirection": "output"
+                                },
+                                {
+                                    "portName": "green_field",
+                                    "portDirection": "output"
+                                },
+                                {
+                                    "portName": "blue_field",
+                                    "portDirection": "output"
+                                },
+                                {
+                                    "portName": "alpha_field",
+                                    "portDirection": "output"
+                                }
+                            ],
+                            "compoundNodes": [
+                                {
+                                    "nodeName": "property_proxy_field",
+                                    "nodeType": "Core::Fields::property_proxy_field",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "719 -359"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "35.000000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "property_proxy_field1",
+                                    "nodeType": "Core::Fields::property_proxy_field",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "708 420"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "33.000000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "property_proxy_field2",
+                                    "nodeType": "Core::Fields::property_proxy_field",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "39.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "695.431 166"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "property_proxy_field3",
+                                    "nodeType": "Core::Fields::property_proxy_field",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "712 -127"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "38.000000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "property_proxy_field4",
+                                    "nodeType": "Core::Fields::property_proxy_field",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "710 709"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "34.000000"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "connections": [
+                                {
+                                    "source": "property_proxy_field.property_field",
+                                    "target": ".rgb_field"
+                                },
+                                {
+                                    "source": "property_proxy_field1.property_field",
+                                    "target": ".blue_field"
+                                },
+                                {
+                                    "source": "property_proxy_field2.property_field",
+                                    "target": ".green_field"
+                                },
+                                {
+                                    "source": "property_proxy_field3.property_field",
+                                    "target": ".red_field"
+                                },
+                                {
+                                    "source": "property_proxy_field4.property_field",
+                                    "target": ".alpha_field"
+                                },
+                                {
+                                    "source": ".rgb_channel_name",
+                                    "target": "property_proxy_field.property"
+                                },
+                                {
+                                    "source": ".red_channel_name",
+                                    "target": "property_proxy_field3.property"
+                                },
+                                {
+                                    "source": ".grn_channel_name",
+                                    "target": "property_proxy_field2.property"
+                                },
+                                {
+                                    "source": ".blu_channel_name",
+                                    "target": "property_proxy_field1.property"
+                                },
+                                {
+                                    "source": ".alf_channel_name",
+                                    "target": "property_proxy_field4.property"
+                                }
+                            ],
+                            "values": [
+                                {
+                                    "valueName": "property_proxy_field.property",
+                                    "valueType": "string",
+                                    "value": "opacity"
+                                },
+                                {
+                                    "valueName": "property_proxy_field.field_type",
+                                    "valueType": "Core::Fields::VectorField",
+                                    "value": {}
+                                },
+                                {
+                                    "valueName": "property_proxy_field1.property",
+                                    "valueType": "string",
+                                    "value": "opacity"
+                                },
+                                {
+                                    "valueName": "property_proxy_field2.property",
+                                    "valueType": "string",
+                                    "value": "opacity"
+                                },
+                                {
+                                    "valueName": "property_proxy_field3.property",
+                                    "valueType": "string",
+                                    "value": "opacity"
+                                },
+                                {
+                                    "valueName": "property_proxy_field4.property",
+                                    "valueType": "string",
+                                    "value": "opacity"
+                                }
+                            ],
+                            "reservedNodeNames": [
+                                {
+                                    "name": "input"
+                                },
+                                {
+                                    "name": "output"
+                                }
+                            ]
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "create_image",
+                            "nodeType": "Simulation::BOSS::Internal::create_image",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-3379.36 -2062.43"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "34.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "set_image_rgba",
+                            "nodeType": "Simulation::BOSS::Internal::set_image_rgba",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-3021.36 -2087.43"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "36.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "to_int3",
+                            "nodeType": "Core::Type_Conversion::to_int",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-3711.36 -1929.43"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "32.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "to_int4",
+                            "nodeType": "Core::Type_Conversion::to_int",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-3711.36 -2114.43"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "33.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "vector4_to_vector3",
+                            "nodeType": "Core::Conversion::vector4_to_vector3",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-3387.36 -1842.43"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "35.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "has_property",
+                            "nodeType": "Core::Object::has_property",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "NodeWidthOffset",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1642.85 -1395.14"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "48.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1349.71 -1313.91"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "46.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "pass",
+                            "nodeType": "Core::Graph::pass",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-2029.85 -1370.14"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "49.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value1",
+                            "valueType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-2870.86 -41.6774"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "39.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value2",
+                            "valueType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-2669.78 124.882"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "40.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value3",
+                            "valueType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-2478.8 304.478"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "41.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value4",
+                            "valueType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-2269.11 485.623"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "42.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value7",
+                            "valueType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-2083.7 647.527"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "43.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "sample_image_channels",
+                            "nodeType": "sample_image_channels",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-2607.57 -1566.02"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "53.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value8",
+                            "valueType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-3382.48 -1627.43"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "37.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "set_channels",
+                            "nodeType": "set_channels",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1593.61 -814.43"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "38.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "channels_to_fields",
+                            "nodeType": "channels_to_fields",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1605.77 -395.048"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "44.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "read_image_data",
+                            "nodeType": "File::Image::read_image_data",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-4021.13 -1736.4"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "51.000000"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "create_image.image",
+                            "target": "set_image_rgba.image"
+                        },
+                        {
+                            "source": "set_image_rgba.image_out",
+                            "target": ".image_out"
+                        },
+                        {
+                            "source": "set_image_rgba.image_out",
+                            "target": "sample_image_channels.image_out"
+                        },
+                        {
+                            "source": "to_int3.int",
+                            "target": "create_image.height_pixels"
+                        },
+                        {
+                            "source": "to_int4.int",
+                            "target": "create_image.width_pixels"
+                        },
+                        {
+                            "source": "vector4_to_vector3.vector3",
+                            "target": "set_image_rgba.color"
+                        },
+                        {
+                            "source": "vector4_to_vector3.w",
+                            "target": "set_image_rgba.alpha"
+                        },
+                        {
+                            "source": "has_property.found",
+                            "target": "if.condition"
+                        },
+                        {
+                            "source": "if.output",
+                            "target": ".mesh"
+                        },
+                        {
+                            "source": "pass.output",
+                            "target": "has_property.object"
+                        },
+                        {
+                            "source": "pass.output",
+                            "target": "set_channels.mesh"
+                        },
+                        {
+                            "source": "value1.output",
+                            "target": "set_channels.rgb_channel_name"
+                        },
+                        {
+                            "source": "value1.output",
+                            "target": "channels_to_fields.rgb_channel_name"
+                        },
+                        {
+                            "source": "value2.output",
+                            "target": "set_channels.red_channel_name"
+                        },
+                        {
+                            "source": "value2.output",
+                            "target": "channels_to_fields.red_channel_name"
+                        },
+                        {
+                            "source": "value3.output",
+                            "target": "set_channels.green_channel_name"
+                        },
+                        {
+                            "source": "value3.output",
+                            "target": "channels_to_fields.grn_channel_name"
+                        },
+                        {
+                            "source": "value4.output",
+                            "target": "set_channels.blue_channel_name"
+                        },
+                        {
+                            "source": "value4.output",
+                            "target": "channels_to_fields.blu_channel_name"
+                        },
+                        {
+                            "source": "value7.output",
+                            "target": "set_channels.alpha_channel_name"
+                        },
+                        {
+                            "source": "value7.output",
+                            "target": "channels_to_fields.alf_channel_name"
+                        },
+                        {
+                            "source": "sample_image_channels.vector3",
+                            "target": "set_channels.rgb_channel"
+                        },
+                        {
+                            "source": "sample_image_channels.w",
+                            "target": "set_channels.alpha_channel"
+                        },
+                        {
+                            "source": "value8.output",
+                            "target": "set_image_rgba.property"
+                        },
+                        {
+                            "source": "value8.output",
+                            "target": "sample_image_channels.property"
+                        },
+                        {
+                            "source": "set_channels.out_geometry",
+                            "target": "if.true_case"
+                        },
+                        {
+                            "source": "channels_to_fields.rgb_field",
+                            "target": ".vector_RGB"
+                        },
+                        {
+                            "source": "channels_to_fields.red_field",
+                            "target": ".scalar_R"
+                        },
+                        {
+                            "source": "channels_to_fields.green_field",
+                            "target": ".scalar_G"
+                        },
+                        {
+                            "source": "channels_to_fields.blue_field",
+                            "target": ".scalar_B"
+                        },
+                        {
+                            "source": "channels_to_fields.alpha_field",
+                            "target": ".scalar_A"
+                        },
+                        {
+                            "source": "read_image_data.pixels",
+                            "target": "vector4_to_vector3.vector4"
+                        },
+                        {
+                            "source": "read_image_data.width",
+                            "target": "to_int4.from"
+                        },
+                        {
+                            "source": "read_image_data.height",
+                            "target": "to_int3.from"
+                        },
+                        {
+                            "source": ".filepath",
+                            "target": "read_image_data.filepath"
+                        },
+                        {
+                            "source": ".mesh_input",
+                            "target": "if.false_case"
+                        },
+                        {
+                            "source": ".mesh_input",
+                            "target": "pass.input"
+                        },
+                        {
+                            "source": ".mesh_input",
+                            "target": "sample_image_channels.mesh_input"
+                        },
+                        {
+                            "source": ".sampler",
+                            "target": "sample_image_channels.sampler"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "create_image.width_pixels",
+                            "valueType": "int",
+                            "value": "100L"
+                        },
+                        {
+                            "valueName": "create_image.height_pixels",
+                            "valueType": "int",
+                            "value": "100L"
+                        },
+                        {
+                            "valueName": "set_image_rgba.image",
+                            "valueType": "Object",
+                            "value": {}
+                        },
+                        {
+                            "valueName": "set_image_rgba.property",
+                            "valueType": "string",
+                            "value": "color"
+                        },
+                        {
+                            "valueName": "set_image_rgba.color",
+                            "valueType": "Math::float3",
+                            "value": {
+                                "x": "1f",
+                                "y": "1f",
+                                "z": "1f"
+                            }
+                        },
+                        {
+                            "valueName": "set_image_rgba.alpha",
+                            "valueType": "float",
+                            "value": "1f"
+                        },
+                        {
+                            "valueName": "has_property.key",
+                            "valueType": "string",
+                            "value": "face_vertex_uv"
+                        },
+                        {
+                            "valueName": "value1.value",
+                            "valueType": "string",
+                            "value": "point_color"
+                        },
+                        {
+                            "valueName": "value2.value",
+                            "valueType": "string",
+                            "value": "point_r"
+                        },
+                        {
+                            "valueName": "value3.value",
+                            "valueType": "string",
+                            "value": "point_g"
+                        },
+                        {
+                            "valueName": "value4.value",
+                            "valueType": "string",
+                            "value": "point_b"
+                        },
+                        {
+                            "valueName": "value7.value",
+                            "valueType": "string",
+                            "value": "point_a"
+                        },
+                        {
+                            "valueName": "sample_image_channels.mesh_input",
+                            "valueType": "Object",
+                            "value": {}
+                        },
+                        {
+                            "valueName": "sample_image_channels.image_out",
+                            "valueType": "Object",
+                            "value": {}
+                        },
+                        {
+                            "valueName": "sample_image_channels.property",
+                            "valueType": "string",
+                            "value": "face_vertex_uv"
+                        },
+                        {
+                            "valueName": "value8.value",
+                            "valueType": "string",
+                            "value": "color"
+                        },
+                        {
+                            "valueName": "set_channels.mesh",
+                            "valueType": "Object",
+                            "value": {}
+                        },
+                        {
+                            "valueName": "set_channels.rgb_channel",
+                            "valueType": "array<Math::float3>",
+                            "value": []
+                        },
+                        {
+                            "valueName": "set_channels.alpha_channel",
+                            "valueType": "array<float>",
+                            "value": []
+                        },
+                        {
+                            "valueName": "set_channels.rgb_channel_name",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "set_channels.red_channel_name",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "set_channels.green_channel_name",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "set_channels.blue_channel_name",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "set_channels.alpha_channel_name",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "channels_to_fields.rgb_channel_name",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "channels_to_fields.red_channel_name",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "channels_to_fields.grn_channel_name",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "channels_to_fields.blu_channel_name",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "channels_to_fields.alf_channel_name",
+                            "valueType": "string",
+                            "value": ""
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        },
+                        {
+                            "name": "output1"
+                        },
+                        {
+                            "name": "output2"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "set_property",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1294.07 -642.834"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "43.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property1",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-954.015 -545.878"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property2",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-697.694 -408.978"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property4",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-444.608 -266.237"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "Object",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1592.77 -614.185"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property5",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-202.288 -158.485"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "file_path",
+                    "nodeType": "VHH::Tool::file_path",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1165.92 121.105"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property6",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "55.1107 51.1866"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property7",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "310.647 219.277"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "41.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "stacked_image_to_fields",
+                    "nodeType": "stacked_image_to_fields",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1120.15 779.245"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value1",
+                    "valueType": "Simulation::BOSS::ImageSamplerType",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1154.37 373.136"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property8",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "568.619 353.217"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "42.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "set_property.out_object",
+                    "target": "set_property1.object"
+                },
+                {
+                    "source": "set_property1.out_object",
+                    "target": "set_property2.object"
+                },
+                {
+                    "source": "set_property2.out_object",
+                    "target": "set_property4.object"
+                },
+                {
+                    "source": "set_property4.out_object",
+                    "target": "set_property5.object"
+                },
+                {
+                    "source": "value.output",
+                    "target": "set_property.object"
+                },
+                {
+                    "source": "set_property5.out_object",
+                    "target": "set_property6.object"
+                },
+                {
+                    "source": "file_path.out",
+                    "target": "set_property6.value"
+                },
+                {
+                    "source": "set_property6.out_object",
+                    "target": "set_property7.object"
+                },
+                {
+                    "source": "set_property7.out_object",
+                    "target": "set_property8.object"
+                },
+                {
+                    "source": "value1.output",
+                    "target": "set_property8.value"
+                },
+                {
+                    "source": "set_property8.out_object",
+                    "target": ".image_filter_data"
+                },
+                {
+                    "source": ".enable",
+                    "target": "set_property1.value"
+                },
+                {
+                    "source": ".filename",
+                    "target": "file_path.file"
+                },
+                {
+                    "source": ".channel_select",
+                    "target": "set_property7.value"
+                },
+                {
+                    "source": ".sampler",
+                    "target": "value1.value"
+                },
+                {
+                    "source": ".reverse",
+                    "target": "set_property5.value"
+                },
+                {
+                    "source": ".weight",
+                    "target": "set_property4.value"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "set_property.key",
+                    "valueType": "string",
+                    "value": "id"
+                },
+                {
+                    "valueName": "set_property.value",
+                    "valueType": "string",
+                    "value": "image"
+                },
+                {
+                    "valueName": "set_property1.key",
+                    "valueType": "string",
+                    "value": "enable"
+                },
+                {
+                    "valueName": "set_property2.key",
+                    "valueType": "string",
+                    "value": "loc_matrix"
+                },
+                {
+                    "valueName": "set_property4.key",
+                    "valueType": "string",
+                    "value": "weight"
+                },
+                {
+                    "valueName": "set_property5.key",
+                    "valueType": "string",
+                    "value": "reverse"
+                },
+                {
+                    "valueName": "set_property5.value",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "file_path.file",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "set_property6.key",
+                    "valueType": "string",
+                    "value": "filepath"
+                },
+                {
+                    "valueName": "set_property6.value",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "set_property7.key",
+                    "valueType": "string",
+                    "value": "channel"
+                },
+                {
+                    "valueName": "set_property7.value",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "stacked_image_to_fields.filepath",
+                    "valueType": "string",
+                    "value": "C:/Users/unkav/Downloads/Mountains Displacement Kit/Mountains Displacement Kit/Mountains 14/tex/MOUNTAINS-14_DIFFUSE_HEIGHT_8k.tif"
+                },
+                {
+                    "valueName": "stacked_image_to_fields.mesh_input",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "stacked_image_to_fields.sampler",
+                    "valueType": "Simulation::BOSS::ImageSamplerType",
+                    "value": "Quadratic"
+                },
+                {
+                    "valueName": "value1.value",
+                    "valueType": "Simulation::BOSS::ImageSamplerType",
+                    "value": "Nearest"
+                },
+                {
+                    "valueName": "set_property8.key",
+                    "valueType": "string",
+                    "value": "sampler"
+                },
+                {
+                    "valueName": "set_property8.value",
+                    "valueType": "bool",
+                    "value": "false"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input1"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
