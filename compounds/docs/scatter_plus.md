@@ -10,7 +10,7 @@ Scatter+ is an attempt to extend scatter functionality.  It implements 3 more sc
 <br />This port is where you would plug in any meshes you wanted to use as a scatter mask.
 
 <span style="color:#90A3F4">***excluding_meshes***</span>
-<br />This port is where you would plug in any strands you wanted to use as a scatter mask..
+<br />This port is where you would plug in any strands you wanted to use as a scatter mask.
 
 <span style="color:#90A3F4">***weight_filter***</span>
 <br />This port is the input for the pre-made filters.  These are accessed through the "create value node" menu item - if you right-click this port, you will be able to access these.
@@ -33,24 +33,26 @@ Scatter+ is an attempt to extend scatter functionality.  It implements 3 more sc
 <span style="color:#D9BE6C">***transfer_properties***</span>
 <br />These are properties that you wish to transfer from the scatter mesh to the points.
 
-### ***Scatter Settings***
+<font size =4><br />***Scatter Settings***</font>
 
 <span style="color:#E69963">***rebuild_scatter***</span>
-<br />When this is checked, the scatter will no longer update.  This speeds up the system but if any changes are made to the scatter or weights they will not be reflected or built until this is checked again.  This is included to speed up culling. 
+<br />When this is ***unchecked***, the scatter will no longer update.  This speeds up the system but if any changes are made to the scatter or weights they will not be reflected or built until this is checked again.  This is included to speed up culling. 
 
 <span style="color:#62CFD9">***which_scatter***</span>
 <br />Choose which scatter to use:
-- points per face
-    - Points per face randomly places *number_of_points_per_face* points inside a triangle face.  If your mesh is not triangulated, it will be converted internally and the scatter applied.  This will mean for a quad mesh, you will have twice the number of points.
 
-- scatter points
-    - This is the Bifrost default scatter we all know and love.
-
-- incircle packing
-    - Uses the incircle and inradius of each triangulated face to place and size a point.  If your mesh is not triangulated, it will be converted internally and the scatter applied.  This will mean for a quad mesh, you will have twice the number of points.
-
-- grid scatter
-    - Very similar to Unreal's PCG scatter system. A grid is created and projected onto the mesh.  This only works well with planes/terrain.
+>***points per face:***<br />
+><font size =3>Points per face randomly places *number_of_points_per_face* points inside a triangle face.  If your mesh is not triangulated, it will be converted internally and the scatter applied.  This will mean for a quad mesh, you will have twice the number of points.</font>
+>
+>***scatter points:***<br />
+><font size =3>This is the Bifrost default scatter we all know and love.</font>
+>
+>***incircle packing:***<br />
+><font size =3>Uses the incircle and inradius of each triangulated face to place and size a point.  If your mesh is not triangulated, it will be converted internally and the scatter applied.  This will mean for a quad mesh, you will have twice the number of points.</font>
+>
+>***grid scatter:***<br />
+><font size =3>Very similar to Unreal's PCG scatter system. A grid is created and projected onto the mesh.  This only works well with planes/terrain.</font>
+>
 
 <span style="color:#82D99F">***point_size***</span>
 <br />The point size for *points_per_face* and *scatter_points*.
@@ -58,31 +60,27 @@ Scatter+ is an attempt to extend scatter functionality.  It implements 3 more sc
 <span style="color:#62CFD9">***seed***</span>
 <br />The random seed.
 
-#### ***Points per face***
-
-<span style="color:#62CFD9">***number_of_points_per_face***</span>
+<font size =3>**Points per face**</font>
+<br /><span style="color:#62CFD9">***number_of_points_per_face***</span>
 <br />How many points per triangle to scatter.
 
-#### ***Scatter points***
-
-<span style="color:#62CFD9">***scatter_mode***</span>
-<br />The mode to use for scattering:  Random gives a uniform pseudo-random distribution. This is the closest to truly random, but exhibits clumps and bare patches that may be unwanted for some purposes.  BlueNoise gives a "blue noise" distribution. This is also referred to as a "quasi-random" or "low discrepancy" distribution. It provides a more even distribution, with points more equally spaced.  BlueNoiseMaximal gives a similar distribution to BlueNoise. This gives the most evenly-spaced distribution, but is the slowest to compute..
+<font size =3>**Scatter points**</font>
+<br /><span style="color:#62CFD9">***scatter_mode***</span>
+<br />The mode to use for scattering:  Random gives a uniform pseudo-random distribution. This is the closest to truly random, but exhibits clumps and bare patches that may be unwanted for some purposes.  BlueNoise gives a "blue noise" distribution. This is also referred to as a "quasi-random" or "low discrepancy" distribution. It provides a more even distribution, with points more equally spaced.  BlueNoiseMaximal gives a similar distribution to BlueNoise. This gives the most evenly-spaced distribution, but is the slowest to compute.
 
 <span style="color:#62CFD9">***amount_mode***</span>
 <br />Controls the interpretation of the amount parameter:  Radius generates locations that are spaced at least 2 × amount units apart. If spheres with this radius are placed on the resulting points, none of the spheres would intersect. Points may be further apart, but never closer than twice this radius.
-number generates the amount number of locations.  Density generates amount locations per unit of surface area, strand length, or volume..
+number generates the amount number of locations.  Density generates amount locations per unit of surface area, strand length, or volume.
 
 <span style="color:#82D99F">***amount***</span>
 <br />Number of points to scatter.
 
-#### ***Incircle packing***
+<font size =3>**Incircle packing**</font>
+<br /><span style="color:#82D99F">***size_mult_incircle***</span>
+<br />Enables scaling of the triangle's incircle, which sets the size of the points.  This will only scale smaller than the incircle.
 
-<span style="color:#82D99F">***size_mult_incircle***</span>
-<br />Enables scaling of the triangle's incircle, which sets the size of the points.
-
-#### ***Grid scatter***
-
-<span style="color:#82D99F">***grid_segments***</span>
+<font size =3>**Grid scatter**</font>
+<br /><span style="color:#82D99F">***grid_segments***</span>
 <br />Controls the number of segments of the grid - higher numbers result in more points.
 
 <span style="color:#82D99F">***master_scale_grid***</span>
@@ -91,7 +89,7 @@ number generates the amount number of locations.  Density generates amount locat
 <span style="color:#82D99F">***randomize***</span>
 <br />This is a zero to one control that randomizes the positions and scale of the grid points.  Zero is no randomization, One is full randomization.
 
-### ***Culling Settings***
+<font size =4><br />***Culling Settings***</font>
 
 <span style="color:#82D99F">***cull_below***</span>
 <br />Cull any weights below this value.
@@ -105,9 +103,9 @@ number generates the amount number of locations.  Density generates amount locat
 <span style="color:#82D99F">***overlapping_radius***</span>
 <br />Controls the distance between points when cull_overlapping is enabled.
 
-### ***Point ID Settings***
+<font size =4><br />***Instance ID Settings***</font>
 
-<span style="color:#E69963">***use_point_id***</span>
+<span style="color:#E69963">***use_instance_id***</span>
 <br />A point_id property is generated from the input mesh or an image absed on the value or hue of the data.  If this is checked, the point id system will be active.
 
 <span style="color:#D9BE6C">***point_id_property***</span>
@@ -131,10 +129,10 @@ number generates the amount number of locations.  Density generates amount locat
 <span style="color:#D9BE6C">***vector_property_to_sample***</span>
 <br />Which vector property on the mesh to generate point ids from.
 
-### ***Clumping Settings***
+<font size =4><br />***Clumping Settings***</font>
 
 <span style="color:#E69963">***clumping***</span>
-<br />Clumping uses the scatter points and adds a clump (secondary scatter) around them.  This means that if you have scattered 2 million points, you're in for a rouhg time.  This works best with a lesser number of points.
+<br />Clumping uses the scatter points and adds a clump (secondary scatter) around them.  This means that if you have scattered 2 million points, you're in for a rough time.  This works best with a lesser number of points.
 
 <span style="color:#E69963">***show_clumping_id***</span>
 <br />When each clump is scattered, it is given an id which is added to the output points as a property.  This allows more control later on and this control will assign a random color to each clump
@@ -174,6 +172,31 @@ number generates the amount number of locations.  Density generates amount locat
 
 <span style="color:#82D99F">***standard_deviation***</span>
 <br />SD for Gaussian A and Gaussian B interpoltion.
+
+<font size =4><br />***Exclusion Settings***</font>
+
+<span style="color:#E69963">***zero_weights_by_id***</span>
+<br />The points all have a *point_id* property, which is their array index.  When this is checked, a string value can be entered into the *id_input* field to set those ids to zero.
+
+<span style="color:#D9BE6C">***id_input***</span>
+<font size =3><br />This is the string that will zero the weights by id.  Input options are:</font>
+>***Single Index:***<br />
+><font size =3>A comma separated list of indicies. [0,1,2,3 ...], this will tag a list of the indices provided.</font>
+>
+>***Index Range:***<br />
+><font size =3>Two indices separated by a dash. [0-10], this will tag a range of indicies from first to last.</font>
+>
+>***Less than an Index:***<br />
+><font size =3>Less than chevron followed by the index number. [<10], this will tag all verticies less than the index provided.</font>
+>
+>***Greater than an Index:***<br />
+><font size =3>Greater than chevron followed by the index number. [>10], this will tag all verticies greater than the index provided.</font>
+>
+>***Range with Step:***<br />
+><font size =3>You can get a step on any range of indices you require by adding a colon then the step-size. [<50:10, >10:3, 10-100:4], this will tag the ranges with their steps, so [<50:10] will return 0,10,20,30,40</font>
+>
+>***Combinations:***<br />
+><font size =3>Any and all of the above can be combined to generate more complex selections. [<10:2, 15, 16, 20-30, >40] is a valid string input value for example.</font>
 
 <span style="color:#82D99F">***exclude_by_strands_radius***</span>
 <br />When excluding points with a strand, this controls the radius outwards from the strand to cull.
