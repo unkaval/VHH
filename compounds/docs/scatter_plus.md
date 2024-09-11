@@ -106,22 +106,22 @@ number generates the amount number of locations.  Density generates amount locat
 <font size =4><br />***Instance ID Settings***</font>
 
 <span style="color:#E69963">***use_instance_id***</span>
-<br />A point_id property is generated from the input mesh or an image absed on the value or hue of the data.  If this is checked, the point id system will be active.
+<br />An instance_id property is generated from the input mesh or an image absed on the value or hue of the data.  If this is checked, the point id system will be active.
 
-<span style="color:#D9BE6C">***point_id_property***</span>
+<span style="color:#D9BE6C">***instance_id_property***</span>
 <br />The property to write to the points.
 
 <span style="color:#62CFD9">***sample_attribute***</span>
 <br />Whether to sample the hue or value of the incoming data.
 
 <span style="color:#62CFD9">***tolerance***</span>
-<br />How tightly the data is matched to a point_id.
+<br />How tightly the data is matched to a instance_id.
 
 <span style="color:#62CFD9">***unique_instances***</span>
-<br />How many unique instances will be used with the *point_id* property.
+<br />How many unique instances will be used with the *instance_id* property.
 
 <span style="color:#E69963">***use_image***</span>
-<br />Read an image from disk to provide the point_id data.
+<br />Read an image from disk to provide the instance_id data.
 
 <span style="color:#D9BE6C">***filepath***</span>
 <br />Path to the file on disk.
@@ -176,27 +176,27 @@ number generates the amount number of locations.  Density generates amount locat
 <font size =4><br />***Exclusion Settings***</font>
 
 <span style="color:#E69963">***zero_weights_by_id***</span>
-<br />The points all have a *point_id* property, which is their array index.  When this is checked, a string value can be entered into the *id_input* field to set those ids to zero.
+<br />The points all have a *point_id* property, which is their array index.  When this is checked, a string value can be entered into the *id_input* field to set the weights for those ids to zero.
 
 <span style="color:#D9BE6C">***id_input***</span>
-<font size =3><br />This is the string that will zero the weights by id.  Input options are:</font>
+<font size =3><br />This is the string that will zero the weights by id. Input options are:</font>
 >***Single Index:***<br />
-><font size =3>A comma separated list of indicies. [0,1,2,3 ...], this will tag a list of the indices provided.</font>
+><font size =3>A comma separated list of indicies. `0,1,2,3 ...`, this will tag a list of the indices provided.</font>
 >
 >***Index Range:***<br />
-><font size =3>Two indices separated by a dash. [0-10], this will tag a range of indicies from first to last.</font>
+><font size =3>Two indices separated by a dash. `0-10`, this will tag a range of indicies from first to last.</font>
 >
 >***Less than an Index:***<br />
-><font size =3>Less than chevron followed by the index number. [<10], this will tag all verticies less than the index provided.</font>
+><font size =3>Less than chevron followed by the index number. `<10`, this will tag all verticies less than the index provided.</font>
 >
 >***Greater than an Index:***<br />
-><font size =3>Greater than chevron followed by the index number. [>10], this will tag all verticies greater than the index provided.</font>
+><font size =3>Greater than chevron followed by the index number. `>10`, this will tag all verticies greater than the index provided.</font>
 >
 >***Range with Step:***<br />
-><font size =3>You can get a step on any range of indices you require by adding a colon then the step-size. [<50:10, >10:3, 10-100:4], this will tag the ranges with their steps, so [<50:10] will return 0,10,20,30,40</font>
+><font size =3>You can get a step on any range of indices you require by adding a colon then the step-size. `<50:10, >10:3, 10-100:4`, this will tag the ranges with their steps, so `<50:10` will return 0,10,20,30,40</font>
 >
 >***Combinations:***<br />
-><font size =3>Any and all of the above can be combined to generate more complex selections. [<10:2, 15, 16, 20-30, >40] is a valid string input value for example.</font>
+><font size =3>Any and all of the above can be combined to generate more complex selections. `<10:2, 15, 16, 20-30, >40` is a valid string input value for example.</font>
 
 <span style="color:#82D99F">***exclude_by_strands_radius***</span>
 <br />When excluding points with a strand, this controls the radius outwards from the strand to cull.
