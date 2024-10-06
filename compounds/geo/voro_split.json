@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "VHH::Core::Geometry::voro_split",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "uriImported": "file:///voro_split.json",
             "metadata": [
                 {
                     "metaName": "documentation",
@@ -23,7 +23,7 @@
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../helper_icons/derhornen.png"
-                },                                
+                },
                 {
                     "metaName": "io_nodes",
                     "metadata": [
@@ -42,11 +42,6 @@
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
                                             "metaValue": "-2256.93 -710.84"
-                                        },
-                                        {
-                                            "metaName": "zValue",
-                                            "metaType": "string",
-                                            "metaValue": "37.000000"
                                         },
                                         {
                                             "metaName": "io_ports",
@@ -70,6 +65,11 @@
                                                     "metaName": "scatter_mode"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "36.000000"
                                         }
                                     ]
                                 }
@@ -87,22 +87,22 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "844.208 -540.295"
-                                        },
-                                        {
-                                            "metaName": "zValue",
-                                            "metaType": "string",
-                                            "metaValue": "43.000000"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "output_mesh_array"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "887.449 -578.903"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "50.000000"
                                         }
                                     ]
                                 }
@@ -138,7 +138,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "266.519 -647.941 975.807 1113.61"
+                    "metaValue": "-55 -850.294 1581 1316.59"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -148,25 +148,25 @@
                 {
                     "metaName": "zValue",
                     "metaType": "string",
-                    "metaValue": "42.000000"
+                    "metaValue": "67.000000"
                 },
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "74.1803 -139.691"
+                    "metaValue": "-217.791 84.8089"
                 }
             ],
             "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "false"
+                },
                 {
                     "name": "Core::Graph::terminal::final",
                     "enabled": "false"
                 },
                 {
                     "name": "Core::Graph::terminal::proxy",
-                    "enabled": "false"
-                },
-                {
-                    "name": "Core::Graph::terminal::diagnostic",
                     "enabled": "false"
                 }
             ],
@@ -215,8 +215,13 @@
             "compounds": [
                 {
                     "name": "for_each1",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///voro_split.json",
                     "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                        },
                         {
                             "metaName": "icon",
                             "metaType": "string",
@@ -415,7 +420,7 @@
                 },
                 {
                     "name": "voronoise",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///voro_split.json",
                     "metadata": [
                         {
                             "metaName": "documentation",
@@ -645,7 +650,7 @@
                     "compounds": [
                         {
                             "name": "voro_simple",
-                            "uriImported": "stream:/bifrostGraphShape1",
+                            "uriImported": "file:///voro_split.json",
                             "metadata": [
                                 {
                                     "metaName": "documentation",
@@ -827,8 +832,13 @@
                             "compounds": [
                                 {
                                     "name": "for_each_in_points",
-                                    "uriImported": "stream:/bifrostGraphShape1",
+                                    "uriImported": "file:///voro_split.json",
                                     "metadata": [
+                                        {
+                                            "metaName": "icon",
+                                            "metaType": "string",
+                                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                                        },
                                         {
                                             "metaName": "icon",
                                             "metaType": "string",
@@ -986,8 +996,13 @@
                                     "compounds": [
                                         {
                                             "name": "for_each_in_control",
-                                            "uriImported": "stream:/bifrostGraphShape1",
+                                            "uriImported": "file:///voro_split.json",
                                             "metadata": [
+                                                {
+                                                    "metaName": "icon",
+                                                    "metaType": "string",
+                                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                                                },
                                                 {
                                                     "metaName": "icon",
                                                     "metaType": "string",
@@ -2254,6 +2269,134 @@
                             "name": "output"
                         }
                     ]
+                },
+                {
+                    "name": "compound",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_mesh"
+                                                        },
+                                                        {
+                                                            "metaName": "faces_to_keep"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_mesh1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "out_mesh",
+                            "portDirection": "input",
+                            "portType": "Object"
+                        },
+                        {
+                            "portName": "faces_to_keep",
+                            "portDirection": "input",
+                            "portType": "array<long>"
+                        },
+                        {
+                            "portName": "out_mesh1",
+                            "portDirection": "output",
+                            "portType": "Object"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "filter_faces",
+                            "nodeType": "Modeling::Mesh::filter_faces",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "534 -541"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "43.000000"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": ".out_mesh",
+                            "target": "filter_faces.mesh"
+                        },
+                        {
+                            "source": "filter_faces.out_mesh",
+                            "target": ".out_mesh1"
+                        },
+                        {
+                            "source": ".faces_to_keep",
+                            "target": "filter_faces.faces_to_keep"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "filter_faces.mesh",
+                            "valueType": "Object",
+                            "value": {}
+                        },
+                        {
+                            "valueName": "filter_faces.faces_to_keep",
+                            "valueType": "array<long>",
+                            "value": []
+                        },
+                        {
+                            "valueName": "filter_faces.properties",
+                            "valueType": "string",
+                            "value": "*"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
                 }
             ],
             "compoundNodes": [
@@ -2274,7 +2417,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "55.000000"
+                            "metaValue": "46.000000"
                         }
                     ]
                 },
@@ -2324,28 +2467,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "50.000000"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "filter_faces",
-                    "nodeType": "Modeling::Mesh::filter_faces",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "534 -541"
-                        },
-                        {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "45.000000"
+                            "metaValue": "44.000000"
                         }
                     ]
                 },
@@ -2381,7 +2503,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "46.000000"
+                            "metaValue": "42.000000"
                         }
                     ]
                 },
@@ -2402,7 +2524,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "35.000000"
+                            "metaValue": "34.000000"
                         }
                     ]
                 },
@@ -2416,14 +2538,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "54.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "213.519 -454.361"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "45.000000"
                         }
                     ]
                 },
@@ -2444,7 +2566,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "49.000000"
+                            "metaValue": "43.000000"
                         }
                     ]
                 },
@@ -2465,7 +2587,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "34.000000"
+                            "metaValue": "33.000000"
                         }
                     ]
                 },
@@ -2507,7 +2629,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "33.000000"
+                            "metaValue": "32.000000"
                         }
                     ]
                 },
@@ -2528,7 +2650,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "36.000000"
+                            "metaValue": "35.000000"
                         }
                     ]
                 },
@@ -2549,7 +2671,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "38.000000"
+                            "metaValue": "37.000000"
                         }
                     ]
                 },
@@ -2570,7 +2692,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "39.000000"
+                            "metaValue": "38.000000"
                         }
                     ]
                 },
@@ -2591,7 +2713,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "41.000000"
+                            "metaValue": "40.000000"
                         }
                     ]
                 },
@@ -2612,7 +2734,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "40.000000"
+                            "metaValue": "39.000000"
                         }
                     ]
                 },
@@ -2633,7 +2755,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "42.000000"
+                            "metaValue": "41.000000"
                         }
                     ]
                 },
@@ -2647,20 +2769,34 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "62.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "282.335 -191.487"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "47.000000"
                         }
                     ]
                 },
                 {
                     "nodeName": "point_scope",
                     "nodeType": "Diagnostic::Display::point_scope",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        }
+                    ],
                     "metadata": [
                         {
                             "metaName": "DisplayMode",
@@ -2668,14 +2804,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "64.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "574.938 -213.629"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "49.000000"
                         }
                     ]
                 },
@@ -2706,27 +2842,40 @@
                             "metaValue": "2"
                         },
                         {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "840.653 -207.303"
+                        },
+                        {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "63.000000"
+                            "metaValue": "48.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "compound",
+                    "nodeType": "compound",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
                         },
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "840.653 -207.303"
+                            "metaValue": "537.089 -581.152"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "51.000000"
                         }
                     ]
                 }
             ],
             "connections": [
-                {
-                    "source": "update_mesh_adjacency.out_mesh",
-                    "target": "filter_faces.mesh"
-                },
-                {
-                    "source": "points_to_faces.face_indices",
-                    "target": "filter_faces.faces_to_keep"
-                },
                 {
                     "source": "sequence_array.sequence",
                     "target": "for_each1.sequence"
@@ -2824,10 +2973,6 @@
                     "target": "pass.input"
                 },
                 {
-                    "source": "filter_faces.out_mesh",
-                    "target": ".output_mesh_array"
-                },
-                {
                     "source": ".tile_seed",
                     "target": "voronoise.seed"
                 },
@@ -2846,6 +2991,18 @@
                 {
                     "source": "point_scope.diagnostic_geo",
                     "target": "terminal.diagnostic.diagnostic_geo"
+                },
+                {
+                    "source": "update_mesh_adjacency.out_mesh",
+                    "target": "compound.out_mesh"
+                },
+                {
+                    "source": "compound.out_mesh1",
+                    "target": ".output_mesh_array"
+                },
+                {
+                    "source": "points_to_faces.face_indices",
+                    "target": "compound.faces_to_keep"
                 }
             ],
             "values": [
@@ -2878,16 +3035,6 @@
                     "valueName": "voronoise.color_diagnostic",
                     "valueType": "bool",
                     "value": "true"
-                },
-                {
-                    "valueName": "filter_faces.mesh",
-                    "valueType": "Object",
-                    "value": {}
-                },
-                {
-                    "valueName": "filter_faces.properties",
-                    "valueType": "string",
-                    "value": "*"
                 },
                 {
                     "valueName": "get_geo_property.property",
@@ -2939,11 +3086,6 @@
                     "value": "0.100500003f"
                 },
                 {
-                    "valueName": "point_scope.coloring_mode",
-                    "valueType": "Diagnostic::ColoringMode",
-                    "value": "Color"
-                },
-                {
                     "valueName": "point_scope.color",
                     "valueType": "Math::float3",
                     "value": {
@@ -2951,6 +3093,21 @@
                         "y": "0.400000006f",
                         "z": "1f"
                     }
+                },
+                {
+                    "valueName": "point_scope.coloring_mode",
+                    "valueType": "Diagnostic::ColoringMode",
+                    "value": "Color"
+                },
+                {
+                    "valueName": "compound.out_mesh",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "compound.faces_to_keep",
+                    "valueType": "array<long>",
+                    "value": []
                 }
             ],
             "reservedNodeNames": [
