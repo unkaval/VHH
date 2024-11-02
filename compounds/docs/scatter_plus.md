@@ -138,7 +138,7 @@ number generates the amount number of locations.  Density generates amount locat
 <br />When each clump is scattered, it is given an id which is added to the output points as a property.  This allows more control later on and this control will assign a random color to each clump
 
 <span style="color:#E69963">***use_bluedisc***</span>
-<br />This scatters points on a disc around the input points using bluenoise.  It adds a more regular looking clump.
+<br />This scatters points on a disc around the input points using bluenoise.  It adds a more regular looking clump.  
 
 <span style="color:#E69963">***show_radius***</span>
 <br />The clumping system allows for culling outside a radius and inside an inner radius.  This will display the radii.
@@ -150,13 +150,16 @@ number generates the amount number of locations.  Density generates amount locat
 <br />How many points per clump.
 
 <span style="color:#82D99F">***points_per_clump_random***</span>
-<br />Amount of randomization in the clump point counts, per clump.
+<br />Amount of randomization in the clump point counts, per clump, 0-1.
+
+<span style="color:#82D99F">***min_radius_per_clump***</span>
+<br />Minimum number of random points per clump.
 
 <span style="color:#82D99F">***radius_per_clump***</span>
 <br />The radius per clump.
 
 <span style="color:#82D99F">***radius_per_clump_random***</span>
-<br />Amount of randomization in the clump radii, per clump.
+<br />Amount of randomization in the clump radii, per clump, 0-1.
 
 <span style="color:#82D99F">***interior_radius***</span>
 <br />The interior radius inside which points will be culled.
