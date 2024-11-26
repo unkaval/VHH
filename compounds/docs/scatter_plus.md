@@ -7,10 +7,10 @@ Scatter+ is an attempt to extend scatter functionality.  It implements 3 more sc
 <br />The input mesh you are going to scatter points on.
 
 <span style="color:#90A3F4">***excluding_strands***</span>
-<br />This port is where you would plug in any meshes you wanted to use as a scatter mask.
+<br />This port is where you would plug in any strands you wanted to use as a scatter mask.
 
 <span style="color:#90A3F4">***excluding_meshes***</span>
-<br />This port is where you would plug in any strands you wanted to use as a scatter mask.
+<br />This port is where you would plug in any meshes you wanted to use as a scatter mask.
 
 <span style="color:#90A3F4">***weight_filter***</span>
 <br />This port is the input for the pre-made filters.  These are accessed through the "create value node" menu item - if you right-click this port, you will be able to access these.
@@ -203,6 +203,12 @@ number generates the amount number of locations.  Density generates amount locat
 
 <span style="color:#82D99F">***exclude_by_strands_radius***</span>
 <br />When excluding points with a strand, this controls the radius outwards from the strand to cull.
+
+<span style="color:#82D99F">***exclude_by_strands_radius***</span>
+<br />This is an *interpreted auto port* that will take scalar values, enabling a radius per incoming strand.
+
+<span style="color:#82D99F">***exclude_by_mesh_scale***</span>
+<br />This is an *interpreted auto port* that will take scalar values, enabling a scalaing value per incoming mesh.
 
 ***
 ## Output
