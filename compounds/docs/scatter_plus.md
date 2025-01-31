@@ -106,7 +106,7 @@ number generates the amount number of locations.  Density generates amount locat
 <font size =4><br />***Instance ID Settings***</font>
 
 <span style="color:#E69963">***use_instance_id***</span>
-<br />An instance_id property is generated from the input mesh or an image absed on the value or hue of the data.  If this is checked, the point id system will be active.
+<br />An instance_id property is generated from the input mesh or an image based on the value or hue of the data.  If this is checked, the point id system will be active.
 
 <span style="color:#D9BE6C">***instance_id_property***</span>
 <br />The property to write to the points.
